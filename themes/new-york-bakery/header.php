@@ -40,11 +40,10 @@
 						<?php the_custom_logo(); ?>
 					</li>
 				</ul>
-			</div><!-- /.navbar-collapse -->
-		</div><!-- /.container-fluid -->
+			</div>
+		</div>
 	</nav>
-</header><!-- header role="banner" -->
-<div clear></div>
+</header>
 
 <?php
 /*wp_nav_menu( array(
@@ -53,4 +52,4 @@
 ) );
 */ ?>
 
-<!--	<div id="content" class="site-content">-->
+<div class="container-fluid">
