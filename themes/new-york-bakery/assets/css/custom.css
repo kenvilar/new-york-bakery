@@ -2,7 +2,6 @@
 1. Header
 2. Banner
 3. Footer
-
 */
 
 /* 1. Header */
@@ -12,13 +11,15 @@ img.custom-logo {
 	width: 120px;
 	height: 55px;
 }
-header { margin-bottom: 45px; }
 header #navbar-primary {
+	background: #fff;
+	margin-bottom: 0;
+}
+header .fixed {
 	position: fixed;
 	top: 0;
 	right: 0;
 	left: 0;
-	background: #fff;
 }
 header #navbar-primary .container-fluid {
 	padding: 0;
@@ -39,11 +40,8 @@ header #navbar-primary .navbar-nav > li {
 	float: none;
 }
 header #navbar-primary .navbar-nav > li > a { padding: 0 30px; }
-header #navbar-primary .navbar-nav > li > a:hover {
-	background-color: transparent;
-}
-
-
+header #navbar-primary .navbar-nav > li > a:hover { background-color: transparent; }
 /* 2. Banner */
 
 /* 3. Footer */
+footer { background: #292929; }
