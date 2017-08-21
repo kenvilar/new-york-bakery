@@ -1,0 +1,27 @@
+{
+  "name": "new-york-bakery",
+  "description": "New York Bakery",
+  "main": "",
+  "keywords": [
+    "new-york-bakery",
+    "wordpress",
+    "wordpress-theme",
+    "bootstrap",
+    "bower"
+  ],
+  "authors": [
+    "The Digital Hyve team"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "3.3.7"
+  }
+}
