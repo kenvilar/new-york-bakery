@@ -83,25 +83,36 @@
 */ ?>
 
 <div class="new-york-bakery-container-fluid">
+	
+	<?php if ( get_field( 'top_banner_section' ) == 'top-banner-one-column' ||
+	           get_field( 'top_banner_section' ) == 'top-banner-two-columns' ) : ?>
 
-	<div class="banner-section"
-	     style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/landing-page-banner-img.png);">
-		<div class="container-fluid">
-			<!--<div class="row top-banner-one-column">
-				<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-					<h1><strong>Quality is is our Priority #1</strong></h1>
-				</div>
-			</div>-->
-			<div class="row top-banner-two-columns">
-				<div class="col-lg-1 col-md-2"><h3></h3></div>
-				<div class="col-lg-5 col-md-4 col-sm-6 col-xs-12">
-					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-				</div>
-				<div class="col-lg-5 col-md-4 col-sm-6 col-xs-12">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/p28-food-that-performs.png"
-					     alt="" title="" style="height:90px"/>
-				</div>
-				<div class="col-lg-1 col-md-2"><h3></h3></div>
+		<div class="banner-section"
+		     style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/landing-page-banner-img.png);">
+			<div class="container-fluid">
+				<?php if ( get_field( 'top_banner_section' ) == 'top-banner-one-column' ) : ?>
+					<div class="row top-banner-one-column">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<?php if ( get_field( 'top_banner_one_column_content' ) ) :
+								the_field( 'top_banner_one_column_content' );
+							else : ?>
+								<?php the_title( '<h1><strong>', '</strong></h1>' ); ?>
+							<?php endif; ?>
+						</div>
+					</div>
+				<?php elseif ( get_field( 'top_banner_section' ) == 'top-banner-two-columns' ) : ?>
+					<div class="row top-banner-two-columns">
+						<div class="col-lg-1 col-md-2"><h3></h3></div>
+						<div class="col-lg-5 col-md-4 col-sm-6 col-xs-12">
+							<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+						</div>
+						<div class="col-lg-5 col-md-4 col-sm-6 col-xs-12">
+							<img src="<?php echo get_template_directory_uri(); ?>/assets/images/p28-food-that-performs.png"
+							     alt="" title="" style="height:90px"/>
+						</div>
+						<div class="col-lg-1 col-md-2"><h3></h3></div>
+					</div>
+				<?php endif; ?>
 			</div>
 		</div>
-	</div>
+	<?php elseif ( get_field( 'top_banner_section' ) == 'no-top-banner' ) : endif; ?>
