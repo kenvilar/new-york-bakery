@@ -52,4 +52,4 @@
 ) );
 */ ?>
 
-<div class="container-fluid">
+<div class="new-york-bakery-container-fluid">
