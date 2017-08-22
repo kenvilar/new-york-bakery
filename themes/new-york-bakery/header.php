@@ -95,8 +95,7 @@
 			<div class="row top-banner-two-columns">
 				<div class="col-lg-1 col-md-2"><h3></h3></div>
 				<div class="col-lg-5 col-md-4 col-sm-6 col-xs-12">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/p28-food-that-performs.png"
-					     alt="" title="" style="height:90px"/>
+					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				</div>
 				<div class="col-lg-5 col-md-4 col-sm-6 col-xs-12">
 					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/p28-food-that-performs.png"

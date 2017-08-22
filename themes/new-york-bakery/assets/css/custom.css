@@ -42,6 +42,7 @@ body {
 	font-style: normal;
 	font-weight: 500;
 	color: #292929;
+	font-size: 16px;
 }
 h4 {
 	font-weight: 900;
@@ -88,6 +89,13 @@ a:hover {
 .button1 {
 	border: 1px solid #FFFFFF;
 	padding: 10px 35px;
+}
+.button2 {
+	border: 1px solid #FFFFFF;
+	padding: 10px 35px;
+	background-color: #AC162C;
+	display: table;
+	font-weight: 900;
 }
 /*
 ============== Header ==============
@@ -215,6 +223,11 @@ footer .footer-container-widget {
 }
 .gray-bg {
 	background-color: #F9F9F9;
+}
+.entry-title {
+	color: #fff;
+	font-weight: 900;
+	text-transform: uppercase;
 }
 /*
 ============== Media ==============
