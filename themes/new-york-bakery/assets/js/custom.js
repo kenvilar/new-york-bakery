@@ -1,13 +1,17 @@
 (function( $ ) {
 
 	$( document ).ready( function() {
-		$( window ).bind( 'scroll', function() {
-			if ( $( window ).scrollTop() > 50 ) {
-				$( '.navbar' ).addClass( 'fixed' );
+
+		/* scroll and fixed the menu */
+		var navbarmenu = $( '.navbar' );
+		$( window ).scroll( function() {
+			if ( $( this ).scrollTop() > 49 ) {
+				navbarmenu.addClass( "fixed" );
 			} else {
-				$( '.navbar' ).removeClass( 'fixed' );
+				navbarmenu.removeClass( "fixed" );
 			}
 		} );
+
 	} );
 
 })( jQuery );

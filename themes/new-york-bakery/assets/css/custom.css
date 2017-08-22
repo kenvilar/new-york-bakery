@@ -7,7 +7,9 @@
 * text-color: #f1f1f1,
 */
 
-/* === Fonts */
+/*
+============== Fonts ==============
+*/
 @font-face {
 	font-family: 'Roboto Bold';
 	src: url('../fonts/Roboto-Bold-webfont.woff'); url('../fonts/Roboto-Bold-webfont.woff') format('woff');
@@ -33,24 +35,33 @@ html {
 	-webkit-tap-highlight-color: transparent;
 }
 h1, h1, h3, h4, h5, h6 {
-	font-family: "Roboto Regular",sans-serif;
+	font-family: "Roboto Regular", sans-serif;
 }
-/* === Header */
+/*
+============== Header ==============
+*/
 div#wpadminbar { opacity: 0.1; }
 div#wpadminbar:hover { opacity: 1; }
 img.custom-logo {
 	width: 120px;
 	height: 55px;
 }
-header #navbar-primary {
-	background: #fff;
-	margin-bottom: 0;
-}
 header .fixed {
 	position: fixed;
 	top: 0;
 	right: 0;
 	left: 0;
+	z-index: 100;
+	opacity: 100;
+}
+header #navbar-primary {
+	background: #fff;
+	margin-bottom: 0;
+	-webkit-transition: all 3s ease-in-out;
+	-moz-transition: all 3s ease-in-out;
+	-ms-transition: all 3s ease-in-out;
+	-o-transition: all 3s ease-in-out;
+	transition: all 3s ease-in-out;
 }
 header #navbar-primary .container-fluid {
 	padding: 0;
@@ -72,9 +83,13 @@ header #navbar-primary .navbar-nav > li {
 }
 header #navbar-primary .navbar-nav > li > a { padding: 0 30px; }
 header #navbar-primary .navbar-nav > li > a:hover { background-color: transparent; }
-/* === Banner */
+/*
+============== Banner ==============
+*/
 
-/* === Footer */
+/*
+============== Footer ==============
+*/
 footer { background: #292929; }
 footer .widget-title {
 	font-size: 14px;
