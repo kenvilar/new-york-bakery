@@ -175,10 +175,12 @@ header #navbar-primary .navbar-nav > li > a:hover { background-color: transparen
 	padding-top: 160px;
 	padding-bottom: 200px;
 	text-transform: uppercase;
+	color: #fff;
 }
 .banner-section .top-banner-one-column strong {
 	color: #fff !important;
 }
+.banner-section .top-banner-two-columns { color: #fff; }
 /*
 ============== Footer ==============
 */
