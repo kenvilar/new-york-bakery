@@ -12,6 +12,15 @@ License URI: LICENSE
 
 A starter theme called New York Bakery.
 
+Documentation
+-------------
+Shortcodes: 
+[white-bg]<content-here>[/white-bg]  ==> for white background div
+
+[gray-bg]<content-here>[/gray-bg] ===> for gray background div
+
+ 
+
 Description
 -----------
 New York Bakery is a full service bakery located in Syracuse, New York.
