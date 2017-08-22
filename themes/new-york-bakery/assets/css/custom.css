@@ -13,20 +13,17 @@
 ============== Fonts ==============
 */
 @font-face {
-	font-family: 'Roboto';
-	src: url('../fonts/Roboto-Regular-webfont.woff'); url('../fonts/Roboto-Regular-webfont.woff') format('woff');
+	font-family: 'Roboto'; url('../fonts/Roboto-Regular-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
-	font-family: 'Roboto Bold';
-	src: url('../fonts/Roboto-Bold-webfont.woff'); url('../fonts/Roboto-Bold-webfont.woff') format('woff');
+	font-family: 'Roboto Bold'; url('../fonts/Roboto-Bold-webfont.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
 @font-face {
-	font-family: 'Avenir Next';
-	src: url('../fonts/Avenir-Next.woff'); url('../fonts/Avenir-Next.woff') format('woff');
+	font-family: 'Avenir Next'; url('../fonts/Avenir-Next.woff') format('woff');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -43,19 +40,14 @@ h1, h2, h3, h4, h5, h6 {
 	font-style: normal;
 	color: #292929;
 }
-span, p, strong {
-	color: #292929;
-}
-p {
-	font-size: 16px;
-}
+span, p, strong { color: #292929; }
+strong { font-weight: bold }
+p { font-size: 16px; }
 a:hover {
 	outline: 0;
 	text-decoration: none;
 }
-.clear {
-	clear: both;
-}
+.clear { clear: both; }
 /*
 ============== Buttons ==============
 */
@@ -152,6 +144,23 @@ header #navbar-primary .navbar-nav > li > a:hover { background-color: transparen
 */
 .banner-section {
 	background-color: #e9eaea;
+	padding-left: 55px;
+	padding-right: 55px;
+	background-attachment: scroll;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 85px;
+	padding-bottom: 110px;
+}
+.banner-section .top-banner-one-column {
+	text-align: center;
+	padding-top: 160px;
+	padding-bottom: 200px;
+	text-transform: uppercase;
+}
+.banner-section .top-banner-one-column strong {
+	color: #fff !important;
 }
 /*
 ============== Footer ==============
@@ -199,7 +208,7 @@ footer .footer-container-widget {
 		display: none !important;
 	}
 }
-@media only screen and (max-width: 1023px) {
+@media only screen and (max-width: 1280px) {
 	header #navbar-primary .menu-hd {
 		display: none !important;
 	}
@@ -207,7 +216,7 @@ footer .footer-container-widget {
 		display: block !important;
 	}
 }
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1281px) {
 	header #navbar-primary .menu-hd {
 		display: block !important;
 	}
