@@ -208,7 +208,13 @@ footer .footer-container-widget {
 */
 .main-content {
 	background-color: #fff;
-	padding: 45px 120px 90px 120px;
+	padding-top: 22px;
+}
+.white-bg, .gray-bg {
+	padding: 22px 120px 20px;
+}
+.gray-bg {
+	background-color: #F9F9F9;
 }
 /*
 ============== Media ==============
