@@ -4,6 +4,7 @@
 ============== Header
 ============== Banner
 ============== Footer
+============== All pages
 ============== Media
 
 * text-color: #292929,
@@ -35,14 +36,22 @@ html {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
-h1, h2, h3, h4, h5, h6 {
+body {
+	background-color: #292929;
 	font-family: "Avenir Next";
 	font-style: normal;
+	font-weight: 500;
 	color: #292929;
 }
-span, p, strong { color: #292929; }
+h4 {
+	font-weight: 900;
+	line-height: 25px;
+}
 strong { font-weight: bold }
-p { font-size: 16px; }
+p {
+	font-size: 16px;
+	line-height: 28px;
+}
 a:hover {
 	outline: 0;
 	text-decoration: none;
@@ -83,7 +92,7 @@ a:hover {
 /*
 ============== Header ==============
 */
-div#wpadminbar { opacity: 0.1; }
+div#wpadminbar { opacity: 0.4; }
 div#wpadminbar:hover { opacity: 1; }
 img.custom-logo {
 	width: 120px;
@@ -193,6 +202,13 @@ footer .site-container {
 }
 footer .footer-container-widget {
 	margin-right: 50px;
+}
+/*
+============== All pages ==============
+*/
+.main-content {
+	background-color: #fff;
+	padding: 45px 120px 90px 120px;
 }
 /*
 ============== Media ==============
