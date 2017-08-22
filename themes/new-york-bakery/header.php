@@ -21,7 +21,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<header role="banner">
+<header role="banner" class="header-banner">
 	<nav id="navbar-primary" class="navbar" role="navigation">
 		<div class="container-fluid">
 			<!-- Brand and toggle get grouped for better mobile display -->
@@ -34,7 +34,37 @@
 					<span class="icon-bar"></span>
 				</button>
 			</div>
-			<div class="collapse navbar-collapse" id="navbar-primary-collapse">
+			<!--For mobile-->
+			<div class="collapse navbar-collapse menu-list-mobile" id="navbar-primary-collapse">
+				<ul class="nav navbar-nav">
+					<ul class="nav navbar-nav">
+						<li>Product Development</li>
+						<li>Distribution</li>
+						<li>Private Label</li>
+						<li>P28</li>
+						<li>About Us</li>
+						<li>Contact</li>
+					</ul>
+				</ul>
+			</div>
+			<!--Display only on HD-->
+			<div class="collapse navbar-collapse menu-hd">
+				<ul class="nav navbar-nav">
+					<li class="active">
+						<?php the_custom_logo(); ?>
+					</li>
+					<ul class="nav navbar-nav navbar-right menu-hd-right">
+						<li>Product Development</li>
+						<li>Distribution</li>
+						<li>Private Label</li>
+						<li>P28</li>
+						<li>About Us</li>
+						<li>Contact</li>
+					</ul>
+				</ul>
+			</div>
+			<!--Display only on width 1023px and below-->
+			<div class="collapse navbar-collapse menu-small-screen" style="display: none;">
 				<ul class="nav navbar-nav">
 					<li class="active">
 						<?php the_custom_logo(); ?>
@@ -53,3 +83,16 @@
 */ ?>
 
 <div class="new-york-bakery-container-fluid">
+
+	<div class="banner-section">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					asdasd
+				</div>
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+					asdasd
+				</div>
+			</div>
+		</div>
+	</div>

@@ -35,6 +35,8 @@ html {
 	-ms-text-size-adjust: 100%;
 	-ms-overflow-style: scrollbar;
 	-webkit-tap-highlight-color: transparent;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 h1, h2, h3, h4, h5, h6 {
 	font-family: "Avenir Next";
@@ -60,16 +62,31 @@ a:hover {
 .button {
 	box-sizing: border-box;
 	color: #F9F9F9 !important;
-	font-family: Roboto;
+	font-family: 'Roboto', sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	line-height: normal;
 	letter-spacing: 1.01111px;
 	display: inline-block;
-	padding: 10px 35px;
+	padding: 6px 12px;
+	margin-bottom: 0;
+	font-size: 14px;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
 }
 .button1 {
 	border: 1px solid #FFFFFF;
+	padding: 10px 35px;
 }
 /*
 ============== Header ==============
@@ -104,7 +121,20 @@ header #navbar-primary .container-fluid {
 header #navbar-primary .collapse.navbar-collapse {
 	padding: 0;
 }
-header #navbar-primary .navbar-nav {
+header #navbar-primary .menu-hd .navbar-nav {
+	width: 100%;
+	height: 74px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+header #navbar-primary .menu-hd .menu-hd-right {
+	width: auto;
+	margin-right: 40px;
+}
+header #navbar-primary .menu-hd .menu-hd-right > li {
+	margin-right: 20px;
+}
+header #navbar-primary .menu-small-screen .navbar-nav {
 	width: 100%;
 	text-align: center;
 	height: 74px;
@@ -120,7 +150,9 @@ header #navbar-primary .navbar-nav > li > a:hover { background-color: transparen
 /*
 ============== Banner ==============
 */
-
+.banner-section {
+	background-color: #e9eaea;
+}
 /*
 ============== Footer ==============
 */
@@ -160,5 +192,26 @@ footer .footer-container-widget {
 	footer .site-container {
 		padding-left: 15px;
 		padding-right: 15px;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.collapse.navbar-collapse.menu-list-mobile {
+		display: none !important;
+	}
+}
+@media only screen and (max-width: 1023px) {
+	header #navbar-primary .menu-hd {
+		display: none !important;
+	}
+	header #navbar-primary .menu-small-screen {
+		display: block !important;
+	}
+}
+@media only screen and (min-width: 1024px) {
+	header #navbar-primary .menu-hd {
+		display: block !important;
+	}
+	header #navbar-primary .menu-small-screen {
+		display: none !important;
 	}
 }
