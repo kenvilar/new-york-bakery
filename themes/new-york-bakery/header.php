@@ -88,7 +88,13 @@
 	           get_field( 'top_banner_section' ) == 'top-banner-two-columns' ) : ?>
 
 		<div class="banner-section"
-		     style="background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/landing-page-banner-img.png);">
+		     style="<?php
+		     if ( has_post_thumbnail( $post->ID ) ) : ?>
+				     background-image: url(<?php echo the_post_thumbnail_url(); ?>);
+		     <?php else : ?>
+				     background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/landing-page-banner-img.png);
+		     <?php endif; ?>">
+
 			<div class="container-fluid">
 				<?php if ( get_field( 'top_banner_section' ) == 'top-banner-one-column' ) : ?>
 					<div class="row top-banner-one-column">
@@ -114,5 +120,6 @@
 					</div>
 				<?php endif; ?>
 			</div>
+
 		</div>
 	<?php elseif ( get_field( 'top_banner_section' ) == 'no-top-banner' ) : endif; ?>
