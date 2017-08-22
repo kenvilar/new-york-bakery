@@ -2,7 +2,7 @@
 
 get_header(); ?>
 
-	<div class="container-fluid main-content">
+	<div class="main-content">
 		<!--<div class="white-bg">
 		
 		</div>-->
