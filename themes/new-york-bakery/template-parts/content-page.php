@@ -20,7 +20,7 @@ wp_link_pages( array(
 ?>
 
 <?php if ( get_edit_post_link() ) : ?>
-	<footer class="entry-footer">
+	<footer class="entry-footer" style="display: none;">
 		<?php
 		edit_post_link(
 			sprintf(
