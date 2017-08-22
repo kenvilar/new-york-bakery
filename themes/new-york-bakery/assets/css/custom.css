@@ -1,8 +1,9 @@
 /*
-=== Fonts
-=== Header
-=== Banner
-=== Footer
+============== Fonts
+============== Header
+============== Banner
+============== Footer
+============== Media
 
 * text-color: #f1f1f1,
 */
@@ -99,4 +100,21 @@ footer .textwidget p {
 	font-size: 14px;
 	line-height: 20px;
 	color: #f1f1f1;
+}
+footer .site-container {
+	padding-left: 140px;
+	padding-right: 140px;
+}
+footer .footer-container-widget {
+	margin-right: 50px;
+}
+
+/*
+============== Media ==============
+*/
+@media only screen and (max-width: 401px) {
+	footer .site-container {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }
