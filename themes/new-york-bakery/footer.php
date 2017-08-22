@@ -11,6 +11,17 @@
 
 ?>
 
+<div class="want-to-know-more">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h2>WANT TO KNOW MORE?</h2>
+				<a href="" class="button button1">CONTACT US</a>
+			</div>
+		</div>
+	</div>
+</div>
+
 <footer class="text-muted site-footer">
 	<div class="container site-container">
 		<div class="row site-row">
