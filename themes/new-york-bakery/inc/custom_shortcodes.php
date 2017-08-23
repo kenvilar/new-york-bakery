@@ -105,7 +105,7 @@ add_shortcode( 'empty_space', 'new_york_bakery_empty_space' );
 //Row for Grids
 function new_york_bakery_row_shortcode( $atts, $content = null ) {
 	
-	$display_class_row = '<div class="row">';
+	$display_class_row = '<div class="row custom-row-margin-bottom">';
 	
 	if ( isset( $content ) || "" !== $content ) {
 		$display_class_row .= do_shortcode( $content );
