@@ -70,3 +70,34 @@ function new_york_bakery_grid_column_shortcode( $atts, $content = null ) {
 }
 
 add_shortcode( 'grid', 'new_york_bakery_grid_column_shortcode' );
+
+//Empty Space
+function new_york_bakery_empty_space( $atts ) {
+	
+	$atts = shortcode_atts(
+		array(
+			'height' => '10',
+		),
+		$atts,
+		'empty-space'
+	);
+	
+	if ( "" === $atts['height'] ) {
+		$atts['class'] = '10';
+	}
+	
+	$display_empty_space = '<div';
+	
+	if ( isset( $atts['height'] ) || "" !== $atts['height'] ) :
+		$display_empty_space .= ' style="height:' . $atts['height'] . 'px;">';
+	else :
+		$display_empty_space .= ' style="height:' . $atts['height'] . 'px;">';
+	endif;
+	
+	$display_empty_space .= '</div>';
+	
+	return $display_empty_space;
+	
+}
+
+add_shortcode( 'empty-space', 'new_york_bakery_empty_space' );
