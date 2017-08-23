@@ -45,6 +45,7 @@ body {
 	color: #292929;
 	font-size: 16px;
 }
+h1 { font-weight: bold; }
 h4 {
 	font-weight: 900;
 	line-height: 25px;
@@ -220,6 +221,7 @@ footer .footer-container-widget {
 .main-content {
 	background-color: #fff;
 	padding-top: 22px;
+	line-height: 28px;
 }
 .white-bg, .gray-bg {
 	padding: 22px 120px 20px;
