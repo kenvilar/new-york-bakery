@@ -60,7 +60,7 @@ function new_york_bakery_grid_column_shortcode( $atts, $content = null ) {
 	endif;
 	
 	if ( isset( $content ) || "" !== $content ) {
-		$display_grid_column .= $content;
+		$display_grid_column .= do_shortcode( $content );
 	}
 	
 	$display_grid_column .= '</div>';
@@ -79,7 +79,7 @@ function new_york_bakery_empty_space( $atts ) {
 			'height' => '10',
 		),
 		$atts,
-		'empty-space'
+		'empty_space'
 	);
 	
 	if ( "" === $atts['height'] ) {
@@ -100,4 +100,21 @@ function new_york_bakery_empty_space( $atts ) {
 	
 }
 
-add_shortcode( 'empty-space', 'new_york_bakery_empty_space' );
+add_shortcode( 'empty_space', 'new_york_bakery_empty_space' );
+
+//Row for Grids
+function new_york_bakery_row_shortcode( $atts, $content = null ) {
+	
+	$display_class_row = '<div class="row">';
+	
+	if ( isset( $content ) || "" !== $content ) {
+		$display_class_row .= do_shortcode( $content );
+	}
+	
+	$display_class_row .= '</div>';
+	
+	return $display_class_row;
+	
+}
+
+add_shortcode( 'row', 'new_york_bakery_row_shortcode' );
