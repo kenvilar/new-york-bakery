@@ -1,4 +1,5 @@
 .DS_Store
+debug.log
 plugins/revisr/
 uploads/revisr-backups/index.php
 uploads/revisr-backups/.htaccess
