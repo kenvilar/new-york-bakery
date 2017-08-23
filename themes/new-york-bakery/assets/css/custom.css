@@ -35,6 +35,7 @@ html {
 	-webkit-tap-highlight-color: transparent;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+	letter-spacing: 0.5px;
 }
 body {
 	background-color: #292929;
