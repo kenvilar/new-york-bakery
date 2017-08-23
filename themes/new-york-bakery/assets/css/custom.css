@@ -227,14 +227,13 @@ footer .footer-container-widget {
 .white-bg, .gray-bg {
 	padding: 22px 120px 20px;
 }
-.gray-bg {
-	background-color: #F9F9F9;
-}
+.gray-bg { background-color: #F9F9F9; }
 .entry-title {
 	color: #fff;
 	font-weight: 900;
 	text-transform: uppercase;
 }
+.custom-row-margin-bottom { margin-bottom: 50px; }
 /*
 ============== Media ==============
 */
