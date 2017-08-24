@@ -45,7 +45,7 @@ body {
 	color: #292929;
 	font-size: 16px;
 }
-h1 { font-weight: bold; }
+h1 { font-weight: 900; }
 h4 {
 	font-weight: 900;
 	line-height: 25px;
@@ -169,7 +169,7 @@ header #navbar-primary .navbar-nav > li > a:hover { background-color: transparen
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding-top: 85px;
+	padding-top: 110px;
 	padding-bottom: 110px;
 }
 .banner-section .top-banner-one-column {
@@ -220,12 +220,12 @@ footer .footer-container-widget {
 */
 .main-content {
 	background-color: #fff;
-	padding-top: 22px;
+	padding-top: 10px;
 	line-height: 28px;
 	word-wrap: break-word;
 }
 .white-bg, .gray-bg {
-	padding: 22px 120px 20px;
+	padding: 22px 170px 25px;
 }
 .gray-bg { background-color: #F9F9F9; }
 .entry-title {
@@ -233,7 +233,9 @@ footer .footer-container-widget {
 	font-weight: 900;
 	text-transform: uppercase;
 }
-.custom-row-margin-bottom { margin-bottom: 50px; }
+.custom-row-margin-bottom {
+	margin: 30px 43px 50px;
+}
 /*
 ============== Media ==============
 */
