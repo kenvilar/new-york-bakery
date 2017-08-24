@@ -186,9 +186,42 @@ header #navbar-primary .navbar-nav > li > a:hover { background-color: transparen
 /*
 ============== Front Page ==============
 */
-.front-page-top-content {
+.front-page .front-page-top-content {
 	padding-left: 60px;
 	padding-right: 60px;
+}
+.front-page .front-page-card:hover .front-page-card-bg-img {
+	background-color: rgba(172, 22, 44, 0.504048);
+	background-blend-mode: multiply;
+}
+.front-page .front-page-card-bg-img {
+	background-size: cover;
+}
+.front-page .front-page-card:hover .plus-for-hover {
+	display: none;
+}
+.front-page .front-page-card:hover .o-for-hover {
+	display: block !important;
+	float: right;
+}
+.front-page .plus-for-hover {
+	float: right;
+	color: #fff;
+	font-weight: 700;
+}
+.front-page .front-page-card h4 {
+	text-transform: uppercase;
+	line-height: 20px;
+}
+.front-page .front-page-card p {
+	margin-bottom: 20px;
+}
+.front-page .front-page-card:hover p a {
+	color: #AC162C;
+}
+.front-page .front-page-card p a {
+	color: #292929;
+	cursor: auto;
 }
 /*
 ============== Footer ==============
