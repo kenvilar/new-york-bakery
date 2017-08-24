@@ -28,7 +28,60 @@ get_header(); ?>
 		<?php endif; ?>
 
 		<div class="container">
-			<div class="row">
+			<?php if ( have_rows( 'row_two_columns' ) ) : ?>
+
+				<div class="row">
+					
+					<?php if ( have_rows( 'first_column' ) ) : ?>
+
+						<div class="col-lg-6 col-md-6 col-md-6 col-sm-12 col-xs-12">
+							<div class="front-page-card">
+								<a href="<?php get_sub_field( 'first_column_link' ); ?>">
+									<div class="front-page-card-bg-img"
+									     style="background-image: url(<?php get_sub_field( 'first_column_background_image' ); ?>);
+											     height: 237px;">
+										<span class="plus-for-hover">
+											<img src="<?php echo get_template_directory_uri() . '/assets/images/plus.svg'; ?>"/>
+										</span>
+										<span class="o-for-hover" style="display: none;">
+											<img src="<?php echo get_template_directory_uri() . '/assets/images/open.png'; ?>"/>
+										</span>
+									</div>
+								</a>
+								<h4><?php get_sub_field( 'first_column_title' ); ?></h4>
+								<p><a href="<?php get_sub_field( 'first_column_link' ); ?>">learn more</a></p>
+							</div>
+						</div>
+					
+					<?php endif; ?>
+					
+					<?php if ( have_rows( 'second_column' ) ) : ?>
+
+						<div class="col-lg-6 col-md-6 col-md-6 col-sm-12 col-xs-12">
+							<div class="front-page-card">
+								<a href="<?php get_sub_field( 'second_column_link' ); ?>">
+									<div class="front-page-card-bg-img"
+									     style="background-image: url(<?php get_sub_field( 'second_column_background_image' ); ?>);
+											     height: 237px;">
+										<span class="plus-for-hover">
+											<img src="<?php echo get_template_directory_uri() . '/assets/images/plus.svg'; ?>"/>
+										</span>
+										<span class="o-for-hover" style="display: none;">
+											<img src="<?php echo get_template_directory_uri() . '/assets/images/open.png'; ?>"/>
+										</span>
+									</div>
+								</a>
+								<h4><?php get_sub_field( 'second_column_title' ); ?></h4>
+								<p><a href="<?php get_sub_field( 'second_column_link' ); ?>">learn more</a></p>
+							</div>
+						</div>
+					
+					<?php endif; ?>
+
+				</div>
+			
+			<?php endif; ?>
+			<!--<div class="row">
 				<div class="col-lg-6 col-md-6 col-md-6 col-sm-12 col-xs-12">
 					<div class="front-page-card">
 						<a href="">
@@ -36,10 +89,10 @@ get_header(); ?>
 							     style="background-image: url(http://127.0.0.1/new-york-bakery/wp-content/themes/new-york-bakery/assets/images/front-page-product-development.jpg);
 									height: 237px;">
 							<span class="plus-for-hover">
-								<img src="<?php echo get_template_directory_uri() . '/assets/images/plus.svg'; ?>"/>
+								<img src="<?php /*echo get_template_directory_uri() . '/assets/images/plus.svg'; */ ?>"/>
 							</span>
 								<span class="o-for-hover" style="display: none;">
-								<img src="<?php echo get_template_directory_uri() . '/assets/images/open.png'; ?>"/>
+								<img src="<?php /*echo get_template_directory_uri() . '/assets/images/open.png'; */ ?>"/>
 							</span>
 							</div>
 						</a>
@@ -54,10 +107,10 @@ get_header(); ?>
 							     style="background-image: url(http://127.0.0.1/new-york-bakery/wp-content/themes/new-york-bakery/assets/images/front-page-product-development.jpg);
 									height: 237px;">
 							<span class="plus-for-hover">
-								<img src="<?php echo get_template_directory_uri() . '/assets/images/plus.svg'; ?>"/>
+								<img src="<?php /*echo get_template_directory_uri() . '/assets/images/plus.svg'; */ ?>"/>
 							</span>
 								<span class="o-for-hover" style="display: none;">
-								<img src="<?php echo get_template_directory_uri() . '/assets/images/open.png'; ?>"/>
+								<img src="<?php /*echo get_template_directory_uri() . '/assets/images/open.png'; */ ?>"/>
 							</span>
 							</div>
 						</a>
@@ -65,8 +118,8 @@ get_header(); ?>
 						<p><a href="">learn more</a></p>
 					</div>
 				</div>
-			</div>
-			<div class="row">
+			</div>-->
+			<!--<div class="row">
 				<div class="col-lg-6 col-md-6 col-md-6 col-sm-12 col-xs-12">
 					<div class="front-page-card">
 						<a href="">
@@ -74,10 +127,10 @@ get_header(); ?>
 							     style="background-image: url(http://127.0.0.1/new-york-bakery/wp-content/themes/new-york-bakery/assets/images/front-page-product-development.jpg);
 									height: 237px;">
 							<span class="plus-for-hover">
-								<img src="<?php echo get_template_directory_uri() . '/assets/images/plus.svg'; ?>"/>
+								<img src="<?php /*echo get_template_directory_uri() . '/assets/images/plus.svg'; */ ?>"/>
 							</span>
 								<span class="o-for-hover" style="display: none;">
-								<img src="<?php echo get_template_directory_uri() . '/assets/images/open.png'; ?>"/>
+								<img src="<?php /*echo get_template_directory_uri() . '/assets/images/open.png'; */ ?>"/>
 							</span>
 							</div>
 						</a>
@@ -92,10 +145,10 @@ get_header(); ?>
 							     style="background-image: url(http://127.0.0.1/new-york-bakery/wp-content/themes/new-york-bakery/assets/images/front-page-product-development.jpg);
 									height: 237px;">
 							<span class="plus-for-hover">
-								<img src="<?php echo get_template_directory_uri() . '/assets/images/plus.svg'; ?>"/>
+								<img src="<?php /*echo get_template_directory_uri() . '/assets/images/plus.svg'; */ ?>"/>
 							</span>
 								<span class="o-for-hover" style="display: none;">
-								<img src="<?php echo get_template_directory_uri() . '/assets/images/open.png'; ?>"/>
+								<img src="<?php /*echo get_template_directory_uri() . '/assets/images/open.png'; */ ?>"/>
 							</span>
 							</div>
 						</a>
@@ -103,7 +156,7 @@ get_header(); ?>
 						<p><a href="">learn more</a></p>
 					</div>
 				</div>
-			</div>
+			</div>-->
 		</div>
 		<div style="clear:both;"></div>
 		<br>
