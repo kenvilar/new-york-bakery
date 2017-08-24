@@ -36,20 +36,28 @@ get_header(); ?>
 
 						<div class="col-lg-6 col-md-6 col-md-6 col-sm-12 col-xs-12">
 							<div class="front-page-card">
-								<a href="<?php get_sub_field( 'first_column_link' ); ?>">
-									<div class="front-page-card-bg-img"
-									     style="background-image: url(<?php get_sub_field( 'first_column_background_image' ); ?>);
-											     height: 237px;">
-										<span class="plus-for-hover">
-											<img src="<?php echo get_template_directory_uri() . '/assets/images/plus.svg'; ?>"/>
-										</span>
-										<span class="o-for-hover" style="display: none;">
-											<img src="<?php echo get_template_directory_uri() . '/assets/images/open.png'; ?>"/>
-										</span>
-									</div>
-								</a>
-								<h4><?php get_sub_field( 'first_column_title' ); ?></h4>
-								<p><a href="<?php get_sub_field( 'first_column_link' ); ?>">learn more</a></p>
+								<?php if ( get_sub_field( 'first_column_link' ) ) : ?>
+									<a href="<?php get_sub_field( 'first_column_link' ); ?>">
+										<?php if ( get_sub_field( 'first_column_background_image' ) ) : ?>
+											<div class="front-page-card-bg-img"
+											     style="background-image: url(<?php get_sub_field( 'first_column_background_image' ); ?>);
+													     height: 237px;">
+												<span class="plus-for-hover">
+													<img src="<?php echo get_template_directory_uri() . '/assets/images/plus.svg'; ?>"/>
+												</span>
+												<span class="o-for-hover" style="display: none;">
+													<img src="<?php echo get_template_directory_uri() . '/assets/images/open.png'; ?>"/>
+												</span>
+											</div>
+										<?php endif; ?>
+									</a>
+								<?php endif; ?>
+								<?php if ( get_sub_field( 'first_column_title' ) ) : ?>
+									<h4><?php get_sub_field( 'first_column_title' ); ?></h4>
+								<?php endif; ?>
+								<?php if ( get_sub_field( 'first_column_link' ) ) : ?>
+									<p><a href="<?php get_sub_field( 'first_column_link' ); ?>">learn more</a></p>
+								<?php endif; ?>
 							</div>
 						</div>
 					
@@ -59,20 +67,28 @@ get_header(); ?>
 
 						<div class="col-lg-6 col-md-6 col-md-6 col-sm-12 col-xs-12">
 							<div class="front-page-card">
-								<a href="<?php get_sub_field( 'second_column_link' ); ?>">
-									<div class="front-page-card-bg-img"
-									     style="background-image: url(<?php get_sub_field( 'second_column_background_image' ); ?>);
-											     height: 237px;">
-										<span class="plus-for-hover">
-											<img src="<?php echo get_template_directory_uri() . '/assets/images/plus.svg'; ?>"/>
-										</span>
-										<span class="o-for-hover" style="display: none;">
-											<img src="<?php echo get_template_directory_uri() . '/assets/images/open.png'; ?>"/>
-										</span>
-									</div>
-								</a>
-								<h4><?php get_sub_field( 'second_column_title' ); ?></h4>
-								<p><a href="<?php get_sub_field( 'second_column_link' ); ?>">learn more</a></p>
+								<?php if ( get_sub_field( 'second_column_link' ) ) : ?>
+									<a href="<?php get_sub_field( 'second_column_link' ); ?>">
+										<?php if ( get_sub_field( 'second_column_background_image' ) ) : ?>
+											<div class="front-page-card-bg-img"
+											     style="background-image: url(<?php get_sub_field( 'second_column_background_image' ); ?>);
+													     height: 237px;">
+												<span class="plus-for-hover">
+													<img src="<?php echo get_template_directory_uri() . '/assets/images/plus.svg'; ?>"/>
+												</span>
+												<span class="o-for-hover" style="display: none;">
+													<img src="<?php echo get_template_directory_uri() . '/assets/images/open.png'; ?>"/>
+												</span>
+											</div>
+										<?php endif; ?>
+									</a>
+								<?php endif; ?>
+								<?php if ( get_sub_field( 'second_column_title' ) ) : ?>
+									<h4><?php get_sub_field( 'second_column_title' ); ?></h4>
+								<?php endif; ?>
+								<?php if ( get_sub_field( 'second_column_link' ) ) : ?>
+									<p><a href="<?php get_sub_field( 'second_column_link' ); ?>">learn more</a></p>
+								<?php endif; ?>
 							</div>
 						</div>
 					
