@@ -35,7 +35,7 @@ html {
 	-webkit-tap-highlight-color: transparent;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	letter-spacing: 0.5px;
+	letter-spacing: 0.1px;
 }
 body {
 	background-color: #292929;
@@ -183,6 +183,13 @@ header #navbar-primary .navbar-nav > li > a:hover { background-color: transparen
 	color: #fff !important;
 }
 .banner-section .top-banner-two-columns { color: #fff; }
+/*
+============== Front Page ==============
+*/
+.front-page-top-content {
+	padding-left: 60px;
+	padding-right: 60px;
+}
 /*
 ============== Footer ==============
 */
