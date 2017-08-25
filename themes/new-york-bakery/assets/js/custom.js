@@ -12,6 +12,11 @@
 			}
 		} );
 
+		//jQuery Timeline
+		$().timelinr( {
+			startAt  : 2
+		} );
+
 	} );
 
 })( jQuery );
