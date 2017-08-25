@@ -115,6 +115,7 @@ a:hover {
 	padding-right: 50px;
 	height: 40px;
 	width: auto;
+	outline: 0;
 }
 div.wpcf7-response-output {
 	display: none !important;
