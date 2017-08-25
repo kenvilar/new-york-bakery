@@ -116,6 +116,9 @@ a:hover {
 	height: 40px;
 	width: auto;
 }
+div.wpcf7-response-output {
+	display: none !important;
+}
 /*
 ============== Header ==============
 */
@@ -314,6 +317,7 @@ form { display: inline-block; }
 	border: 1px solid #979797;
 	border-radius: 0;
 	margin-bottom: 10px;
+	padding-left: 10px;
 }
 .contact-us input::-webkit-input-placeholder, .contact-us textarea::-webkit-input-placeholder {
 	color: #9B9B9B;
