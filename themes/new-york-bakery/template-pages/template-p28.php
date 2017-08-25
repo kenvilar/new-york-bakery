@@ -5,7 +5,7 @@
 
 get_header(); ?>
 
-	<div class="main-content">
+	<div class="container-fluid main-content">
 		<?php
 		if ( have_posts() ) : while ( have_posts() ) : the_post();
 			the_content();
