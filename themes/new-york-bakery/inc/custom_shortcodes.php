@@ -7,7 +7,7 @@ function white_bg_shortcode( $atts, $content = null ) {
 	
 	if ( isset( $content ) && "" !== $content ) {
 		$content                    = __( $content, 'new-york-bakery' );
-		$display_white_bg_shortcode .= $content;
+		$display_white_bg_shortcode .= do_shortcode( $content );
 	}
 	
 	$display_white_bg_shortcode .= '</div>';
@@ -25,7 +25,7 @@ function gray_bg_shortcode( $atts, $content = null ) {
 	
 	if ( isset( $content ) && "" !== $content ) {
 		$content                   = __( $content, 'new-york-bakery' );
-		$display_gray_bg_shortcode .= $content;
+		$display_gray_bg_shortcode .= do_shortcode( $content );
 	}
 	
 	$display_gray_bg_shortcode .= '</div>';
