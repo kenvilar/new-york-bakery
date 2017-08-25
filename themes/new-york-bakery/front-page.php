@@ -89,84 +89,10 @@ get_header(); ?>
 				</div>
 			
 			<?php endwhile; endif; ?>
-			<!--<div class="row">
-				<div class="col-lg-6 col-md-6 col-md-6 col-sm-12 col-xs-12">
-					<div class="front-page-card">
-						<a href="">
-							<div class="front-page-card-bg-img"
-							     style="background-image: url(http://127.0.0.1/new-york-bakery/wp-content/themes/new-york-bakery/assets/images/front-page-product-development.jpg);
-									height: 237px;">
-							<span class="plus-for-hover">
-								<img src="<?php /*echo get_template_directory_uri() . '/assets/images/plus.svg'; */ ?>"/>
-							</span>
-								<span class="o-for-hover" style="display: none;">
-								<img src="<?php /*echo get_template_directory_uri() . '/assets/images/open.png'; */ ?>"/>
-							</span>
-							</div>
-						</a>
-						<h4>PRODUCT DEVELOPMENT</h4>
-						<p><a href="">learn more</a></p>
-					</div>
-				</div>
-				<div class="col-lg-6 col-md-6 col-md-6 col-sm-12 col-xs-12">
-					<div class="front-page-card">
-						<a href="">
-							<div class="front-page-card-bg-img"
-							     style="background-image: url(http://127.0.0.1/new-york-bakery/wp-content/themes/new-york-bakery/assets/images/front-page-product-development.jpg);
-									height: 237px;">
-							<span class="plus-for-hover">
-								<img src="<?php /*echo get_template_directory_uri() . '/assets/images/plus.svg'; */ ?>"/>
-							</span>
-								<span class="o-for-hover" style="display: none;">
-								<img src="<?php /*echo get_template_directory_uri() . '/assets/images/open.png'; */ ?>"/>
-							</span>
-							</div>
-						</a>
-						<h4>PRODUCT DEVELOPMENT</h4>
-						<p><a href="">learn more</a></p>
-					</div>
-				</div>
-			</div>-->
-			<!--<div class="row">
-				<div class="col-lg-6 col-md-6 col-md-6 col-sm-12 col-xs-12">
-					<div class="front-page-card">
-						<a href="">
-							<div class="front-page-card-bg-img"
-							     style="background-image: url(http://127.0.0.1/new-york-bakery/wp-content/themes/new-york-bakery/assets/images/front-page-product-development.jpg);
-									height: 237px;">
-							<span class="plus-for-hover">
-								<img src="<?php /*echo get_template_directory_uri() . '/assets/images/plus.svg'; */ ?>"/>
-							</span>
-								<span class="o-for-hover" style="display: none;">
-								<img src="<?php /*echo get_template_directory_uri() . '/assets/images/open.png'; */ ?>"/>
-							</span>
-							</div>
-						</a>
-						<h4>PRODUCT DEVELOPMENT</h4>
-						<p><a href="">learn more</a></p>
-					</div>
-				</div>
-				<div class="col-lg-6 col-md-6 col-md-6 col-sm-12 col-xs-12">
-					<div class="front-page-card">
-						<a href="">
-							<div class="front-page-card-bg-img"
-							     style="background-image: url(http://127.0.0.1/new-york-bakery/wp-content/themes/new-york-bakery/assets/images/front-page-product-development.jpg);
-									height: 237px;">
-							<span class="plus-for-hover">
-								<img src="<?php /*echo get_template_directory_uri() . '/assets/images/plus.svg'; */ ?>"/>
-							</span>
-								<span class="o-for-hover" style="display: none;">
-								<img src="<?php /*echo get_template_directory_uri() . '/assets/images/open.png'; */ ?>"/>
-							</span>
-							</div>
-						</a>
-						<h4>PRODUCT DEVELOPMENT</h4>
-						<p><a href="">learn more</a></p>
-					</div>
-				</div>
-			</div>-->
 		</div>
+		
 		<div style="clear:both;"></div>
+		
 		<br>
 
 	</div>
