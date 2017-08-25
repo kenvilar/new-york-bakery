@@ -99,6 +99,23 @@ a:hover {
 	display: table;
 	font-weight: 900;
 }
+.contact-us input[type="submit"]:hover {
+	background-color: #ac162c;
+	color: #fff;
+}
+.contact-us input[type="submit"] {
+	font-family: "Roboto", sans-serif;
+	font-style: normal;
+	font-weight: normal;
+	line-height: normal;
+	font-size: 14px;
+	text-align: center;
+	letter-spacing: 1.01111px;
+	padding-left: 50px;
+	padding-right: 50px;
+	height: 40px;
+	width: auto;
+}
 /*
 ============== Header ==============
 */
@@ -284,7 +301,7 @@ footer .footer-container-widget {
 */
 form { display: inline-block; }
 .contact-us label {
-	font-family: "Avenir Next";
+	font-family: "Avenir Next", sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	line-height: normal;
@@ -300,7 +317,7 @@ form { display: inline-block; }
 }
 .contact-us input::-webkit-input-placeholder, .contact-us textarea::-webkit-input-placeholder {
 	color: #9B9B9B;
-	font-family: "Avenir Next";
+	font-family: "Avenir Next", sans-serif;
 	font-style: normal;
 	font-weight: normal;
 	line-height: normal;
