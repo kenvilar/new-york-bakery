@@ -289,7 +289,7 @@ footer .footer-container-widget {
 }
 .white-bg, .gray-bg {
 	padding: 22px 170px 25px;
-	display: flex;
+	/*display: flex;*/
 }
 .gray-bg { background-color: #F9F9F9; }
 .entry-title {
