@@ -483,6 +483,11 @@ form { display: inline-block; }
 	}
 }
 @media only screen and (max-width: 1280px) {
+	/*Menu Toggle*/
+	.navbar-toggle .icon-bar {
+		background: #292929;
+	}
+	/*Menu*/
 	header #navbar-primary .menu-hd {
 		display: none !important;
 	}
