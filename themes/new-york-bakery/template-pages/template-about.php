@@ -105,8 +105,8 @@ get_header(); ?>
 			</ul>
 			<!--<div id="grad_left"></div>
 			<div id="grad_right"></div>-->
-			<a href="#" id="next">+</a>
-			<a href="#" id="prev">-</a>
+			<!--<a href="#" id="next">+</a>
+			<a href="#" id="prev">-</a>-->
 		</div>
 	</div>
 
