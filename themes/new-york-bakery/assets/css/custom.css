@@ -495,9 +495,6 @@ form { display: inline-block; }
 		padding-left: 15px !important;
 	}
 	/*Menu Toggle*/
-	.side-collapse {
-		top: 90px !important;
-	}
 	.navbar-toggle {
 		top: 10px !important;
 		left: 20px !important;
@@ -546,7 +543,7 @@ form { display: inline-block; }
 		transition: left .4s !important;
 	}
 	.side-collapse {
-		top: 75px;
+		top: 76px;
 		bottom: 0;
 		left: 0;
 		width: 342px;
