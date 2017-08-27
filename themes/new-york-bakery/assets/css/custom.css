@@ -311,7 +311,7 @@ footer .footer-container-widget {
 	/*margin: 100px auto;*/
 	margin: 0 auto 100px;
 	position: relative;
-	background: url('../images/dot.gif') left 45px repeat-x;
+	background: url('../images/dot.png') left 45px repeat-x;
 	/*background-color: #000 !important;*/
 }
 #dates {
@@ -413,9 +413,8 @@ footer .footer-container-widget {
 #next,
 #prev {
 	position: absolute;
-	top: 0;
 	font-size: 70px;
-	top: 170px;
+	top: 170px; /*top: 0;*/
 	width: 22px;
 	height: 38px;
 	background-position: 0 0;
