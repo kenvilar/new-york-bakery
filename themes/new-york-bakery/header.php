@@ -28,48 +28,48 @@
 <header role="banner" class="header-banner">
 	<nav id="navbar-primary" class="navbar" role="navigation">
 		<div class="container-fluid">
-			<!-- Brand and toggle get grouped for better mobile display -->
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle" data-toggle="collapse"
-				        data-target="#navbar-primary-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-			</div>
-			<!--For mobile-->
-			<div class="collapse navbar-collapse menu-list-mobile" id="navbar-primary-collapse">
-				<ul class="nav navbar-nav">
+			<!--For mobile side pull left to right-->
+			<div class="navbar-inverse side-collapse in">
+				<nav role="navigation" class="navbar-collapse">
 					<ul class="nav navbar-nav">
-						<li>Product Development</li>
-						<li>Distribution</li>
-						<li>Private Label</li>
-						<li>P28</li>
-						<li>About Us</li>
-						<li>Contact</li>
+						<li><a href="">Product Development</a></li>
+						<li><a href="">Distribution</a></li>
+						<li><a href="">Private Label</a></li>
+						<li><a href="">P28</a></li>
+						<li><a href="">About Us</a></li>
+						<li><a href="">Contact</a></li>
 					</ul>
-				</ul>
+				</nav>
 			</div>
-			<!--Display only on HD-->
+			<!--Display only on Desktop HD-->
 			<div class="collapse navbar-collapse menu-hd">
 				<ul class="nav navbar-nav">
 					<li class="active">
 						<?php the_custom_logo(); ?>
 					</li>
 					<ul class="nav navbar-nav navbar-right menu-hd-right">
-						<li>Product Development</li>
-						<li>Distribution</li>
-						<li>Private Label</li>
-						<li>P28</li>
-						<li>About Us</li>
-						<li>Contact</li>
+						<li><a href="">Product Development</a></li>
+						<li><a href="">Distribution</a></li>
+						<li><a href="">Private Label</a></li>
+						<li><a href="">P28</a></li>
+						<li><a href="">About Us</a></li>
+						<li><a href="">Contact</a></li>
 					</ul>
 				</ul>
 			</div>
 			<!--Display only on width 1023px and below-->
 			<div class="collapse navbar-collapse menu-small-screen" style="display: none;">
+
 				<ul class="nav navbar-nav">
+					<button type="button" class="navbar-toggle"
+					        data-toggle="collapse-side"
+					        data-target=".side-collapse"
+					        data-target-2=".new-york-bakery-container-fluid">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
 					<li class="active">
 						<?php the_custom_logo(); ?>
 					</li>
