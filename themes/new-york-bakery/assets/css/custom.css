@@ -304,6 +304,10 @@ footer .footer-container-widget {
 /*
 ============== jQuery Timeline Slider ==============
 */
+.timeline-header {
+	width: 800px;
+	margin: 0 auto;
+}
 #timeline {
 	width: 800px;
 	height: 350px;
@@ -459,6 +463,17 @@ form { display: inline-block; }
 	footer .site-container {
 		padding-left: 15px;
 		padding-right: 15px;
+	}
+}
+@media only screen and (max-width: 768px) {
+	/*
+	============== jQuery Timeline Slider ==============
+	*/
+	.timeline-header {
+		width: auto;
+	}
+	#timeline {
+		width: auto;
 	}
 }
 @media only screen and (min-width: 768px) {
