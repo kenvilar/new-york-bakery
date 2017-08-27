@@ -313,7 +313,7 @@ footer .footer-container-widget {
 	height: 350px;
 	overflow: hidden;
 	/*margin: 100px auto;*/
-	margin: 0 auto 100px;
+	margin: 0 auto 20px;
 	position: relative;
 	background: url('../images/dot.png') left 45px repeat-x;
 	/*background-color: #000 !important;*/
@@ -327,7 +327,7 @@ footer .footer-container-widget {
 #dates li {
 	list-style: none;
 	float: left;
-	width: 100px;
+	width: 80px;
 	height: 50px;
 	font-size: 24px;
 	text-align: center;
@@ -378,7 +378,7 @@ footer .footer-container-widget {
 #issues li h1 {
 	color: #fff;
 	font-size: 36px;
-	margin: 20px 0;
+	margin: 10px 0 25px;
 	font-family: "Avenir Next", sans-serif;
 	font-style: normal;
 	font-weight: 900;
@@ -387,6 +387,7 @@ footer .footer-container-widget {
 #issues li p {
 	font-size: 16px;
 	margin-right: 70px;
+	margin-left: 10px;
 	font-weight: normal;
 	line-height: 28px;
 	font-family: Roboto, sans-serif;
