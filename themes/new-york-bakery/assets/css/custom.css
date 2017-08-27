@@ -482,6 +482,11 @@ form { display: inline-block; }
 		width: 100% !important;
 	}
 }
+@media only screen and (max-width: 767px) {
+	.side-collapse {
+		top: 92px !important;
+	}
+}
 @media only screen and (max-width: 768px) {
 	/*jQuery Timeline Slider*/
 	.timeline-header {
