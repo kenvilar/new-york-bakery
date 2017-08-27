@@ -460,6 +460,11 @@ form { display: inline-block; }
 /*
 ============== Media ==============
 */
+@media only screen and (max-width: 320px) {
+	.white-bg, .gray-bg {
+		padding: 0;
+	}
+}
 @media only screen and (max-width: 401px) {
 	footer .site-container {
 		padding-left: 15px;
@@ -475,6 +480,10 @@ form { display: inline-block; }
 	}
 	#timeline {
 		width: auto;
+	}
+	.container-fluid {
+		padding-right: 15px !important;
+		padding-left: 15px !important;
 	}
 }
 @media only screen and (min-width: 768px) {
