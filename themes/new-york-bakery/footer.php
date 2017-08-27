@@ -11,6 +11,8 @@
 
 ?>
 
+</div><!-- .container-fluid main-content -->
+
 <div class="want-to-know-more">
 	<div class="container">
 		<div class="row">

@@ -16,22 +16,14 @@ get_header(); ?>
 		} );
 	</script>
 
-	<div class="container-fluid main-content">
-		<?php
-		if ( have_posts() ) : while ( have_posts() ) : the_post();
-			the_content();
-		endwhile; endif;
-		?>
-	</div>
-	
-	<?php /*if ( get_field( 'about_us_history' ) ) : */ ?><!--
-		<div class="gray-bg">
-			<?php /*the_field( 'about_us_history' ); */ ?>
-		</div>
-	--><?php /*endif; */ ?>
+<?php
+if ( have_posts() ) : while ( have_posts() ) : the_post();
+	the_content();
+endwhile; endif;
+?>
 
 	<div class="gray-bg" style="padding: 22px 0 25px;">
-		<h4>OUR HISTORY</h4>
+		<h4 class="timeline-header">OUR HISTORY</h4>
 		<div id="timeline">
 			<ul id="dates">
 				<li><a href="#1920" style="opacity:0;">1920</a></li>
