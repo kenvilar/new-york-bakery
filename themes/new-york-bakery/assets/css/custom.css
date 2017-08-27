@@ -6,7 +6,7 @@
 ============== Footer
 ============== All pages
 ============== jQuery Timeline Slider
-============== Media
+============== Media Queries
 
 * text-color: #292929,
 */
@@ -180,6 +180,59 @@ header #navbar-primary .navbar-nav > li {
 }
 header #navbar-primary .navbar-nav > li > a { padding: 0 30px; }
 header #navbar-primary .navbar-nav > li > a:hover { background-color: transparent; }
+/*
+============== Search ==============
+*/
+input[type="search"] {
+	height: 80px;
+	font-size: 18px;
+	display: inline-block;
+	font-family: "Roboto", sans-serif;
+	font-weight: normal;
+	border: none;
+	outline: none;
+	color: #898989;
+	padding: 3px;
+	padding-right: 60px;
+	width: 0;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background: none;
+	z-index: 3;
+	transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+	cursor: pointer;
+}
+input[type="search"]:focus:hover {
+	border-bottom: 1px solid #BBB;
+}
+input[type="search"]:focus {
+	width: 700px;
+	z-index: 1;
+	border-bottom: 1px solid #BBB;
+	cursor: text;
+}
+input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active, input[type="submit"]:hover {
+	background: url(../images/search-red-hover.png) center center no-repeat !important;
+}
+input[type="submit"] {
+	height: 67px;
+	width: 63px;
+	display: inline-block;
+	color: #FF0000;
+	float: right;
+	background: url(../images/search.svg) center center no-repeat;
+	text-indent: -10000px;
+	border: none;
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: 2;
+	cursor: pointer;
+	opacity: 0.4;
+	transition: opacity .4s ease;
+}
+input[type="submit"]:hover { opacity: 0.8; }
 /*
 ============== Banner ==============
 */
@@ -458,7 +511,7 @@ form { display: inline-block; }
 	font-size: 14px;
 }
 /*
-============== Media ==============
+============== Media Queries ==============
 */
 @media only screen and (max-width: 320px) {
 	.white-bg, .gray-bg {
