@@ -184,7 +184,7 @@ header #navbar-primary .navbar-nav > li > a:hover { background-color: transparen
 /*
 ============== Search ==============
 */
-input[type="search"] {
+.navbar-nav input[type="search"] {
 	height: 80px;
 	font-size: 18px;
 	display: inline-block;
@@ -204,19 +204,28 @@ input[type="search"] {
 	transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
 	cursor: pointer;
 }
-input[type="search"]:focus:hover {
-	border-bottom: 1px solid #BBB;
-}
-input[type="search"]:focus {
-	width: 700px;
+.navbar-nav input[type="search"]:focus {
+	width: 100% !important;
+	padding: 0 260px !important;
+	position: fixed !important;
+	font-family: Roboto !important;
+	font-style: normal !important;
+	font-weight: normal !important;
+	line-height: normal !important;
+	font-size: 18px !important;
+	color: #898989 !important;
+	top: 75px !important;
+	background-color: rgba(41, 41, 41, 0.85);
 	z-index: 1;
-	border-bottom: 1px solid #BBB;
 	cursor: text;
 }
-input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active, input[type="submit"]:hover {
+.navbar-nav input[type="submit"]:hover,
+.navbar-nav input[type="submit"]:focus,
+.navbar-nav input[type="submit"]:active,
+.navbar-nav input[type="submit"]:hover {
 	background: url(../images/search-red-hover.png) center center no-repeat !important;
 }
-input[type="submit"] {
+.navbar-nav input[type="submit"] {
 	height: 67px;
 	width: 63px;
 	display: inline-block;
@@ -233,7 +242,9 @@ input[type="submit"] {
 	opacity: 0.4;
 	transition: opacity .4s ease;
 }
-input[type="submit"]:hover { opacity: 0.8; }
+.navbar-nav input[type="submit"]:hover { opacity: 0.8; }
+.navbar-nav input::-webkit-input-placeholder { border-bottom: 1px solid #979797; }
+.navbar-nav input::-webkit-textfield-decoration-container { border-bottom: 1px solid #979797 !important; }
 /*
 ============== Banner ==============
 */
