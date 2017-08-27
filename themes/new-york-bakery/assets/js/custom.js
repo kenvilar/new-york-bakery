@@ -12,6 +12,15 @@
 			}
 		} );
 
+		/* Menu Toggle on Mobile */
+		var newYorkBakerySideMenu = $( '[data-toggle=collapse-side]' );
+		var newYorkBakerySideMenuRes = newYorkBakerySideMenu.attr( 'data-target' );
+		var newYorkBakerySideMenuRes2 = newYorkBakerySideMenu.attr( 'data-target-2' );
+		newYorkBakerySideMenu.click( function( event ) {
+			$( newYorkBakerySideMenuRes ).toggleClass( 'in' );
+			$( newYorkBakerySideMenuRes2 ).toggleClass( 'out' );
+		} );
+
 	} );
 
 })( jQuery );
