@@ -4,6 +4,7 @@
 ============== Header
 ============== Search
 ============== Banner
+============== Product Development Page
 ============== Footer
 ============== All pages
 ============== jQuery Timeline Slider
@@ -118,6 +119,7 @@ a:hover {
 	height: 40px;
 	width: auto;
 	outline: 0;
+	border: 1px solid #292929;
 }
 div.wpcf7-response-output {
 	display: none !important;
@@ -257,8 +259,8 @@ header #navbar-primary .navbar-nav > li > a:hover { background-color: transparen
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding-top: 110px;
-	padding-bottom: 110px;
+	padding-top: 95px;
+	padding-bottom: 95px;
 }
 .banner-section .top-banner-one-column {
 	text-align: center;
@@ -271,6 +273,14 @@ header #navbar-primary .navbar-nav > li > a:hover { background-color: transparen
 	color: #fff !important;
 }
 .banner-section .top-banner-two-columns { color: #fff; }
+/*
+============== Product Development Page ==============
+*/
+.product-development-card-image {
+	height: 230px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
 /*
 ============== Front Page ==============
 */
@@ -355,7 +365,8 @@ footer .footer-container-widget {
 	word-wrap: break-word;
 }
 .white-bg, .gray-bg {
-	padding: 22px 170px 25px;
+	padding: 22px 185px 25px;
+	display: flow-root;
 	/*display: flex;*/
 }
 .gray-bg { background-color: #F9F9F9; }
@@ -407,8 +418,8 @@ footer .footer-container-widget {
 #issues {
 	width: 800px;
 	height: 350px;
-	overflow: hidden;
-	background-color: #000;
+	overflow-x: hidden;
+	background-color: #292929;
 }
 #issues li {
 	width: 800px;
@@ -459,6 +470,7 @@ footer .footer-container-widget {
 	font-family: Roboto, sans-serif;
 	font-style: normal;
 	color: #fff;
+	height: 100%;
 }
 #grad_left, #grad_right {
 	width: 100px;
@@ -575,10 +587,18 @@ form { display: inline-block; }
 @media only screen and (max-width: 767px) {
 	.side-collapse {
 		top: 92px !important;
-		padding-left: 20px;
+		padding-left: 0;
 	}
 }
 @media only screen and (max-width: 768px) {
+	/*All Pages*/
+	.white-bg, .gray-bg {
+		padding: 22px 40px 25px;
+	}
+	/*Banner*/
+	.row.top-banner-two-columns {
+		padding-left: 0 !important;
+	}
 	/*jQuery Timeline Slider*/
 	.timeline-header {
 		width: auto;
@@ -587,18 +607,38 @@ form { display: inline-block; }
 		width: auto;
 	}
 	.container-fluid {
-		padding-right: 15px !important;
-		padding-left: 15px !important;
+		padding-right: 0 !important;
+		padding-left: 0 !important;
 	}
 	/*Menu Toggle*/
 	.navbar-toggle {
 		top: 10px !important;
 		left: 20px !important;
 	}
+	/*Front Page*/
+	.front-page .white-bg {
+		padding: 22px 10px 25px;
+	}
+	/*Footer*/
+	.site-footer .site-container {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	footer .footer-container-widget .widget {
+		margin-bottom: 0px;
+	}
+	footer .footer-container-widget:last-child .widget {
+		margin-bottom: 35px;
+	}
 }
 @media only screen and (min-width: 768px) {
 	.collapse.navbar-collapse.menu-list-mobile {
 		display: none !important;
+	}
+}
+@media only screen and (max-width: 1024px) {
+	.row.top-banner-two-columns {
+		padding-left: 115px;
 	}
 }
 @media only screen and (max-width: 1679px) {
