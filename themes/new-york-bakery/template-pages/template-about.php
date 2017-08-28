@@ -22,7 +22,7 @@ if ( have_posts() ) : while ( have_posts() ) : the_post();
 endwhile; endif;
 ?>
 
-	<div class="gray-bg" style="padding: 22px 0 25px;">
+	<div class="gray-bg timeline-history" style="padding: 22px 0 25px;">
 		<h4 class="timeline-header">OUR HISTORY</h4>
 		<div id="timeline">
 			<ul id="dates">

@@ -595,6 +595,13 @@ form { display: inline-block; }
 	.white-bg, .gray-bg {
 		padding: 22px 40px 25px;
 	}
+	/*About Page*/
+	.page-template-template-about .gray-bg.timeline-history {
+		padding: 22px 40px 25px !important;
+	}
+	.page-template-template-about #issues li {
+		width: 700px;
+	}
 	/*Banner*/
 	.row.top-banner-two-columns {
 		padding-left: 0 !important;
