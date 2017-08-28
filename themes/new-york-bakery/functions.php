@@ -209,6 +209,11 @@ require get_template_directory() . '/inc/custom-misc.php';
 require get_template_directory() . '/inc/custom_shortcodes.php';
 
 /**
+ * Custom menu.
+ */
+require get_template_directory() . '/inc/custom_menus.php';
+
+/**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
