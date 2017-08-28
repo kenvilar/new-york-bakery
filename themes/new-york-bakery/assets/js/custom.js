@@ -21,6 +21,16 @@
 			$( newYorkBakerySideMenuRes2 ).toggleClass( 'out' );
 		} );
 
+		//Hide/show menu icon in mobile
+		$( "#navbar-toggle-open" ).click( function() {
+			$( "#navbar-toggle-open" ).hide( 500 );
+			$( "#navbar-toggle-close" ).show( 500 );
+		} );
+		$( "#navbar-toggle-close" ).click( function() {
+			$( "#navbar-toggle-close" ).hide( 500 );
+			$( "#navbar-toggle-open" ).show( 500 );
+		} );
+
 	} );
 
 })( jQuery );

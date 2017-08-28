@@ -72,7 +72,7 @@
 			<div class="collapse navbar-collapse menu-small-screen" style="display: none;">
 
 				<ul class="nav navbar-nav">
-					<button type="button" class="navbar-toggle"
+					<button type="button" class="navbar-toggle" id="navbar-toggle-open"
 					        data-toggle="collapse-side"
 					        data-target=".side-collapse"
 					        data-target-2=".new-york-bakery-container-fluid">
@@ -80,6 +80,13 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
+					</button>
+					<button type="button" class="navbar-toggle" id="navbar-toggle-close"
+					        data-toggle="collapse-side"
+					        data-target=".side-collapse"
+					        data-target-2=".new-york-bakery-container-fluid" style="display: none;">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/ x-close.svg"
+						     alt="menu-close">
 					</button>
 					<li class="active">
 						<?php the_custom_logo(); ?>
