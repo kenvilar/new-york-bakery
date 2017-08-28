@@ -16,6 +16,9 @@ the_content();
 if ( get_field( 'contact_us_shortcode' ) ) : ?>
 	<div class="gray-bg"><?php the_field( 'contact_us_shortcode' ) ?></div>
 <?php endif;
+wp_reset_query();
+
+get_template_part( 'template-parts/content', 'product-development' );
 
 wp_link_pages( array(
 	'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'new-york-bakery' ),
