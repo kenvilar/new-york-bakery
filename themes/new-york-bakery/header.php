@@ -31,14 +31,35 @@
 			<!--For mobile side pull left to right-->
 			<div class="navbar-inverse side-collapse in">
 				<nav role="navigation" class="navbar-collapse">
-					<ul class="nav navbar-nav">
+					<!--<ul class="nav navbar-nav">
 						<li><a href="">Product Development</a></li>
 						<li><a href="">Distribution</a></li>
 						<li><a href="">Private Label</a></li>
 						<li><a href="">P28</a></li>
 						<li><a href="">About Us</a></li>
 						<li><a href="">Contact</a></li>
-					</ul>
+					</ul>-->
+					<?php
+					wp_nav_menu( array(
+						'menu'            => '',
+						'container'       => 'span',
+						'container_class' => '',
+						'container_id'    => '',
+						'menu_class'      => '',
+						'menu_id'         => '',
+						'echo'            => true,
+						'fallback_cb'     => 'wp_page_menu',
+						'before'          => '',
+						'after'           => '',
+						'link_before'     => '',
+						'link_after'      => '',
+						'items_wrap'      => '<ul id="%1$s" class="nav navbar-nav %2$s">%3$s</ul>',
+						'item_spacing'    => 'discard',
+						'depth'           => 0,
+						'walker'          => '',
+						'theme_location'  => 'menu-1',
+					) );
+					?>
 				</nav>
 			</div>
 			<!--Display only on Desktop HD-->
@@ -57,14 +78,35 @@
 								       value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>"/>
 							</form>
 						</li>
-						<ul class="nav navbar-nav">
+						<!--<ul class="nav navbar-nav">
 							<li><a href="">Product Development</a></li>
 							<li><a href="">Distribution</a></li>
 							<li><a href="">Private Label</a></li>
 							<li><a href="">P28</a></li>
 							<li><a href="">About Us</a></li>
 							<li><a href="">Contact</a></li>
-						</ul>
+						</ul>-->
+						<?php
+						wp_nav_menu( array(
+							'menu'            => '',
+							'container'       => 'span',
+							'container_class' => '',
+							'container_id'    => '',
+							'menu_class'      => '',
+							'menu_id'         => '',
+							'echo'            => true,
+							'fallback_cb'     => 'wp_page_menu',
+							'before'          => '',
+							'after'           => '',
+							'link_before'     => '',
+							'link_after'      => '',
+							'items_wrap'      => '<ul id="%1$s" class="nav navbar-nav %2$s">%3$s</ul>',
+							'item_spacing'    => 'discard',
+							'depth'           => 0,
+							'walker'          => '',
+							'theme_location'  => 'menu-1',
+						) );
+						?>
 					</ul>
 				</ul>
 			</div>
