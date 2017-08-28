@@ -5,7 +5,7 @@
 ?>
 
 <?php if ( have_rows( 'product_development_cards' ) ) : while ( have_rows( 'product_development_cards' ) ) : the_row(); ?>
-	<div class="row custom-row-margin-bottom">
+	<div class="row custom-row-margin-bottom product-development-cards">
 		
 		<?php if ( get_sub_field( 'first_column_card_image' ) && get_sub_field( 'first_column_card_title' ) ) : ?>
 

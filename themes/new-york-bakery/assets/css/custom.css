@@ -538,114 +538,30 @@ form { display: inline-block; }
 /*
 ============== Media Queries ==============
 */
-@media only screen and (max-width: 320px) {
-	.white-bg, .gray-bg {
-		padding: 0;
-	}
-	.banner-section {
-		padding-left: 0;
-		padding-right: 0;
+@media only screen and (min-width: 2560px) {
+	ul.nav.navbar-nav.navbar-right.menu-hd-right.menus li.search-menu-hd {
+		right: 500px;
 	}
 }
-@media only screen and (max-width: 401px) {
-	/*Footer*/
-	footer .site-container {
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-}
-@media only screen and (max-width: 480px) {
-	.new-york-bakery-container-fluid.out {
-		left: 0 !important;
+@media only screen and (min-width: 1680px) {
+	/*Search icon*/
+	ul.nav.navbar-nav.navbar-right.menu-hd-right.menus li.search-menu-hd {
+		right: 40px;
+		bottom: 10px;
 	}
 	/*Menu Toggle*/
-	.side-collapse {
-		z-index: 1;
-		width: 100% !important;
-		padding-left: 0 !important;
+	.side-collapse.in { display: none; }
+	/*Menu*/
+	header #navbar-primary .menu-small-screen { display: none !important; }
+	a.custom-logo-link {
+		margin-left: 40px;
 	}
-	.side-collapse ul {
-		margin-left: 10px;
+	header #navbar-primary .menu-hd { display: block !important; }
+	header #navbar-primary .menu-hd .menu-hd-right li {
+		margin-right: 15px;
 	}
-	/*Search*/
-	.navbar-nav input[type="search"]:focus {
-		padding: 0 20px !important;
-	}
-	.navbar-nav input[type="search"]:focus {
-		top: 90px;
-	}
-}
-@media only screen and (max-width: 640px) {
-	/*top search*/
-	.navbar-nav input[type="search"]:focus {
-		padding: 0 100px;
-	}
-	.navbar-nav input[type="submit"] {
-		top: 20px;
-	}
-}
-@media only screen and (max-width: 767px) {
-	.side-collapse {
-		top: 92px !important;
-		padding-left: 0;
-	}
-}
-@media only screen and (max-width: 768px) {
-	/*All Pages*/
-	.white-bg, .gray-bg {
-		padding: 22px 40px 25px;
-	}
-	/*About Page*/
-	.page-template-template-about .gray-bg.timeline-history {
-		padding: 22px 40px 25px !important;
-	}
-	.page-template-template-about #issues li {
-		width: 700px;
-	}
-	/*Banner*/
-	.row.top-banner-two-columns {
-		padding-left: 0 !important;
-	}
-	/*jQuery Timeline Slider*/
-	.timeline-header {
-		width: auto;
-	}
-	#timeline {
-		width: auto;
-	}
-	.container-fluid {
-		padding-right: 0 !important;
-		padding-left: 0 !important;
-	}
-	/*Menu Toggle*/
-	.navbar-toggle {
-		top: 10px !important;
-		left: 20px !important;
-	}
-	/*Front Page*/
-	.front-page .white-bg {
-		padding: 22px 10px 25px;
-	}
-	/*Footer*/
-	.site-footer .site-container {
-		padding-left: 40px;
-		padding-right: 40px;
-	}
-	footer .footer-container-widget .widget {
-		margin-bottom: 0px;
-	}
-	footer .footer-container-widget:last-child .widget {
-		margin-bottom: 35px;
-	}
-}
-@media only screen and (min-width: 768px) {
-	.collapse.navbar-collapse.menu-list-mobile {
-		display: none !important;
-	}
-}
-@media only screen and (max-width: 1024px) {
-	.row.top-banner-two-columns {
-		padding-left: 115px;
+	header #navbar-primary .menu-hd .menu-hd-right li:last-child {
+		margin-right: 35px;
 	}
 }
 @media only screen and (max-width: 1679px) {
@@ -711,29 +627,157 @@ form { display: inline-block; }
 	body { background-color: #fff; }
 	.new-york-bakery-container-fluid { background-color: #292929; }
 }
-@media only screen and (min-width: 1680px) {
-	/*Search icon*/
-	ul.nav.navbar-nav.navbar-right.menu-hd-right.menus li.search-menu-hd {
-		right: 40px;
-		bottom: 10px;
-	}
-	/*Menu Toggle*/
-	.side-collapse.in { display: none; }
-	/*Menu*/
-	header #navbar-primary .menu-small-screen { display: none !important; }
-	a.custom-logo-link {
-		margin-left: 40px;
-	}
-	header #navbar-primary .menu-hd { display: block !important; }
-	header #navbar-primary .menu-hd .menu-hd-right li {
-		margin-right: 15px;
-	}
-	header #navbar-primary .menu-hd .menu-hd-right li:last-child {
-		margin-right: 35px;
+@media only screen and (max-width: 1024px) {
+	.row.top-banner-two-columns {
+		padding-left: 115px;
 	}
 }
-@media only screen and (min-width: 2560px) {
-	ul.nav.navbar-nav.navbar-right.menu-hd-right.menus li.search-menu-hd {
-		right: 500px;
+@media only screen and (min-width: 768px) {
+	.collapse.navbar-collapse.menu-list-mobile {
+		display: none !important;
+	}
+}
+@media only screen and (max-width: 768px) {
+	/*All Pages*/
+	.white-bg, .gray-bg {
+		padding: 22px 40px 25px;
+	}
+	/*About Page*/
+	.page-template-template-about .gray-bg.timeline-history {
+		padding: 22px 40px 25px !important;
+	}
+	.page-template-template-about #issues li {
+		width: 700px;
+	}
+	/*Banner*/
+	.row.top-banner-two-columns {
+		padding-left: 0 !important;
+	}
+	/*jQuery Timeline Slider*/
+	.timeline-header {
+		width: auto;
+	}
+	#timeline {
+		width: auto;
+	}
+	/*Menu Toggle*/
+	.navbar-toggle {
+		top: 10px !important;
+		left: 20px !important;
+	}
+	/*Front Page*/
+	.front-page .white-bg {
+		padding: 22px 10px 25px;
+	}
+	/*Footer*/
+	.site-footer .site-container {
+		padding-left: 40px;
+		padding-right: 40px;
+	}
+	footer .footer-container-widget .widget {
+		margin-bottom: 0px;
+	}
+	footer .footer-container-widget:last-child .widget {
+		margin-bottom: 35px;
+	}
+}
+@media only screen and (max-width: 767px) {
+	.side-collapse {
+		top: 92px !important;
+		padding-left: 0;
+	}
+}
+@media only screen and (max-width: 640px) {
+	/*top search*/
+	.navbar-nav input[type="search"]:focus {
+		padding: 0 100px;
+	}
+	.navbar-nav input[type="submit"] {
+		top: 20px;
+	}
+	/*About Us*/
+	.page-template-template-about #issues li {
+		width: 550px;
+	}
+}
+@media only screen and (max-width: 480px) {
+	.new-york-bakery-container-fluid.out {
+		left: 0 !important;
+	}
+	/*Menu Toggle*/
+	.side-collapse {
+		z-index: 1;
+		width: 100% !important;
+		padding-left: 0 !important;
+	}
+	.side-collapse ul {
+		margin-left: 10px;
+	}
+	/*Search*/
+	.navbar-nav input[type="search"]:focus {
+		padding: 0 20px !important;
+	}
+	.navbar-nav input[type="search"]:focus {
+		top: 90px;
+	}
+	/*About Us*/
+	.page-template-template-about #issues li {
+		width: 400px;
+	}
+}
+@media only screen and (max-width: 424px) {
+	/*About Us*/
+	.page-template-template-about #issues li {
+		width: 300px;
+	}
+}
+@media only screen and (max-width: 401px) {
+	/*Footer*/
+	footer .site-container {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+@media only screen and (max-width: 320px) {
+	.white-bg, .gray-bg {
+		padding: 0 10px !important;
+	}
+	/*Banner*/
+	.banner-section {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	.row.top-banner-two-columns {
+		text-align: center;
+	}
+	/*Front Page*/
+	.front-page .front-page-top-content {
+		padding-left: 0;
+		padding-right: 0;
+	}
+	/*Contact us Button*/
+	.contact-us input[type="submit"] {
+		margin: 0 auto;
+		display: block;
+	}
+	/*About Us*/
+	.page-template-template-about #issues li {
+		width: 260px;
+	}
+	#issues {
+		padding-left: 0;
+	}
+	/*Product Development*/
+	.product-development-cards {
+		margin: 0;
+	}
+}
+@media only screen and (max-width: 240px) {
+	/*About Us*/
+	.page-template-template-about #issues li {
+		width: 225px;
+	}
+	#issues {
+		padding-left: 0;
 	}
 }
