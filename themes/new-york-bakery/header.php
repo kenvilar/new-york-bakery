@@ -47,13 +47,24 @@
 					<li class="active">
 						<?php the_custom_logo(); ?>
 					</li>
-					<ul class="nav navbar-nav navbar-right menu-hd-right">
-						<li><a href="">Product Development</a></li>
-						<li><a href="">Distribution</a></li>
-						<li><a href="">Private Label</a></li>
-						<li><a href="">P28</a></li>
-						<li><a href="">About Us</a></li>
-						<li><a href="">Contact</a></li>
+					<ul class="nav navbar-nav navbar-right menu-hd-right menus">
+						<li class="search-menu-hd">
+							<form role="search" method="get" action="<?php echo home_url( '/' ); ?>">
+								<input id="search" type="search" class="search-field"
+								       placeholder="<?php echo esc_attr_x( 'search', 'placeholder' ) ?>"
+								       value="<?php echo get_search_query() ?>" name="s"/>
+								<input type="submit" class="search-submit"
+								       value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>"/>
+							</form>
+						</li>
+						<ul class="nav navbar-nav">
+							<li><a href="">Product Development</a></li>
+							<li><a href="">Distribution</a></li>
+							<li><a href="">Private Label</a></li>
+							<li><a href="">P28</a></li>
+							<li><a href="">About Us</a></li>
+							<li><a href="">Contact</a></li>
+						</ul>
 					</ul>
 				</ul>
 			</div>
@@ -76,9 +87,9 @@
 					<form role="search" method="get" action="<?php echo home_url( '/' ); ?>">
 						<input id="search" type="search" class="search-field"
 						       placeholder="<?php echo esc_attr_x( 'search', 'placeholder' ) ?>"
-						       value="<?php echo get_search_query() ?>" name="s" />
+						       value="<?php echo get_search_query() ?>" name="s"/>
 						<input type="submit" class="search-submit"
-						       value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>" />
+						       value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>"/>
 					</form>
 				</ul>
 			</div>
