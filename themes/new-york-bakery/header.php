@@ -31,14 +31,6 @@
 			<!--For mobile side pull left to right-->
 			<div class="navbar-inverse side-collapse in">
 				<nav role="navigation" class="navbar-collapse">
-					<!--<ul class="nav navbar-nav">
-						<li><a href="">Product Development</a></li>
-						<li><a href="">Distribution</a></li>
-						<li><a href="">Private Label</a></li>
-						<li><a href="">P28</a></li>
-						<li><a href="">About Us</a></li>
-						<li><a href="">Contact</a></li>
-					</ul>-->
 					<?php
 					wp_nav_menu( array(
 						'menu'            => '',
@@ -78,14 +70,6 @@
 								       value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>"/>
 							</form>
 						</li>
-						<!--<ul class="nav navbar-nav">
-							<li><a href="">Product Development</a></li>
-							<li><a href="">Distribution</a></li>
-							<li><a href="">Private Label</a></li>
-							<li><a href="">P28</a></li>
-							<li><a href="">About Us</a></li>
-							<li><a href="">Contact</a></li>
-						</ul>-->
 						<?php
 						wp_nav_menu( array(
 							'menu'            => '',
