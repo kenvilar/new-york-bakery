@@ -391,6 +391,12 @@ footer .footer-container-widget {
 .custom-row-margin-bottom {
 	margin: 30px 43px 50px;
 }
+input[type=submit] {
+	font-size: 16px;
+}
+footer.comment-meta, footer.entry-footer {
+	background: transparent;
+}
 /*
 ============== 404 Page ==============
 */
