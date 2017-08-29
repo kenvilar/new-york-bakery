@@ -132,7 +132,9 @@ div#wpadminbar:hover { opacity: 1; }
 img.custom-logo {
 	width: 120px;
 	height: 55px;
+	margin-top: 10px;
 }
+header #navbar-primary .menu-small-screen img.custom-logo { margin-top: inherit; }
 header .fixed {
 	position: fixed;
 	top: 0;
