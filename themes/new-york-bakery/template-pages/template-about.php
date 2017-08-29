@@ -5,18 +5,10 @@
 
 get_header(); ?>
 
-	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.timelinr-0.9.6.js?ver=<?php esc_attr_e( bloginfo( 'version' ) ); ?>"></script>
-
-	<script>
-		jQuery( function( $ ) {
-			$().timelinr( { autoPlayDirection : 'forward' } );
-		} );
-	</script>
-
 <?php
 if ( have_posts() ) : while ( have_posts() ) : the_post();
-	the_content();
-endwhile; endif;
+	the_content(); endwhile; endif;
+wp_reset_query();
 ?>
 
 	<div class="gray-bg timeline-history" style="padding: 22px 0 25px;">
@@ -51,8 +43,7 @@ endwhile; endif;
 					<?php endwhile;
 					wp_reset_postdata(); ?>
 				</ul>
-				<!--<div id="grad_left"></div>
-				<div id="grad_right"></div>-->
+				<!--<div id="grad_left"></div><div id="grad_right"></div>-->
 				<a href="#" id="next">+</a>
 				<a href="#" id="prev">-</a>
 			</div>

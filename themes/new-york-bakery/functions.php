@@ -158,18 +158,28 @@ add_action( 'wp_enqueue_scripts', 'new_york_bakery_styles' );
  * Enqueue scripts and styles.
  */
 function new_york_bakery_scripts() {
+	
 	wp_enqueue_script( 'new-york-bakery-navigation',
 		get_template_directory_uri() . '/assets/js/navigation.js',
 		array(), get_bloginfo( 'version' ), true );
+	
 	wp_enqueue_script( 'new-york-bakery-skip-link-focus-fix',
 		get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js',
 		array(), get_bloginfo( 'version' ), true );
+	
 	wp_enqueue_script( 'bootstrap-js',
 		get_template_directory_uri() . '/assets/bower_components/bootstrap/dist/js/bootstrap.min.js',
 		array( 'jquery' ), get_bloginfo( 'version' ), true );
+	
+	if ( is_page( 'about-us' ) || is_page( 'about' ) ) :
+		wp_enqueue_script( 'timeline-slider',
+			get_template_directory_uri() . '/assets/js/jquery.timelinr-0.9.6.js',
+			array( 'jquery' ), get_bloginfo( 'version' ), true );
+	endif;
+	
 	wp_enqueue_script( 'custom-js',
 		get_template_directory_uri() . '/assets/js/custom.js',
-		array( 'bootstrap-js' ), get_bloginfo( 'version' ), true );
+		array( 'jquery' ), get_bloginfo( 'version' ), true );
 	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

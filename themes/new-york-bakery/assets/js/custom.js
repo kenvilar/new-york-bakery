@@ -31,6 +31,9 @@
 			$( "#navbar-toggle-open" ).show( 500 );
 		} );
 
+		//jQuery Timeline Slider
+		$().timelinr( { autoPlayDirection : 'forward' } );
+
 	} );
 
 })( jQuery );
