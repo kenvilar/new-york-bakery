@@ -111,7 +111,7 @@
 					        data-toggle="collapse-side"
 					        data-target=".side-collapse"
 					        data-target-2=".new-york-bakery-container-fluid" style="display: none;">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/ x-close.svg"
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/close.svg"
 						     alt="menu-close">
 					</button>
 					<li class="active">
@@ -147,7 +147,7 @@
 		     if ( has_post_thumbnail( $post->ID ) ) : ?>
 				     background-image: url(<?php echo the_post_thumbnail_url(); ?>);
 		     <?php else : ?>
-				     background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/landing-page-banner-img.png);
+				     background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/landing-page-banner-img.jpg);
 		     <?php endif; ?>">
 
 			<div class="container-fluid">
