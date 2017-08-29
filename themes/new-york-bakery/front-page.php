@@ -41,10 +41,10 @@ get_header(); ?>
 										     style="background-image: url(<?php the_sub_field( 'first_column_background_image' ); ?>);
 												     height: 237px;">
 											<span class="plus-for-hover">
-												<img src="<?php echo get_template_directory_uri() . '/assets/images/plus.svg'; ?>"/>
+												<img alt="icon" src="<?php echo get_template_directory_uri() . '/assets/images/plus.svg'; ?>"/>
 											</span>
 											<span class="o-for-hover" style="display: none;">
-												<img src="<?php echo get_template_directory_uri() . '/assets/images/open.png'; ?>"/>
+												<img alt="icon" src="<?php echo get_template_directory_uri() . '/assets/images/open.png'; ?>"/>
 											</span>
 										</div>
 									<?php endif; ?>
@@ -68,10 +68,10 @@ get_header(); ?>
 										     style="background-image: url(<?php the_sub_field( 'second_column_background_image' ); ?>);
 												     height: 237px;">
 											<span class="plus-for-hover">
-												<img src="<?php echo get_template_directory_uri() . '/assets/images/plus.svg'; ?>"/>
+												<img alt="icon" src="<?php echo get_template_directory_uri() . '/assets/images/plus.svg'; ?>"/>
 											</span>
 											<span class="o-for-hover" style="display: none;">
-												<img src="<?php echo get_template_directory_uri() . '/assets/images/open.png'; ?>"/>
+												<img alt="icon" src="<?php echo get_template_directory_uri() . '/assets/images/open.png'; ?>"/>
 											</span>
 										</div>
 									<?php endif; ?>
