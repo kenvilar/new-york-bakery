@@ -40,11 +40,11 @@ html {
 	-webkit-tap-highlight-color: transparent;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-	letter-spacing: 0.1px;
+	letter-spacing: 0;
 }
 body {
 	background-color: #292929;
-	font-family: "Avenir Next";
+	font-family: "Avenir Next", sans-serif;
 	font-style: normal;
 	font-weight: 500;
 	color: #292929;
@@ -75,7 +75,7 @@ a:hover {
 	font-style: normal;
 	font-weight: normal;
 	line-height: normal;
-	letter-spacing: 1.01111px;
+	letter-spacing: 1px;
 	display: inline-block;
 	padding: 6px 12px;
 	margin-bottom: 0;
@@ -119,7 +119,7 @@ a:hover {
 	line-height: normal;
 	font-size: 14px;
 	text-align: center;
-	letter-spacing: 1.01111px;
+	letter-spacing: 1px;
 	padding-left: 50px;
 	padding-right: 50px;
 	height: 40px;
@@ -208,8 +208,7 @@ header #navbar-primary .navbar-nav > li > a:hover { background-color: transparen
 	border: none;
 	outline: none;
 	color: #898989;
-	padding: 3px;
-	padding-right: 60px;
+	padding: 3px 60px 3px 3px;
 	width: 0;
 	position: absolute;
 	top: 0;
@@ -269,15 +268,9 @@ header #navbar-primary .navbar-nav > li > a:hover { background-color: transparen
 ============== Banner ==============
 */
 .banner-section {
-	background-color: #e9eaea;
-	padding-left: 55px;
-	padding-right: 55px;
-	background-attachment: scroll;
-	background-position: 50% 50%;
-	background-repeat: no-repeat;
+	background: #e9eaea no-repeat scroll 50% 50%;
 	background-size: cover;
-	padding-top: 110px;
-	padding-bottom: 110px;
+	padding: 110px 55px;
 }
 .banner-section .top-banner-one-column {
 	text-align: center;
@@ -406,8 +399,7 @@ footer.comment-meta, footer.entry-footer {
 ============== 404 Page ==============
 */
 .error404 .error-404 form {
-	display: inline-block;
-	display: block;
+	display: block; /*inline-block;*/
 }
 .error404 .error-404 label {
 	display: block;
@@ -424,8 +416,7 @@ footer.comment-meta, footer.entry-footer {
 ============== Search Page ==============
 */
 .search-no-results .not-found form {
-	display: inline-block;
-	display: block;
+	display: block; /*inline-block;*/
 }
 .search-no-results .not-found label {
 	display: block;
@@ -561,8 +552,7 @@ footer.comment-meta, footer.entry-footer {
 	top: 170px; /*top: 0;*/
 	width: 22px;
 	height: 38px;
-	background-position: 0 0;
-	background-repeat: no-repeat;
+	background: no-repeat 0 0;
 	text-indent: -9999px;
 	overflow: hidden;
 }
@@ -744,7 +734,7 @@ form { display: inline-block; }
 		padding-right: 40px;
 	}
 	footer .footer-container-widget .widget {
-		margin-bottom: 0px;
+		margin-bottom: 0;
 	}
 	footer .footer-container-widget:last-child .widget {
 		margin-bottom: 35px;
@@ -765,6 +755,7 @@ form { display: inline-block; }
 	/*top search*/
 	.navbar-nav input[type="search"]:focus {
 		padding: 0 100px;
+		top: 90px;
 	}
 	.navbar-nav input[type="submit"] {
 		top: 20px;
