@@ -33,7 +33,8 @@ endwhile; endif;
 									<?php the_sub_field( 'year' ); ?></a>
 							</li>
 						<?php endif; ?>
-					<?php endwhile; ?>
+					<?php endwhile;
+					wp_reset_postdata(); ?>
 				</ul>
 				<ul id="issues">
 					<?php while ( have_rows( 'timeline_slider' ) ) : the_row(); ?>
@@ -48,14 +49,16 @@ endwhile; endif;
 							<?php endif; ?>
 
 						</li>
-					<?php endwhile; ?>
+					<?php endwhile;
+					wp_reset_postdata(); ?>
 				</ul>
 				<!--<div id="grad_left"></div>
 				<div id="grad_right"></div>-->
 				<!--<a href="#" id="next">+</a>
 				<a href="#" id="prev">-</a>-->
 			</div>
-		<?php endif; ?>
+		<?php endif;
+		wp_reset_query(); ?>
 
 	</div>
 
