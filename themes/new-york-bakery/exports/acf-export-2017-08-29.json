@@ -433,9 +433,9 @@
         "location": [
             [
                 {
-                    "param": "page",
+                    "param": "page_template",
                     "operator": "==",
-                    "value": "214"
+                    "value": "template-pages\/template-about.php"
                 }
             ]
         ],
