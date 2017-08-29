@@ -475,6 +475,15 @@ footer.comment-meta, footer.entry-footer {
 	padding-bottom: 10px;
 }
 #dates .selected { font-size: 38px; }
+#dates .selected {
+	background: #b0122e;
+	opacity: 0.8;
+	font-size: 4px;
+	top: 25px;
+	position: relative;
+	border-radius: 50px;
+	padding-bottom: 5px;
+}
 #issues {
 	width: 800px;
 	height: 350px;

@@ -29,8 +29,8 @@ endwhile; endif;
 					<?php while ( have_rows( 'timeline_slider' ) ) : the_row(); ?>
 						
 						<?php if ( get_sub_field( 'year' ) ) : ?>
-							<li><a href="#<?php the_sub_field( 'year' ); ?>" style="opacity:0;">
-									<?php the_sub_field( 'year' ); ?></a>
+							<li><a href="#<?php the_sub_field( 'year' ); ?>">
+									<span style="opacity:0;"><?php the_sub_field( 'year' ); ?></span></a>
 							</li>
 						<?php endif; ?>
 					<?php endwhile;
@@ -54,8 +54,8 @@ endwhile; endif;
 				</ul>
 				<!--<div id="grad_left"></div>
 				<div id="grad_right"></div>-->
-				<!--<a href="#" id="next">+</a>
-				<a href="#" id="prev">-</a>-->
+				<a href="#" id="next">+</a>
+				<a href="#" id="prev">-</a>
 			</div>
 		<?php endif;
 		wp_reset_query(); ?>
