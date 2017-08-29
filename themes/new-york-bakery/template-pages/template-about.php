@@ -5,8 +5,8 @@
 
 get_header(); ?>
 
-	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.min-1.12.4.js"></script>
-	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.timelinr-0.9.6.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.min-1.12.4.js?ver=<?php esc_attr_e( bloginfo( 'version' ) ); ?>"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/assets/js/jquery.timelinr-0.9.6.js?ver=<?php esc_attr_e( bloginfo( 'version' ) ); ?>"></script>
 
 	<script>
 		$( function() {
