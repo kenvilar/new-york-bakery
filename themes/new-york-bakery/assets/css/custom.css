@@ -399,7 +399,7 @@ footer .footer-container-widget {
 	width: 800px;
 	height: 60px;
 	overflow: hidden;
-	margin-left: 0 !important;
+	/*margin-left: 0 !important;*/
 }
 #dates li {
 	list-style: none;
