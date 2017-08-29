@@ -214,6 +214,11 @@ require get_template_directory() . '/inc/custom_shortcodes.php';
 require get_template_directory() . '/inc/custom_menus.php';
 
 /**
+ * Custom ACF.
+ */
+require get_template_directory() . '/inc/custom-acf.php';
+
+/**
  * Load Jetpack compatibility file.
  */
 if ( defined( 'JETPACK__VERSION' ) ) {
