@@ -95,6 +95,10 @@ a:hover {
 	border: 1px solid #FFFFFF;
 	padding: 10px 35px;
 }
+.button1:hover {
+	background-color: #fff;
+	color: #ac162c !important;
+}
 .button2 {
 	border: 1px solid #FFFFFF;
 	padding: 10px 35px;
@@ -183,7 +187,12 @@ header #navbar-primary .navbar-nav > li {
 	display: inline-block;
 	float: none;
 }
-header #navbar-primary .navbar-nav > li > a { padding: 0; text-transform: uppercase; color: #292929; }
+header #navbar-primary .navbar-nav > li > a {
+	padding: 0;
+	text-transform: uppercase;
+	color: #292929;
+	font-weight: 600;
+}
 header #navbar-primary .navbar-nav > li > a:hover { background-color: transparent; }
 /*
 ============== Search ==============
@@ -244,7 +253,6 @@ header #navbar-primary .navbar-nav > li > a:hover { background-color: transparen
 	right: 0;
 	z-index: 2;
 	cursor: pointer;
-	opacity: 0.4;
 	transition: opacity .4s ease;
 }
 .navbar-nav input[type="submit"]:hover { opacity: 0.8; }
@@ -261,8 +269,8 @@ header #navbar-primary .navbar-nav > li > a:hover { background-color: transparen
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
-	padding-top: 95px;
-	padding-bottom: 95px;
+	padding-top: 110px;
+	padding-bottom: 110px;
 }
 .banner-section .top-banner-one-column {
 	text-align: center;
@@ -296,6 +304,7 @@ header #navbar-primary .navbar-nav > li > a:hover { background-color: transparen
 }
 .front-page .front-page-card-bg-img {
 	background-size: cover;
+	background-position: center center;
 }
 .front-page .front-page-card:hover .plus-for-hover {
 	display: none;
