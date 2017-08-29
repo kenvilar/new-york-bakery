@@ -747,6 +747,8 @@ form { display: inline-block; }
 	}
 }
 @media only screen and (max-width: 640px) {
+	/*Menu Toggle*/
+	.side-collapse ul li a { margin-left: 10px; }
 	/*Menu*/
 	.container-fluid > .navbar-collapse {
 		margin-left: 0;
