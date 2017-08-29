@@ -18,7 +18,7 @@
 		<div class="row">
 			<div class="col-md-12">
 				<h2>WANT TO KNOW MORE?</h2>
-				<a href="" class="button button1">CONTACT US</a>
+				<a href="/contact-us" class="button button1">CONTACT US</a>
 			</div>
 		</div>
 	</div>
