@@ -31,7 +31,7 @@ jQuery.fn.timelinr = function( options ) {
 		autoPlayPause           : 2000					// value: integer (1000 = 1 seg), default to 2000 (2segs)
 	}, options );
 
-	$( function() {
+	jQuery( function( $ ) {
 		// Checks if required elements exist on page before initializing timelinr | improvement since 0.9.55
 		if ( $( settings.datesDiv ).length > 0 && $( settings.issuesDiv ).length > 0 ) {
 			// setting variables... many of them
