@@ -108,8 +108,11 @@ a:hover {
 	display: table;
 	font-weight: 900;
 }
+.button2:hover {
+	background-color: #000;
+}
 .contact-us input[type="submit"]:hover {
-	background-color: #ac162c;
+	background-color: #000;
 	color: #fff;
 }
 .contact-us input[type="submit"] {
@@ -658,6 +661,11 @@ form { display: inline-block; }
 }
 @media only screen and (min-width: 768px) {
 	.collapse.navbar-collapse.menu-list-mobile { display: none !important; }
+	.contact-form-container .wpcf7 {
+		width: 680px !important;
+		margin: 0 auto !important;
+	}
+	.contact-form-container { padding: 22px 0 !important; }
 }
 @media only screen and (max-width: 768px) {
 	/*All Pages*/
