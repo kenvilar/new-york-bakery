@@ -12,7 +12,13 @@
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 
 				<div class="product-development-card-image"
-				     style="background-image: url(<?php the_sub_field( 'first_column_card_image' ); ?>)"></div>
+				     style="background-image: url(<?php the_sub_field( 'first_column_card_image' ); ?>)">
+					<?php if ( get_sub_field( 'first_column_icon' ) ) : ?>
+						<span class="product-development-icon step size-24">
+							<i class="icon <?php the_sub_field( 'first_column_icon' ); ?>"></i>
+						</span>
+					<?php endif; ?>
+				</div>
 				
 				<?php the_sub_field( 'first_column_card_title' ); ?>
 				
@@ -26,7 +32,13 @@
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 
 				<div class="product-development-card-image"
-				     style="background-image: url(<?php the_sub_field( 'second_column_card_image' ); ?>)"></div>
+				     style="background-image: url(<?php the_sub_field( 'second_column_card_image' ); ?>)">
+					<?php if ( get_sub_field( 'second_column_icon' ) ) : ?>
+						<span class="product-development-icon step size-24">
+							<i class="icon <?php the_sub_field( 'second_column_icon' ); ?>"></i>
+						</span>
+					<?php endif; ?>
+				</div>
 				
 				<?php the_sub_field( 'second_column_card_title' ); ?>
 				
