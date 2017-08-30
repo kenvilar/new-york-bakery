@@ -138,7 +138,10 @@ img.custom-logo {
 	height: 55px;
 	margin-top: 10px;
 }
-header #navbar-primary .menu-small-screen img.custom-logo { margin-top: inherit; }
+header #navbar-primary .menu-small-screen img.custom-logo {
+	margin-top: inherit;
+	margin-left: -30px;
+}
 header .fixed {
 	position: fixed;
 	top: 0;
@@ -558,6 +561,10 @@ form { display: inline-block; }
 	margin-bottom: 10px;
 	padding-left: 10px;
 }
+.contact-us input:focus, .contact-us textarea:focus {
+	border: 1px solid #009688;
+	outline: 0;
+}
 .contact-us input::-webkit-input-placeholder, .contact-us textarea::-webkit-input-placeholder {
 	color: #9B9B9B;
 	font-family: "Avenir Next", sans-serif;
@@ -691,6 +698,9 @@ form { display: inline-block; }
 	.container-fluid > .navbar-collapse {
 		margin-left: 0;
 		margin-right: 0;
+	}
+	header #navbar-primary .menu-small-screen img.custom-logo {
+		margin-left: 0;
 	}
 	/*top search*/
 	.navbar-nav input[type="search"]:focus {
