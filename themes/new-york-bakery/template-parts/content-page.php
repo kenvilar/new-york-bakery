@@ -14,7 +14,7 @@
 the_content();
 
 if ( get_field( 'contact_us_shortcode' ) ) : ?>
-	<div class="gray-bg"><?php the_field( 'contact_us_shortcode' ) ?></div>
+	<div class="gray-bg contact-form-container"><?php the_field( 'contact_us_shortcode' ) ?></div>
 <?php endif;
 wp_reset_query();
 
