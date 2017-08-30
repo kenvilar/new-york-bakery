@@ -147,9 +147,12 @@ function new_york_bakery_styles() {
 	wp_enqueue_style( 'bootstrap-css',
 		get_template_directory_uri() . '/assets/bower_components/bootstrap/dist/css/bootstrap.min.css',
 		array(), get_bloginfo( 'version' ), 'all' );
+	wp_enqueue_style( 'ionicons-css',
+		get_template_directory_uri() . '/assets/bower_components/Ionicons/css/ionicons.min.css',
+		array(), get_bloginfo( 'version' ), 'all' );
 	wp_enqueue_style( 'custom-css',
 		get_template_directory_uri() . '/assets/css/custom.css',
-		array( 'bootstrap-css' ), null, 'all' );
+		array(), null, 'all' );
 }
 
 add_action( 'wp_enqueue_scripts', 'new_york_bakery_styles' );
