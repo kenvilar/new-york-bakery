@@ -9,6 +9,12 @@
  * @package New_York_Bakery
  */
 
+header( "Cache-Control: must-revalidate" );
+
+$offset = 60 * 60 * 24 * 2;
+$expStr = "Expires: " . gmdate( "D, d M Y H:i:s", time() + $offset ) . " GMT";
+header( $expStr );
+
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
