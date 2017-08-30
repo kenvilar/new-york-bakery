@@ -747,7 +747,7 @@ form { display: inline-block; }
 	}
 	/*About Us*/
 	.page-template-template-about #issues li { width: 260px; }
-	#issues { padding-left: 0; }
+	#issues { padding-left: 10px; }
 	/*Product Development*/
 	.product-development-cards { margin: 0; }
 }
