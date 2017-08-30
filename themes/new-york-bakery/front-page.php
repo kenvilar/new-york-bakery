@@ -41,10 +41,12 @@ get_header(); ?>
 										     style="background-image: url(<?php the_sub_field( 'first_column_background_image' ); ?>);
 												     height: 237px;">
 											<span class="plus-for-hover">
-												<img alt="icon" src="<?php echo get_template_directory_uri() . '/assets/images/plus.svg'; ?>"/>
+												<img alt="icon"
+												     src="<?php echo get_template_directory_uri() . '/assets/images/plus.svg'; ?>"/>
 											</span>
 											<span class="o-for-hover" style="display: none;">
-												<img alt="icon" src="<?php echo get_template_directory_uri() . '/assets/images/open.png'; ?>"/>
+												<img alt="icon"
+												     src="<?php echo get_template_directory_uri() . '/assets/images/open.png'; ?>"/>
 											</span>
 										</div>
 									<?php endif; ?>
@@ -54,7 +56,8 @@ get_header(); ?>
 								<h4><?php the_sub_field( 'first_column_title' ); ?></h4>
 							<?php endif; ?>
 							<?php if ( get_sub_field( 'first_column_link' ) ) : ?>
-								<p><a href="<?php the_sub_field( 'first_column_link' ); ?>">learn more</a></p>
+								<p class="learn-more"><a href="<?php the_sub_field( 'first_column_link' ); ?>">learn
+										more</a></p>
 							<?php endif; ?>
 						</div>
 					</div>
@@ -68,10 +71,12 @@ get_header(); ?>
 										     style="background-image: url(<?php the_sub_field( 'second_column_background_image' ); ?>);
 												     height: 237px;">
 											<span class="plus-for-hover">
-												<img alt="icon" src="<?php echo get_template_directory_uri() . '/assets/images/plus.svg'; ?>"/>
+												<img alt="icon"
+												     src="<?php echo get_template_directory_uri() . '/assets/images/plus.svg'; ?>"/>
 											</span>
 											<span class="o-for-hover" style="display: none;">
-												<img alt="icon" src="<?php echo get_template_directory_uri() . '/assets/images/open.png'; ?>"/>
+												<img alt="icon"
+												     src="<?php echo get_template_directory_uri() . '/assets/images/open.png'; ?>"/>
 											</span>
 										</div>
 									<?php endif; ?>
@@ -81,7 +86,8 @@ get_header(); ?>
 								<h4><?php the_sub_field( 'second_column_title' ); ?></h4>
 							<?php endif; ?>
 							<?php if ( get_sub_field( 'second_column_link' ) ) : ?>
-								<p><a href="<?php the_sub_field( 'second_column_link' ); ?>">learn more</a></p>
+								<p class="learn-more"><a href="<?php the_sub_field( 'second_column_link' ); ?>">learn
+										more</a></p>
 							<?php endif; ?>
 						</div>
 					</div>
