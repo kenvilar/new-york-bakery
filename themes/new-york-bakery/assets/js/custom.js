@@ -2,6 +2,13 @@
 
 	$( document ).ready( function() {
 
+		/* Hover effects in front page cards */
+		$( '.learn-more' ).hover( function() {
+			$( this ).parents( '.front-page-card' ).last().addClass( 'add-hover-front-page' );
+		}, function() {
+			$( this ).parents( '.front-page-card' ).last().removeClass( 'add-hover-front-page' );
+		} );
+
 		/* scroll and fixed the menu */
 		$( window ).bind( 'scroll', function() {
 			var navbarmenu = $( '.navbar' );
