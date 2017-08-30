@@ -631,6 +631,12 @@ form { display: inline-block; }
 	/*Menu*/
 	header #navbar-primary .menu-hd { display: none !important; }
 	header #navbar-primary .menu-small-screen { display: block !important; }
+	header #navbar-primary .menu-small-screen .navbar-toggle {
+		padding-right: 0;
+		margin-right: 0;
+	}
+	header #navbar-primary .menu-small-screen .navbar-toggle:focus,
+	header #navbar-primary .menu-small-screen .navbar-toggle:hover { border: none; }
 	.side-collapse ul li:first-child { padding-top: 35px; }
 	.side-collapse ul li {
 		width: 100%;
