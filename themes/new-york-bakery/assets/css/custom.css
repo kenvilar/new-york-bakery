@@ -289,6 +289,21 @@ header #navbar-primary .navbar-nav > li > a:hover { background-color: transparen
 	background-size: cover;
 	background-repeat: no-repeat;
 }
+.product-development-icon {
+	float: right;
+	padding: 14px;
+}
+i.icon:before { color: #fff; }
+.product-development-icon.size-12 { font-size: 12px; }
+.product-development-icon.size-14 { font-size: 14px; }
+.product-development-icon.size-16 { font-size: 16px; }
+.product-development-icon.size-18 { font-size: 18px; }
+.product-development-icon.size-21 { font-size: 21px; }
+.product-development-icon.size-24 { font-size: 24px; }
+.product-development-icon.size-32 { font-size: 32px; }
+.product-development-icon.size-48 { font-size: 48px; }
+.product-development-icon.size-64 { font-size: 64px; }
+.product-development-icon.size-96 { font-size: 96px; }
 /*
 ============== Front Page ==============
 */
@@ -313,6 +328,9 @@ header #navbar-primary .navbar-nav > li > a:hover { background-color: transparen
 	float: right;
 	color: #fff;
 	font-weight: 700;
+}
+.front-page .plus-for-hover, .front-page .o-for-hover {
+	padding: 10px;
 }
 .front-page .front-page-card h4 {
 	text-transform: uppercase;
@@ -343,6 +361,7 @@ footer { background: #292929; }
 footer .widget-title {
 	font-size: 14px;
 	color: #636262;
+	font-weight: 700;
 }
 footer .textwidget p {
 	font-size: 14px;
