@@ -3,12 +3,13 @@
 	$( document ).ready( function() {
 
 		/* scroll and fixed the menu */
-		var navbarmenu = $( '.navbar' );
-		$( window ).scroll( function() {
-			if ( $( this ).scrollTop() > 49 ) {
-				navbarmenu.addClass( "fixed" );
+		$( window ).bind( 'scroll', function() {
+			var navbarmenu = $( '.navbar' );
+			var navHeight = $( window ).height() - $( window ).height();
+			if ( $( window ).scrollTop() > navHeight ) {
+				navbarmenu.addClass( 'fixed' );
 			} else {
-				navbarmenu.removeClass( "fixed" );
+				navbarmenu.removeClass( 'fixed' );
 			}
 		} );
 
