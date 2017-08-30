@@ -19,7 +19,11 @@ Shortcodes:
 
 [gray-bg]<content-here>[/gray-bg] ===> for gray background div
 
- 
+To run bower
+-----------
+bower install <package_name> --save
+
+* To install the package the exact version, put { "save-exact": true } in .bowerrc file
 
 Description
 -----------
