@@ -234,16 +234,9 @@ header #navbar-primary .navbar-nav > li > a:hover { background-color: transparen
 	font-size: 18px;
 	color: #898989;
 	top: 75px;
-	background-color: rgba(41, 41, 41, 0.85);
+	background-color: rgba(41, 41, 41, 0.95);
 	z-index: 1;
 	cursor: text;
-}
-.navbar-nav input[type="submit"]:hover,
-.navbar-nav input[type="submit"]:focus,
-.navbar-nav input[type="submit"]:active,
-.navbar-nav input[type="submit"]:hover {
-	background: url(../images/search-red-hover.png) center center no-repeat !important;
-	outline: 0;
 }
 .navbar-nav input[type="submit"] {
 	height: 67px;
@@ -260,6 +253,14 @@ header #navbar-primary .navbar-nav > li > a:hover { background-color: transparen
 	z-index: 2;
 	cursor: pointer;
 	transition: opacity .4s ease;
+	outline: 0;
+}
+input.search-submit:hover,
+input.search-submit:active,
+.navbar-nav input[type="search"]:focus + input.search-submit,
+.navbar-nav input[type="search"]:active + input.search-submit {
+	background: url(../images/search-red-hover.png) center center no-repeat !important;
+	outline: 0;
 }
 .navbar-nav input[type="submit"]:hover { opacity: 0.8; }
 .navbar-nav input::-webkit-input-placeholder { border-bottom: 1px solid #979797; }
