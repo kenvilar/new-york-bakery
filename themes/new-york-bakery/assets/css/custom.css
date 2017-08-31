@@ -185,6 +185,7 @@ header #navbar-primary .menu-small-screen .navbar-nav {
 	padding-top: 10px;
 	padding-bottom: 10px;
 }
+header #navbar-primary .menu-small-screen .navbar-toggle .icon-bar { height: 3px; }
 header #navbar-primary .navbar-nav > li {
 	display: inline-block;
 	float: none;
