@@ -688,6 +688,9 @@ form { display: inline-block; }
 	body { background-color: #fff; }
 	.new-york-bakery-container-fluid { background-color: #292929; }
 }
+@media only screen and (max-width: 1136px) {
+	.banner-section .top-banner-two-columns { padding: 22px 100px 25px; }
+}
 @media only screen and (max-width: 1024px) {
 	.row.top-banner-two-columns { padding-left: 115px; }
 }
@@ -706,7 +709,7 @@ form { display: inline-block; }
 	.page-template-template-about .gray-bg.timeline-history { padding: 22px 40px 25px !important; }
 	.page-template-template-about #issues li { width: 700px; }
 	/*Banner*/
-	.row.top-banner-two-columns { padding-left: 0 !important; }
+	.banner-section .top-banner-two-columns { padding: 0; }
 	/*jQuery Timeline Slider*/
 	.timeline-header { width: auto; }
 	#timeline { width: auto; }
@@ -742,6 +745,8 @@ form { display: inline-block; }
 	header #navbar-primary .menu-small-screen img.custom-logo {
 		margin-left: 0;
 	}
+	/*Banner*/
+	.banner-section { padding: 110px 0 110px 25px; }
 	/*top search*/
 	.navbar-nav input[type="search"]:focus {
 		padding: 0 100px;
@@ -780,7 +785,7 @@ form { display: inline-block; }
 @media only screen and (max-width: 320px) {
 	.white-bg, .gray-bg { padding: 0 10px !important; }
 	/*Banner*/
-	.banner-section { padding: 0; }
+	.banner-section { padding: 110px 0 110px 0px; }
 	.row.top-banner-two-columns { text-align: center; }
 	/*Front Page*/
 	.front-page .front-page-top-content {
