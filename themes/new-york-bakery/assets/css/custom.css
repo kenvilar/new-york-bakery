@@ -733,6 +733,8 @@ form { display: inline-block; }
 		top: 92px !important;
 		padding-left: 0;
 	}
+	/*menu/burger icon on top menu*/
+	header #navbar-primary .menu-small-screen { padding-left: 15px !important; }
 	/*search icon on top menu*/
 	.navbar-nav input[type="submit"] { top: 20px }
 	.navbar-nav input[type="search"]:focus {
@@ -781,6 +783,10 @@ form { display: inline-block; }
 	/*About Us*/
 	.page-template-template-about #issues li { width: 300px; }
 }
+@media only screen and (max-width: 420px) {
+	/*All Pages*/
+	.white-bg, .gray-bg { padding: 22px 10px 25px !important; }
+}
 @media only screen and (max-width: 401px) {
 	/*Footer*/
 	footer .site-container {
@@ -789,7 +795,6 @@ form { display: inline-block; }
 	}
 }
 @media only screen and (max-width: 320px) {
-	.white-bg, .gray-bg { padding: 0 10px !important; }
 	/*Banner*/
 	.banner-section { padding: 110px 0 110px 0; }
 	.row.top-banner-two-columns { text-align: center; }
