@@ -733,6 +733,12 @@ form { display: inline-block; }
 		top: 92px !important;
 		padding-left: 0;
 	}
+	/*search icon on top menu*/
+	.navbar-nav input[type="submit"] { top: 20px }
+	.navbar-nav input[type="search"]:focus {
+		top: 90px;
+		padding: 0 100px;
+	}
 }
 @media only screen and (max-width: 640px) {
 	/*Menu Toggle*/
@@ -785,7 +791,7 @@ form { display: inline-block; }
 @media only screen and (max-width: 320px) {
 	.white-bg, .gray-bg { padding: 0 10px !important; }
 	/*Banner*/
-	.banner-section { padding: 110px 0 110px 0px; }
+	.banner-section { padding: 110px 0 110px 0; }
 	.row.top-banner-two-columns { text-align: center; }
 	/*Front Page*/
 	.front-page .front-page-top-content {
