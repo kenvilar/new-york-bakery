@@ -576,6 +576,7 @@ footer.comment-meta, footer.entry-footer { background: transparent; }
 #next {
 	right: 0;
 	background-image: url('../images/next.png');
+	opacity: 0;
 }
 #prev {
 	left: 0;
