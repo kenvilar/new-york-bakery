@@ -66,7 +66,15 @@ header( $expStr );
 			<div class="collapse navbar-collapse menu-hd">
 				<ul class="nav navbar-nav">
 					<li class="active">
-						<?php the_custom_logo(); ?>
+						<a href="<?php echo home_url( '/' ); ?>" class="custom-logo-link" rel="home" itemprop="url">
+							<?php
+							$custom_logo_id = get_theme_mod( 'custom_logo' );
+							$image          = wp_get_attachment_image_src( $custom_logo_id, 'full' );
+							?>
+							<img width="1085" height="495"
+							     src="<?php echo $image[0] . '?ver=' . get_bloginfo( 'version' ); ?>"
+							     class="custom-logo" alt="new-york-bakery-logo" itemprop="logo">
+						</a>
 					</li>
 					<ul class="nav navbar-nav navbar-right menu-hd-right menus">
 						<li class="search-menu-hd">
@@ -123,7 +131,15 @@ header( $expStr );
 						     alt="menu-close">
 					</button>
 					<li class="active">
-						<?php the_custom_logo(); ?>
+						<a href="<?php echo home_url( '/' ); ?>" class="custom-logo-link" rel="home" itemprop="url">
+							<?php
+							$custom_logo_id = get_theme_mod( 'custom_logo' );
+							$image          = wp_get_attachment_image_src( $custom_logo_id, 'full' );
+							?>
+							<img width="1085" height="495"
+							     src="<?php echo $image[0] . '?ver=' . get_bloginfo( 'version' ); ?>"
+							     class="custom-logo" alt="new-york-bakery-logo" itemprop="logo">
+						</a>
 					</li>
 					<form role="search" method="get" action="<?php echo home_url( '/' ); ?>">
 						<input id="search" type="search" class="search-field"
