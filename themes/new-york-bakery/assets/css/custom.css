@@ -704,6 +704,11 @@ form { display: inline-block; }
 	.white-bg, .gray-bg { padding: 22px 60px 25px; }
 	/*Banner*/
 	.banner-section .top-banner-two-columns { padding: 22px 100px 25px 0; }
+	/*Buttons*/
+	.contact-us input[type="submit"] {
+		display: block;
+		margin: 0 auto;
+	}
 }
 @media only screen and (min-width: 768px) {
 	.collapse.navbar-collapse.menu-list-mobile { display: none !important; }
