@@ -13,7 +13,7 @@
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 
 				<div class="product-development-card-image"
-				     style="background-image: url(<?php the_sub_field( 'first_column_card_image' ); ?>)">
+				     style="background-image: url(<?php the_sub_field( 'first_column_card_image' ); ?>?ver=<?php echo get_bloginfo( 'version' ); ?>)">
 					<?php if ( get_sub_field( 'first_column_icon' ) ) : ?>
 						<span class="product-development-icon step size-24">
 							<i class="icon <?php the_sub_field( 'first_column_icon' ); ?>"></i>
@@ -33,7 +33,7 @@
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
 
 				<div class="product-development-card-image"
-				     style="background-image: url(<?php the_sub_field( 'second_column_card_image' ); ?>)">
+				     style="background-image: url(<?php the_sub_field( 'second_column_card_image' ); ?>?ver=<?php echo get_bloginfo( 'version' ); ?>)">
 					<?php if ( get_sub_field( 'second_column_icon' ) ) : ?>
 						<span class="product-development-icon step size-24">
 							<i class="icon <?php the_sub_field( 'second_column_icon' ); ?>"></i>
@@ -66,18 +66,18 @@
 				<span class="first-column-card-title"><?php the_sub_field( 'first_column_card_title' ); ?></span>
 
 				<div class="product-development-toggle-show-content">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-down.png" alt="icon">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-down.png?ver=<?php echo get_bloginfo( 'version' ); ?>" alt="icon">
 				</div>
 
 				<div class="product-development-toggle-content" style="display: none;">
 					<div class="product-development-card-image"
-					     style="background-image: url(<?php the_sub_field( 'first_column_card_image' ); ?>)">
+					     style="background-image: url(<?php the_sub_field( 'first_column_card_image' ); ?>?ver=<?php echo get_bloginfo( 'version' ); ?>)">
 					</div>
 
 					<span class="content"><?php the_sub_field( 'first_column_card_content' ); ?></span>
 
 					<div class="product-development-toggle-hide-content">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-up.png" alt="icon">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-up.png?ver=<?php echo get_bloginfo( 'version' ); ?>" alt="icon">
 					</div>
 				</div>
 
@@ -96,18 +96,18 @@
 				<span class="first-column-card-title"><?php the_sub_field( 'second_column_card_title' ); ?></span>
 
 				<div class="product-development-toggle-show-content">
-					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-down.png" alt="icon">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-down.png?ver=<?php echo get_bloginfo( 'version' ); ?>" alt="icon">
 				</div>
 
 				<div class="product-development-toggle-content" style="display: none;">
 					<div class="product-development-card-image"
-					     style="background-image: url(<?php the_sub_field( 'second_column_card_image' ); ?>)">
+					     style="background-image: url(<?php the_sub_field( 'second_column_card_image' ); ?>?ver=<?php echo get_bloginfo( 'version' ); ?>)">
 					</div>
 
 					<span class="content"><?php the_sub_field( 'second_column_card_content' ); ?></span>
 
 					<div class="product-development-toggle-hide-content">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-up.png" alt="icon">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-up.png?ver=<?php echo get_bloginfo( 'version' ); ?>" alt="icon">
 					</div>
 				</div>
 

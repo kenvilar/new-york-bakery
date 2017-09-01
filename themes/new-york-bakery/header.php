@@ -119,7 +119,7 @@ header( $expStr );
 					        data-toggle="collapse-side"
 					        data-target=".side-collapse"
 					        data-target-2=".new-york-bakery-container-fluid" style="display: none;">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/close.svg?ver=4.8.1"
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/close.svg?ver=<?php echo get_bloginfo( 'version' ); ?>"
 						     alt="menu-close">
 					</button>
 					<li class="active">
@@ -148,9 +148,9 @@ header( $expStr );
 		<div class="banner-section"
 		     style="<?php
 		     if ( has_post_thumbnail( $post->ID ) ) : ?>
-				     background-image: url(<?php echo the_post_thumbnail_url(); ?>);
+				     background-image: url(<?php echo the_post_thumbnail_url(); ?>?ver=<?php echo get_bloginfo( 'version' ); ?>);
 		     <?php else : ?>
-				     background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/landing-page-banner-img.jpg);
+				     background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/landing-page-banner-img.jpg?ver=<?php echo get_bloginfo( 'version' ); ?>);
 		     <?php endif; ?>">
 
 			<div class="container-fluid">
