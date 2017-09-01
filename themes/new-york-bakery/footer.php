@@ -42,6 +42,18 @@
 
 </div> <!--.new-york-bakery-container-fluid-->
 
+<script>
+	if ( 'serviceWorker' in navigator ) {
+		console.log( "Will the service worker register?" );
+		navigator.serviceWorker.register( '<?php echo get_template_directory_uri(); ?>/service-worker.js' )
+			.then( function( reg ) {
+				console.log( "Yes, it did." );
+			} ).catch( function( err ) {
+			console.log( "No it didn't. This happened: ", err );
+		} );
+	}
+</script>
+
 <?php wp_footer(); ?>
 
 </body>

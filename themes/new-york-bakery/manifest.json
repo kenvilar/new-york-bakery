@@ -1,0 +1,15 @@
+{
+  "short_name": "NYBakery",
+  "name": "New York Bakery",
+  "icons": [
+    {
+      "src": "wp-content/themes/new-york-bakery/assets/images/loading.png",
+      "sizes": "120x55",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/?utm_source=homescreen",
+  "background_color": "#fff",
+  "theme_color": "#292929",
+  "display": "standalone"
+}

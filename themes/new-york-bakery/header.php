@@ -20,6 +20,7 @@ header( $expStr );
 <html <?php language_attributes(); ?>>
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
+	<meta name="theme-color" content="#292929"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	
@@ -28,6 +29,7 @@ header( $expStr );
 	if ( get_field( 'page_css' ) ) :
 		require get_template_directory() . '/inc/custom-page-css.php';
 	endif; ?>
+	<link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/manifest.json">
 </head>
 
 <body <?php body_class(); ?>>
