@@ -59,7 +59,7 @@
 
 		//Adjust next and prev timeline icons when width resize
 		window.onload = window.onresize = function() {
-			var nextAndPrevWidth = window.innerWidth; /*var nextAndPrevHeight = window.innerHeight;*/
+			var nextAndPrevWidth = window.innerWidth;
 			var next = $( '#next' );
 			var prev = $( '#prev' );
 			//var viewportWidthRatio = window.innerWidth * 0.8; //In case when viewport is used
@@ -87,15 +87,15 @@
 			//Min Width
 			if ( nextAndPrevWidth > 1024 || nextAndPrevWidth === 1024 ) {
 				next.css( 'right', ((nextAndPrevWidth / 2) / 2) / 2 - 50 + 'px' );
-				prev.css( 'right', ((nextAndPrevWidth / 2) / 2) / 2 - 50 + 'px' );
+				prev.css( 'left', ((nextAndPrevWidth / 2) / 2) / 2 - 50 + 'px' );
 			}
 			if ( nextAndPrevWidth > 1679 ) {
 				next.css( 'right', ((nextAndPrevWidth / 2) / 2) - 50 + 'px' );
-				prev.css( 'right', ((nextAndPrevWidth / 2) / 2) - 50 + 'px' );
+				prev.css( 'left', ((nextAndPrevWidth / 2) / 2) - 50 + 'px' );
 			}
 			if ( nextAndPrevWidth > 2559 ) {
 				next.css( 'right', ((nextAndPrevWidth / 2) - 500) + 'px' );
-				prev.css( 'right', ((nextAndPrevWidth / 2) - 500) + 'px' );
+				prev.css( 'left', ((nextAndPrevWidth / 2) - 500) + 'px' );
 			}
 		};
 

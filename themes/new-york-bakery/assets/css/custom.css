@@ -740,6 +740,10 @@ form { display: inline-block; }
 @media only screen and (max-width: 1136px) {
 	.banner-section .top-banner-two-columns { padding: 22px 100px 25px; }
 }
+@media only screen and (min-width: 1024px) {
+	/*jQuery Timeline slider*/
+	#next, #prev { margin-top: -160px; }
+}
 @media only screen and (max-width: 1024px) {
 	.row.top-banner-two-columns { padding-left: 115px; }
 }
