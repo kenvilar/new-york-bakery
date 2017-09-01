@@ -117,7 +117,7 @@ header( $expStr );
 					        data-toggle="collapse-side"
 					        data-target=".side-collapse"
 					        data-target-2=".new-york-bakery-container-fluid" style="display: none;">
-						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/close.svg"
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/close.svg?ver=4.8.1"
 						     alt="menu-close">
 					</button>
 					<li class="active">
