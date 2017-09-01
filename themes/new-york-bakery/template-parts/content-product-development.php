@@ -65,7 +65,9 @@
 
 				<span class="first-column-card-title"><?php the_sub_field( 'first_column_card_title' ); ?></span>
 
-				<div class="product-development-toggle-show-content">plus</div>
+				<div class="product-development-toggle-show-content">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-down.png" alt="icon">
+				</div>
 
 				<div class="product-development-toggle-content" style="display: none;">
 					<div class="product-development-card-image"
@@ -74,7 +76,9 @@
 
 					<span class="content"><?php the_sub_field( 'first_column_card_content' ); ?></span>
 
-					<div class="product-development-toggle-hide-content">minus</div>
+					<div class="product-development-toggle-hide-content">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-up.png" alt="icon">
+					</div>
 				</div>
 
 			</div>
@@ -91,7 +95,9 @@
 
 				<span class="first-column-card-title"><?php the_sub_field( 'second_column_card_title' ); ?></span>
 
-				<div class="product-development-toggle-show-content">plus</div>
+				<div class="product-development-toggle-show-content">
+					<img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-down.png" alt="icon">
+				</div>
 
 				<div class="product-development-toggle-content" style="display: none;">
 					<div class="product-development-card-image"
@@ -100,7 +106,9 @@
 
 					<span class="content"><?php the_sub_field( 'second_column_card_content' ); ?></span>
 
-					<div class="product-development-toggle-hide-content">minus</div>
+					<div class="product-development-toggle-hide-content">
+						<img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-up.png" alt="icon">
+					</div>
 				</div>
 
 			</div>
