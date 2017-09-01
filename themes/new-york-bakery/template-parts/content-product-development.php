@@ -64,16 +64,16 @@
 				<?php endif; ?>
 
 				<span class="first-column-card-title"><?php the_sub_field( 'first_column_card_title' ); ?></span>
-				
+
 				<div class="product-development-toggle-show-content">plus</div>
 
 				<div class="product-development-toggle-content" style="display: none;">
 					<div class="product-development-card-image"
 					     style="background-image: url(<?php the_sub_field( 'first_column_card_image' ); ?>)">
 					</div>
-					
-					<?php the_sub_field( 'first_column_card_content' ); ?>
-					
+
+					<span class="content"><?php the_sub_field( 'first_column_card_content' ); ?></span>
+
 					<div class="product-development-toggle-hide-content">minus</div>
 				</div>
 
@@ -97,8 +97,8 @@
 					<div class="product-development-card-image"
 					     style="background-image: url(<?php the_sub_field( 'second_column_card_image' ); ?>)">
 					</div>
-					
-					<?php the_sub_field( 'second_column_card_content' ); ?>
+
+					<span class="content"><?php the_sub_field( 'second_column_card_content' ); ?></span>
 
 					<div class="product-development-toggle-hide-content">minus</div>
 				</div>
