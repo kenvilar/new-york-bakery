@@ -2,6 +2,11 @@
 
 	$( document ).ready( function() {
 
+		//Animate loader off screen / Logo Display when website load
+		$( window ).load( function() {
+			$( ".newyorkbakery-pre-con" ).fadeOut( 'fast' );
+		} );
+
 		/* Hover effects in front page cards */
 		$( '.learn-more' ).hover( function() {
 			$( this ).parents( '.front-page-card' ).last().addClass( 'add-hover-front-page' );
@@ -135,7 +140,6 @@
 				prev.css( 'opacity', '1' );
 			}
 		};
-
 
 	} );
 
