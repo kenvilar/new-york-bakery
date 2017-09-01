@@ -39,6 +39,51 @@
 			$( "#navbar-toggle-open" ).show( 1 );
 		} );
 
+		//Adjust next and prev timeline icons when width resize
+		window.onload = window.onresize = function() {
+			var viewportWidthRatio = window.innerWidth * 0.8;
+			var nextAndPrevWidth = window.innerWidth;
+
+			//Max Width
+			if ( nextAndPrevWidth < 1023 || nextAndPrevWidth === 1023 ) {
+				$( '#next' ).css( 'right', ( ( nextAndPrevWidth - ( nextAndPrevWidth / 2 ) ) - 70 ) + 'px' );
+				$( '#next' ).css( 'bottom', '300px' );
+				$( '#prev' ).css( 'left', ( ( nextAndPrevWidth - ( nextAndPrevWidth / 2 ) ) - 70 ) + 'px' );
+				$( '#prev' ).css( 'bottom', '300px' );
+			}
+			if ( nextAndPrevWidth < 992 || nextAndPrevWidth === 992 ) {
+				$( '#next' ).css( 'bottom', '500px' );
+				$( '#prev' ).css( 'bottom', '500px' );
+			}
+			if ( nextAndPrevWidth < 769 ) {
+				$( '#next' ).css( 'bottom', '480px' );
+				$( '#prev' ).css( 'bottom', '480px' );
+			}
+			if ( nextAndPrevWidth < 271 ) {
+				$( '#next' ).css( 'bottom', '525px' );
+				$( '#prev' ).css( 'bottom', '525px' );
+			}
+
+			//Min Width
+			if ( nextAndPrevWidth > 1024 || nextAndPrevWidth === 1024 ) {
+				$( '#next' ).css( 'right', nextAndPrevWidth / 6 - 100 + 'px' );
+				$( '#next' ).css( 'bottom', '470px' );
+				$( '#prev' ).css( 'left', nextAndPrevWidth / 6 - 100 + 'px' );
+				$( '#prev' ).css( 'bottom', '470px' );
+			}
+			if ( nextAndPrevWidth > 1679 || nextAndPrevWidth === 1680 ) {
+				$( '#next' ).css( 'right', nextAndPrevWidth / 3 - 200 + 'px' );
+				$( '#next' ).css( 'bottom', '190px' );
+				$( '#prev' ).css( 'left', nextAndPrevWidth / 3 - 200 + 'px' );
+				$( '#prev' ).css( 'bottom', '190px' );
+			}
+			if ( nextAndPrevWidth > 2559 ) {
+				$( '#next' ).css( 'right', nextAndPrevWidth / 3 + 'px' );
+				$( '#prev' ).css( 'left', nextAndPrevWidth / 3 + 'px' );
+			}
+		};
+
+
 	} );
 
 })( jQuery );
