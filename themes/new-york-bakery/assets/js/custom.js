@@ -24,7 +24,7 @@
 		var newYorkBakerySideMenu = $( '[data-toggle=collapse-side]' );
 		var newYorkBakerySideMenuRes = newYorkBakerySideMenu.attr( 'data-target' );
 		var newYorkBakerySideMenuRes2 = newYorkBakerySideMenu.attr( 'data-target-2' );
-		newYorkBakerySideMenu.click( function( event ) {
+		newYorkBakerySideMenu.click( function() {
 			$( newYorkBakerySideMenuRes ).toggleClass( 'in' );
 			$( newYorkBakerySideMenuRes2 ).toggleClass( 'out' );
 		} );
@@ -96,14 +96,6 @@
 				prev.css( 'bottom', '470px' );
 				prev.css( 'opacity', '1' );
 			}
-			/*if ( nextAndPrevWidth > 1679 || nextAndPrevWidth === 1680 ) {
-				next.css( 'right', nextAndPrevWidth / 3 - 200 + 'px' );
-				next.css( 'bottom', '190px' );
-				next.css( 'opacity', '1' );
-				prev.css( 'left', nextAndPrevWidth / 3 - 200 + 'px' );
-				prev.css( 'bottom', '190px' );
-				prev.css( 'opacity', '1' );
-			}*/
 			if ( nextAndPrevWidth === 1280 || nextAndPrevWidth > 1280 ) {
 				next.css( 'right', nextAndPrevWidth / 5 - 80 + 'px' );
 				next.css( 'bottom', '470px' );
