@@ -96,7 +96,39 @@
 				prev.css( 'bottom', '470px' );
 				prev.css( 'opacity', '1' );
 			}
-			if ( nextAndPrevWidth > 1679 || nextAndPrevWidth === 1680 ) {
+			/*if ( nextAndPrevWidth > 1679 || nextAndPrevWidth === 1680 ) {
+				next.css( 'right', nextAndPrevWidth / 3 - 200 + 'px' );
+				next.css( 'bottom', '190px' );
+				next.css( 'opacity', '1' );
+				prev.css( 'left', nextAndPrevWidth / 3 - 200 + 'px' );
+				prev.css( 'bottom', '190px' );
+				prev.css( 'opacity', '1' );
+			}*/
+			if ( nextAndPrevWidth === 1280 || nextAndPrevWidth > 1280 ) {
+				next.css( 'right', nextAndPrevWidth / 5 - 80 + 'px' );
+				next.css( 'bottom', '470px' );
+				next.css( 'opacity', '1' );
+				prev.css( 'left', nextAndPrevWidth / 5 - 80 + 'px' );
+				prev.css( 'bottom', '470px' );
+				prev.css( 'opacity', '1' );
+			}
+			if ( nextAndPrevWidth === 1366 || nextAndPrevWidth > 1366 ) {
+				next.css( 'right', nextAndPrevWidth / 6 + 'px' );
+				next.css( 'bottom', '470px' );
+				next.css( 'opacity', '1' );
+				prev.css( 'left', nextAndPrevWidth / 6 + 'px' );
+				prev.css( 'bottom', '470px' );
+				prev.css( 'opacity', '1' );
+			}
+			if ( nextAndPrevWidth === 1680 ) {
+				next.css( 'right', nextAndPrevWidth / 3 - 200 + 'px' );
+				next.css( 'bottom', '190px' );
+				next.css( 'opacity', '1' );
+				prev.css( 'left', nextAndPrevWidth / 3 - 200 + 'px' );
+				prev.css( 'bottom', '190px' );
+				prev.css( 'opacity', '1' );
+			}
+			if ( nextAndPrevWidth === 1681 || nextAndPrevWidth > 1681 ) {
 				next.css( 'right', nextAndPrevWidth / 3 - 200 + 'px' );
 				next.css( 'bottom', '190px' );
 				next.css( 'opacity', '1' );
