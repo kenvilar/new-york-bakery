@@ -718,6 +718,9 @@ form { display: inline-block; }
 		margin: 0 auto !important;
 	}
 	.contact-form-container { padding: 22px 0 !important; }
+	/*Product Development Page*/
+	.product-development-cards { display: block; }
+	.product-development-cards.mobile { display: none; }
 }
 @media only screen and (max-width: 768px) {
 	/*All Pages*/
@@ -744,6 +747,24 @@ form { display: inline-block; }
 	}
 	footer .footer-container-widget .widget { margin-bottom: 0; }
 	footer .footer-container-widget:last-child .widget { margin-bottom: 35px; }
+	/*Product Development Page*/
+	.product-development-cards { display: none; }
+	.product-development-cards.mobile {
+		display: block;
+		margin-top: 10px;
+	}
+	.product-development-cards.mobile i.icon:before { color: #000; }
+	.product-development-cards.mobile .product-development-icon {
+		display: block;
+		float: none;
+		text-align: center;
+	}
+	.product-development-cards.mobile .first-column-card-title { text-align: center; }
+	.product-development-cards.mobile .product-development-toggle-show-content,
+	.product-development-cards.mobile .product-development-toggle-hide-content {
+		display: block;
+		text-align: center;
+	}
 }
 @media only screen and (max-width: 767px) {
 	.side-collapse {
