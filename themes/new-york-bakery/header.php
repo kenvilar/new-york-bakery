@@ -136,12 +136,7 @@ header( $expStr );
 	</nav>
 </header>
 
-<?php
-/*wp_nav_menu( array(
-	'theme_location' => 'menu-1',
-	'menu_id'        => 'primary-menu',
-) );
-*/ ?>
+<div class="newyorkbakery-pre-con"></div>
 
 <div class="new-york-bakery-container-fluid">
 	
