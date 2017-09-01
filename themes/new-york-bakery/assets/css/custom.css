@@ -486,6 +486,7 @@ footer.comment-meta, footer.entry-footer { background: transparent; }
 	opacity: 0.8;
 	font-size: 4px;
 	top: 25px;
+	left: 80px;
 	position: relative;
 	border-radius: 50px;
 	padding-bottom: 5px;
