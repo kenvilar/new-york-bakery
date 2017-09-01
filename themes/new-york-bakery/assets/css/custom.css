@@ -580,6 +580,7 @@ footer.comment-meta, footer.entry-footer { background: transparent; }
 	font-size: 16px;
 	margin-right: 70px;
 	margin-left: 10px;
+	margin-bottom: 55px;
 	font-weight: normal;
 	line-height: 28px;
 	font-family: Roboto, sans-serif;
@@ -615,7 +616,6 @@ footer.comment-meta, footer.entry-footer { background: transparent; }
 #next {
 	right: 0;
 	background-image: url('../images/next.png');
-	opacity: 0;
 }
 #prev {
 	left: 0;
