@@ -59,7 +59,7 @@
 
 		//Adjust next and prev timeline icons when width resize
 		window.onload = window.onresize = function() {
-			var nextAndPrevWidth = window.innerWidth;
+			var nextAndPrevWidth = window.innerWidth; /*var nextAndPrevHeight = window.innerHeight;*/
 			var next = $( '#next' );
 			var prev = $( '#prev' );
 			//var viewportWidthRatio = window.innerWidth * 0.8; //In case when viewport is used
@@ -68,76 +68,34 @@
 			if ( nextAndPrevWidth < 1023 || nextAndPrevWidth === 1023 ) {
 				next.css( 'right', ( ( nextAndPrevWidth - ( nextAndPrevWidth / 2 ) ) - 70 ) + 'px' );
 				next.css( 'bottom', '300px' );
-				next.css( 'opacity', '1' );
 				prev.css( 'left', ( ( nextAndPrevWidth - ( nextAndPrevWidth / 2 ) ) - 70 ) + 'px' );
 				prev.css( 'bottom', '300px' );
-				prev.css( 'opacity', '1' );
 			}
 			if ( nextAndPrevWidth < 992 || nextAndPrevWidth === 992 ) {
 				next.css( 'bottom', '500px' );
-				next.css( 'opacity', '1' );
 				prev.css( 'bottom', '500px' );
-				prev.css( 'opacity', '1' );
 			}
 			if ( nextAndPrevWidth < 769 ) {
 				next.css( 'bottom', '480px' );
-				next.css( 'opacity', '1' );
 				prev.css( 'bottom', '480px' );
-				prev.css( 'opacity', '1' );
 			}
 			if ( nextAndPrevWidth < 271 ) {
 				next.css( 'bottom', '525px' );
-				next.css( 'opacity', '1' );
 				prev.css( 'bottom', '525px' );
-				prev.css( 'opacity', '1' );
 			}
 
 			//Min Width
 			if ( nextAndPrevWidth > 1024 || nextAndPrevWidth === 1024 ) {
-				next.css( 'right', nextAndPrevWidth / 6 - 100 + 'px' );
-				next.css( 'bottom', '470px' );
-				next.css( 'opacity', '1' );
-				prev.css( 'left', nextAndPrevWidth / 6 - 100 + 'px' );
-				prev.css( 'bottom', '470px' );
-				prev.css( 'opacity', '1' );
+				next.css( 'right', ((nextAndPrevWidth / 2) / 2) / 2 - 50 + 'px' );
+				prev.css( 'right', ((nextAndPrevWidth / 2) / 2) / 2 - 50 + 'px' );
 			}
-			if ( nextAndPrevWidth === 1280 || nextAndPrevWidth > 1280 ) {
-				next.css( 'right', nextAndPrevWidth / 5 - 80 + 'px' );
-				next.css( 'bottom', '470px' );
-				next.css( 'opacity', '1' );
-				prev.css( 'left', nextAndPrevWidth / 5 - 80 + 'px' );
-				prev.css( 'bottom', '470px' );
-				prev.css( 'opacity', '1' );
-			}
-			if ( nextAndPrevWidth === 1366 || nextAndPrevWidth > 1366 ) {
-				next.css( 'right', nextAndPrevWidth / 6 + 'px' );
-				next.css( 'bottom', '470px' );
-				next.css( 'opacity', '1' );
-				prev.css( 'left', nextAndPrevWidth / 6 + 'px' );
-				prev.css( 'bottom', '470px' );
-				prev.css( 'opacity', '1' );
-			}
-			if ( nextAndPrevWidth === 1680 ) {
-				next.css( 'right', nextAndPrevWidth / 3 - 200 + 'px' );
-				next.css( 'bottom', '190px' );
-				next.css( 'opacity', '1' );
-				prev.css( 'left', nextAndPrevWidth / 3 - 200 + 'px' );
-				prev.css( 'bottom', '190px' );
-				prev.css( 'opacity', '1' );
-			}
-			if ( nextAndPrevWidth === 1681 || nextAndPrevWidth > 1681 ) {
-				next.css( 'right', nextAndPrevWidth / 3 - 200 + 'px' );
-				next.css( 'bottom', '190px' );
-				next.css( 'opacity', '1' );
-				prev.css( 'left', nextAndPrevWidth / 3 - 200 + 'px' );
-				prev.css( 'bottom', '190px' );
-				prev.css( 'opacity', '1' );
+			if ( nextAndPrevWidth > 1679 ) {
+				next.css( 'right', ((nextAndPrevWidth / 2) / 2) - 50 + 'px' );
+				prev.css( 'right', ((nextAndPrevWidth / 2) / 2) - 50 + 'px' );
 			}
 			if ( nextAndPrevWidth > 2559 ) {
-				next.css( 'right', nextAndPrevWidth / 3 + 'px' );
-				next.css( 'opacity', '1' );
-				prev.css( 'left', nextAndPrevWidth / 3 + 'px' );
-				prev.css( 'opacity', '1' );
+				next.css( 'right', ((nextAndPrevWidth / 2) - 500) + 'px' );
+				prev.css( 'right', ((nextAndPrevWidth / 2) - 500) + 'px' );
 			}
 		};
 
