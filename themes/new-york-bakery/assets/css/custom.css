@@ -454,10 +454,13 @@ footer.comment-meta, footer.entry-footer { background: transparent; }
 	overflow: hidden;
 	/*margin: 100px auto;*/
 	margin: 0 auto 20px;
-	position: relative;
+	/*position: relative;*/
 	background: url('../images/dot.png') left 45px repeat-x;
+	position: inherit;
+	margin-bottom: 55px;
 	/*background-color: #000 !important;*/
 }
+.timeline-wrap { position: static; }
 #dates {
 	width: 800px;
 	height: 60px;
@@ -561,7 +564,7 @@ footer.comment-meta, footer.entry-footer { background: transparent; }
 #next, #prev {
 	position: absolute;
 	font-size: 70px;
-	top: 170px; /*top: 0;*/
+	/*top: 170px;*/ /*top: 0;*/
 	width: 22px;
 	height: 38px;
 	background: no-repeat 0 0;
@@ -724,7 +727,7 @@ form { display: inline-block; }
 	#timeline { width: auto; }
 	/*Menu Toggle*/
 	.navbar-toggle {
-		top: 10px !important;
+		top: 8px !important;
 		left: 20px !important;
 	}
 	/*Front Page*/
@@ -745,7 +748,7 @@ form { display: inline-block; }
 	/*menu/burger icon on top menu*/
 	header #navbar-primary .menu-small-screen { padding-left: 15px !important; }
 	/*search icon on top menu*/
-	.navbar-nav input[type="submit"] { top: 20px }
+	.navbar-nav input[type="submit"] { top: 22px; }
 	.navbar-nav input[type="search"]:focus {
 		top: 90px;
 		padding: 0 100px;
