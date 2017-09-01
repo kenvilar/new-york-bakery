@@ -3,7 +3,7 @@
 	$( document ).ready( function() {
 
 		//Animate loader off screen / Logo Display when website load
-		$( window ).load( function() {
+		$( window ).on( 'load', function() {
 			$( ".newyorkbakery-pre-con" ).fadeOut( 'fast' );
 		} );
 
