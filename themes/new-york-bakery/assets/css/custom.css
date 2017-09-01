@@ -284,6 +284,20 @@ input.search-submit:active,
 .banner-section .top-banner-one-column strong { color: #fff !important; }
 .banner-section .top-banner-two-columns { color: #fff; }
 /*
+============== Animation Loader ==============
+*/
+.no-js #loader { display: none; }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.newyorkbakery-pre-con {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(../images/loading.gif) center no-repeat rgba(255, 255, 255, 0.97);
+}
+/*
 ============== Product Development Page ==============
 */
 .product-development-card-image {
