@@ -170,6 +170,10 @@ function new_york_bakery_scripts() {
 		get_template_directory_uri() . '/assets/js/skip-link-focus-fix.js',
 		array(), get_bloginfo( 'version' ), true );
 	
+	wp_enqueue_script( 'smooth-scroll',
+		get_template_directory_uri() . '/assets/js/smoothScroll.js',
+		array( 'jquery' ), get_bloginfo( 'version' ), true );
+	
 	wp_enqueue_script( 'bootstrap-js',
 		get_template_directory_uri() . '/assets/bower_components/bootstrap/dist/js/bootstrap.min.js',
 		array( 'jquery' ), get_bloginfo( 'version' ), true );
