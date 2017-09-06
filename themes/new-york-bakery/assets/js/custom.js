@@ -2,8 +2,13 @@
 
 	$( document ).ready( function() {
 
-		//Smooth scrolling to the top
-		$( 'html, body' ).animate( { scrollTop : $( 'body' ).offset().top }, 500 );
+		//Smooth scrolling
+		var htmlBody = $( 'html, body' );
+		htmlBody.animate( { scrollTop : $( 'body' ).offset().top }, 500 );
+		htmlBody.smoothScroll( {
+			stepAmount : 80,
+			speed      : 50
+		} );
 
 		//Animate loader off screen / Logo Display when website load
 		$( window ).on( 'load', function() {
