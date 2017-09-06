@@ -167,15 +167,22 @@ div.wpcf7-response-output { display: none !important; }
 /* Track */
 .page::-webkit-scrollbar-track {
 	-webkit-box-shadow: 0 0 50px 50px rgba(172, 22, 44, 0.67) !important;
+	-moz-box-shadow: 0 0 50px 50px rgba(172, 22, 44, 0.67) !important;
+	-o-box-shadow: 0 0 50px 50px rgba(172, 22, 44, 0.67) !important;
+	box-shadow: 0 0 50px 50px rgba(172, 22, 44, 0.67) !important;
 	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
 	border-radius: 10px;
 }
 /* Handle */
 .page::-webkit-scrollbar-thumb {
 	background: rgba(172, 22, 44, 0.67);
 	-webkit-border-radius: 10px !important;
+	-moz-border-radius: 10px !important;
 	border-radius: 10px !important;
 	-webkit-box-shadow: 0 0 50px 50px rgba(172, 22, 44, 0.67) !important;
+	-moz-box-shadow: 0 0 50px 50px rgba(172, 22, 44, 0.67) !important;
+	-o-box-shadow: 0 0 50px 50px rgba(172, 22, 44, 0.67) !important;
 	box-shadow: 0 0 50px 50px rgba(172, 22, 44, 0.67) !important;
 }
 /*
