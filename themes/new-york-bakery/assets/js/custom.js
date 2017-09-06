@@ -2,6 +2,9 @@
 
 	$( document ).ready( function() {
 
+		//Smooth scrolling to the top
+		$( 'html, body' ).animate( { scrollTop : $( 'body' ).offset().top }, 500 );
+
 		//Animate loader off screen / Logo Display when website load
 		$( window ).on( 'load', function() {
 			$( ".newyorkbakery-pre-con" ).fadeOut( 'fast' );
