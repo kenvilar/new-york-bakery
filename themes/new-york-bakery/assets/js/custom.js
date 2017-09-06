@@ -6,8 +6,8 @@
 		var htmlBody = $( 'html, body' );
 		htmlBody.animate( { scrollTop : $( 'body' ).offset().top }, 500 );
 		htmlBody.smoothScroll( {
-			stepAmount : 80,
-			speed      : 50
+			stepAmount : 30,
+			speed      : 20
 		} );
 
 		//Animate loader off screen / Logo Display when website load
