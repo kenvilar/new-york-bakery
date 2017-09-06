@@ -1,6 +1,7 @@
 /*
 ============== Fonts
 ============== Buttons
+============== Scrollbar
 ============== Header
 ============== Search
 ============== Banner
@@ -157,6 +158,26 @@ a:hover {
 	transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 div.wpcf7-response-output { display: none !important; }
+/*
+============== Scrollbar ==============
+*/
+.page::-webkit-scrollbar {
+	width: 3px;
+}
+/* Track */
+.page::-webkit-scrollbar-track {
+	-webkit-box-shadow: 0 0 50px 50px rgba(172, 22, 44, 0.67) !important;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+/* Handle */
+.page::-webkit-scrollbar-thumb {
+	background: rgba(172, 22, 44, 0.67);
+	-webkit-border-radius: 10px !important;
+	border-radius: 10px !important;
+	-webkit-box-shadow: 0 0 50px 50px rgba(172, 22, 44, 0.67) !important;
+	box-shadow: 0 0 50px 50px rgba(172, 22, 44, 0.67) !important;
+}
 /*
 ============== Header ==============
 */
