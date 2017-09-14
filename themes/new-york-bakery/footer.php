@@ -42,17 +42,6 @@
 
 </div> <!--.new-york-bakery-container-fluid-->
 
-<script>
-	if ( 'serviceWorker' in navigator ) {
-		navigator.serviceWorker.register( '<?php echo get_template_directory_uri(); ?>/service-worker.js' )
-			.then( function( reg ) {
-				console.log( "Service worker registered." );
-			} ).catch( function( err ) {
-
-		} );
-	}
-</script>
-
 <?php wp_footer(); ?>
 
 </body>
