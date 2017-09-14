@@ -9,11 +9,11 @@
  * @package New_York_Bakery
  */
 
-header( "Cache-Control: must-revalidate" );
+/*header( "Cache-Control: must-revalidate" );
 
-$offset = 60 * 60 * 24 * 2;
+$offset = 60 * 60 * 24 * 1; //one day
 $expStr = "Expires: " . gmdate( "D, d M Y H:i:s", time() + $offset ) . " GMT";
-header( $expStr );
+header( $expStr );*/
 
 ?>
 <!doctype html>
@@ -29,7 +29,6 @@ header( $expStr );
 	if ( get_field( 'page_css' ) ) :
 		require get_template_directory() . '/inc/custom-page-css.php';
 	endif; ?>
-	<link rel="manifest" href="<?php echo get_template_directory_uri(); ?>/manifest.json">
 </head>
 
 <body <?php body_class(); ?>>
