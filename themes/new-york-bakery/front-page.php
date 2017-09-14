@@ -40,7 +40,7 @@ get_header(); ?>
 										     height: 237px;">
 									<span class="plus-for-hover">
 										<img alt="icon"
-										     src="<?php echo get_template_directory_uri() . '/assets/images/plus.svg?ver=' . get_bloginfo( 'version' ); ?>"/>
+										     src="<?php echo get_template_directory_uri() . '/assets/images/plus.svg'; ?>"/>
 									</span>
 									<span class="o-for-hover" style="display: none;">
 										<img alt="icon"
@@ -66,7 +66,7 @@ get_header(); ?>
 										     height: 237px;">
 									<span class="plus-for-hover">
 										<img alt="icon"
-										     src="<?php echo get_template_directory_uri() . '/assets/images/plus.svg?ver=' . get_bloginfo( 'version' ); ?>"/>
+										     src="<?php echo get_template_directory_uri() . '/assets/images/plus.svg'; ?>"/>
 									</span>
 									<span class="o-for-hover" style="display: none;">
 										<img alt="icon"
