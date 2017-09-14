@@ -388,6 +388,11 @@ i.icon:before { color: #fff; }
 .add-hover-front-page .front-page-card-bg-img {
 	background-color: rgba(172, 22, 44, 0.504048);
 	background-blend-mode: multiply;
+	-webkit-transition: all 900ms ease-out;
+	-moz-transition: all 900ms ease-out;
+	-o-transition: all 900ms ease-out;
+	-ms-transition: all 900ms ease-out;
+	transition: all 900ms ease-out;
 }
 .front-page .front-page-card-bg-img {
 	background-size: cover;
