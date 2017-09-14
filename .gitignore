@@ -7,5 +7,6 @@ uploads
 plugins
 
 #from WPSOL cache
+cache
 wpsol-config
 advanced-cache.php
