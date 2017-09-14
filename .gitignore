@@ -5,3 +5,7 @@ uploads/revisr-backups/index.php
 uploads/revisr-backups/.htaccess
 uploads
 plugins
+
+#from WPSOL cache
+wpsol-config
+advanced-cache.php
