@@ -36,7 +36,7 @@ get_header(); ?>
 						<div class="front-page-card">
 							<?php if ( get_sub_field( 'first_column_background_image' ) ) : ?>
 								<div class="front-page-card-bg-img"
-								     style="background-image: url(<?php the_sub_field( 'first_column_background_image' ); ?>?ver=<?php echo get_bloginfo( 'version' ); ?>);
+								     style="background-image: url(<?php the_sub_field( 'first_column_background_image' ); ?>);
 										     height: 237px;">
 									<span class="plus-for-hover">
 										<img alt="icon"
@@ -44,7 +44,7 @@ get_header(); ?>
 									</span>
 									<span class="o-for-hover" style="display: none;">
 										<img alt="icon"
-										     src="<?php echo get_template_directory_uri() . '/assets/images/open.png?ver=' . get_bloginfo( 'version' ); ?>"/>
+										     src="<?php echo get_template_directory_uri() . '/assets/images/open.png'; ?>"/>
 									</span>
 								</div>
 							<?php endif; ?>
@@ -62,7 +62,7 @@ get_header(); ?>
 						<div class="front-page-card">
 							<?php if ( get_sub_field( 'second_column_background_image' ) ) : ?>
 								<div class="front-page-card-bg-img"
-								     style="background-image: url(<?php the_sub_field( 'second_column_background_image' ); ?>?ver=<?php echo get_bloginfo( 'version' ); ?>);
+								     style="background-image: url(<?php the_sub_field( 'second_column_background_image' ); ?>);
 										     height: 237px;">
 									<span class="plus-for-hover">
 										<img alt="icon"
@@ -70,7 +70,7 @@ get_header(); ?>
 									</span>
 									<span class="o-for-hover" style="display: none;">
 										<img alt="icon"
-										     src="<?php echo get_template_directory_uri() . '/assets/images/open.png?ver=' . get_bloginfo( 'version' ); ?>"/>
+										     src="<?php echo get_template_directory_uri() . '/assets/images/open.png'; ?>"/>
 									</span>
 								</div>
 							<?php endif; ?>

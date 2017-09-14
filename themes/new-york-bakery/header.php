@@ -71,7 +71,7 @@ header( $expStr );*/
 							$image          = wp_get_attachment_image_src( $custom_logo_id, 'full' );
 							?>
 							<img width="1085" height="495"
-							     src="<?php echo $image[0] . '?ver=' . get_bloginfo( 'version' ); ?>"
+							     src="<?php echo $image[0]; ?>"
 							     class="custom-logo" alt="new-york-bakery-logo" itemprop="logo">
 						</a>
 					</li>
@@ -136,7 +136,7 @@ header( $expStr );*/
 							$image          = wp_get_attachment_image_src( $custom_logo_id, 'full' );
 							?>
 							<img width="1085" height="495"
-							     src="<?php echo $image[0] . '?ver=' . get_bloginfo( 'version' ); ?>"
+							     src="<?php echo $image[0]; ?>"
 							     class="custom-logo" alt="new-york-bakery-logo" itemprop="logo">
 						</a>
 					</li>
@@ -163,9 +163,9 @@ header( $expStr );*/
 		<div class="banner-section"
 		     style="<?php
 		     if ( has_post_thumbnail( $post->ID ) ) : ?>
-				     background-image: url(<?php echo the_post_thumbnail_url(); ?>?ver=<?php echo get_bloginfo( 'version' ); ?>);
+				     background-image: url(<?php echo the_post_thumbnail_url(); ?>);
 		     <?php else : ?>
-				     background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/landing-page-banner-img.jpg?ver=<?php echo get_bloginfo( 'version' ); ?>);
+				     background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/landing-page-banner-img.jpg);
 		     <?php endif; ?>">
 
 			<div class="container-fluid">

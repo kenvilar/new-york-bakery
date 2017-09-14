@@ -10,7 +10,7 @@ function my_login_logo_one() {
 	?>
 	<style type="text/css">
 		body.login div#login h1 a {
-			background-image: url(<?php echo $image[0] . '?ver=' . get_bloginfo( 'version' ); ?>);
+			background-image: url(<?php echo $image[0]; ?>);
 			padding-bottom: 100px;
 			width: 100% !important;
 			height: auto;
