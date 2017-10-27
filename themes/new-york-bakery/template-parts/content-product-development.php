@@ -4,9 +4,10 @@
  * */
 ?>
 
-<?php if ( have_rows( 'product_development_cards' ) ) : while ( have_rows( 'product_development_cards' ) ) : the_row(); ?>
-	<!--Desktop-->
-	<div class="row custom-row-margin-bottom product-development-cards">
+<?php
+/*<!--Desktop-->*/
+if ( have_rows( 'product_development_cards' ) ) : while ( have_rows( 'product_development_cards' ) ) : the_row(); ?>
+	<div class="row custom-row-margin-bottom product-development-cards desktop">
 		
 		<?php if ( get_sub_field( 'first_column_card_image' ) && get_sub_field( 'first_column_card_title' ) ) : ?>
 
@@ -50,8 +51,11 @@
 		<?php endif; ?>
 
 	</div>
+<?php endwhile; endif;
+wp_reset_query();
 
-	<!--Mobile-->
+/*<!--Mobile-->*/
+if ( have_rows( 'product_development_cards' ) ) : while ( have_rows( 'product_development_cards' ) ) : the_row(); ?>
 	<div class="row custom-row-margin-bottom product-development-cards mobile">
 		
 		<?php if ( get_sub_field( 'first_column_card_image' ) && get_sub_field( 'first_column_card_title' ) ) : ?>
@@ -118,4 +122,3 @@
 	</div>
 <?php endwhile; endif;
 wp_reset_query(); ?>
-
