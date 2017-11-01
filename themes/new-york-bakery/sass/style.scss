@@ -1,7 +1,8 @@
 /*
 Run this command in terminal
 
-sass --watch assets/css/style.css:assets/css/style.min.css --style compressed --watch sass/style.scss:assets/css/style.css --scss
+sass --watch sass/style.scss:assets/css/style.css --style expanded
+sass --watch assets/css/style.css:assets/css/style.min.css --style compressed --scss
 
 */
 @import "typography/fonts";
