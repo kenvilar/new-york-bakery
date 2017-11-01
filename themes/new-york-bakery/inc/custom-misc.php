@@ -22,3 +22,10 @@ function my_login_logo_one() {
 }
 
 add_action( 'login_enqueue_scripts', 'my_login_logo_one' );
+
+// Check if New York Bakery is running in localhost
+function newyorkbakery_is_localhost() {
+	$server_name = strtolower( $_SERVER['SERVER_NAME'] );
+	
+	return in_array( $server_name, array( 'localhost', '127.0.0.1' ) );
+}
