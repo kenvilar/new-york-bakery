@@ -14,5 +14,19 @@
 	font-family: 'Avenir Next';
 	font-weight: normal;
 	font-style: normal;
-	src: url('../../fonts/Avenir-Next.woff') format('woff');
+	src: url('../../fonts/AvenirNextLTPro-Regular.otf') format('woff'),
+	url('../../fonts/AvenirNextLTPro-Regular.otf') format('opentype'),
+	url('../../fonts/AvenirNextLTPro-Regular.otf') format('truetype');
+}
+@font-face {
+	font-family: 'Montserrat';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../../fonts/Montserrat-Light.woff') format('woff');
+}
+@font-face {
+	font-family: 'Montserrat Bold';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../../fonts/Montserrat-Bold.woff') format('woff');
 }

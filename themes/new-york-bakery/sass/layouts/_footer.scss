@@ -12,11 +12,13 @@
 }
 footer {
 	background: #292929;
+	font-family: 'Montserrat', sans-serif;
 	&.comment-meta,
 	&.entry-footer {
 		background: transparent;
 	}
 	.widget-title {
+		font-family: 'Montserrat Bold', sans-serif;
 		font-size: 14px;
 		color: #636262;
 		font-weight: 700;
@@ -24,7 +26,7 @@ footer {
 	.textwidget p {
 		font-size: 14px;
 		line-height: 20px;
-		color: #f1f1f1;
+		color: #ffffff;
 	}
 	.site-container {
 		padding-left: 140px;

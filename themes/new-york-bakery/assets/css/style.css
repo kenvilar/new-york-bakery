@@ -21,7 +21,19 @@ sass --watch assets/css/style.css:assets/css/style.min.css --style compressed --
   font-family: 'Avenir Next';
   font-weight: normal;
   font-style: normal;
-  src: url("../../fonts/Avenir-Next.woff") format("woff");
+  src: url("../../fonts/AvenirNextLTPro-Regular.otf") format("woff"), url("../../fonts/AvenirNextLTPro-Regular.otf") format("opentype"), url("../../fonts/AvenirNextLTPro-Regular.otf") format("truetype");
+}
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../../fonts/Montserrat-Light.woff") format("woff");
+}
+@font-face {
+  font-family: 'Montserrat Bold';
+  font-weight: normal;
+  font-style: normal;
+  src: url("../../fonts/Montserrat-Bold.woff") format("woff");
 }
 html {
   -webkit-text-size-adjust: 100%;
@@ -40,6 +52,10 @@ body {
   font-weight: 500;
   color: #292929;
   font-size: 16px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Avenir Next Condensed', sans-serif;
 }
 
 h1 {
@@ -590,11 +606,13 @@ i.icon:before {
 
 footer {
   background: #292929;
+  font-family: 'Montserrat', sans-serif;
 }
 footer.comment-meta, footer.entry-footer {
   background: transparent;
 }
 footer .widget-title {
+  font-family: 'Montserrat Bold', sans-serif;
   font-size: 14px;
   color: #636262;
   font-weight: 700;
@@ -602,7 +620,7 @@ footer .widget-title {
 footer .textwidget p {
   font-size: 14px;
   line-height: 20px;
-  color: #f1f1f1;
+  color: #ffffff;
 }
 footer .site-container {
   padding-left: 140px;
