@@ -184,6 +184,9 @@ header #navbar-primary {
 	-ms-transition: all 3s ease-in-out;
 	-o-transition: all 3s ease-in-out;
 	transition: all 3s ease-in-out;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	border-radius: 0;
 }
 header #navbar-primary .container-fluid {
 	padding: 0;
@@ -276,7 +279,6 @@ header #navbar-primary .navbar-nav > li > a:hover { background-color: transparen
 	right: 0;
 	z-index: 2;
 	cursor: pointer;
-	transition: opacity .4s ease;
 	outline: 0;
 }
 input.search-submit:hover,
@@ -286,7 +288,6 @@ input.search-submit:active,
 	background: url(../images/search-red-hover.png) center center no-repeat !important;
 	outline: 0;
 }
-.navbar-nav input[type="submit"]:hover { opacity: 0.8; }
 .navbar-nav input::-webkit-input-placeholder { border-bottom: 1px solid #979797; }
 .navbar-nav input::-webkit-textfield-decoration-container { border-bottom: 1px solid #979797 !important; }
 /*
@@ -737,7 +738,7 @@ form { display: inline-block; }
 		margin-right: 0;
 	}
 	header #navbar-primary .menu-small-screen .navbar-toggle:focus,
-	header #navbar-primary .menu-small-screen .navbar-toggle:hover { border: none; }
+	header #navbar-primary .menu-small-screen .navbar-toggle:hover { border: 1px solid transparent; }
 	.side-collapse ul li:first-child { padding-top: 35px; }
 	.side-collapse ul li {
 		width: 100%;
