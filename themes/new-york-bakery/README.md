@@ -14,10 +14,21 @@ A starter theme called New York Bakery.
 
 Documentation
 -------------
+Running SASS:
+
+Run this command in terminal
+
+`sass --watch sass/style.scss:assets/css/style.css --style expanded`
+
+`sass --watch assets/css/style.css:assets/css/style.min.css --style compressed --scss`
+
+
 Shortcodes: 
+
 [white-bg]<content-here>[/white-bg]  ==> for white background div
 
 [gray-bg]<content-here>[/gray-bg] ===> for gray background div
+
 
 To run bower
 -----------
