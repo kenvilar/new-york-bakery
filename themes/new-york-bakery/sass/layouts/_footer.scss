@@ -1,0 +1,36 @@
+.want-to-know-more {
+	background: #AC162C;
+	text-align: center;
+	padding: 10px 10px 40px;
+	h2 {
+		color: #fff;
+		font-weight: bold;
+		line-height: 33px;
+		font-size: 18px;
+	}
+	a { }
+}
+footer {
+	background: #292929;
+	&.comment-meta,
+	&.entry-footer {
+		background: transparent;
+	}
+	.widget-title {
+		font-size: 14px;
+		color: #636262;
+		font-weight: 700;
+	}
+	.textwidget p {
+		font-size: 14px;
+		line-height: 20px;
+		color: #f1f1f1;
+	}
+	.site-container {
+		padding-left: 140px;
+		padding-right: 140px;
+	}
+	.footer-container-widget {
+		margin-right: 50px;
+	}
+}

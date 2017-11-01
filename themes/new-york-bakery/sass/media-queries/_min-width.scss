@@ -1,0 +1,62 @@
+@media screen and (min-width: 2560px) {
+	ul.nav.navbar-nav.navbar-right.menu-hd-right.menus li.search-menu-hd {
+		right: 500px;
+	}
+}
+@media screen and (min-width: 1680px) {
+	/* Search icon */
+	ul.nav.navbar-nav.navbar-right.menu-hd-right.menus li.search-menu-hd {
+		right: 40px;
+		bottom: 10px;
+	}
+	/* Menu Toggle */
+	.side-collapse.in {
+		display: none;
+	}
+	/* Menu */
+	a.custom-logo-link {
+		margin-left: 40px;
+	}
+	header {
+		#navbar-primary {
+			.menu-hd {
+				display: block !important;
+				.menu-hd-right li {
+					margin-right: 15px;
+				}
+				.menu-hd-right li:last-child {
+					margin-right: 35px;
+				}
+			}
+			.menu-small-screen {
+				display: none !important;
+			}
+		}
+	}
+}
+@media only screen and (min-width: 1024px) {
+	/* jQuery Timeline slider */
+	#next, #prev {
+		margin-top: -160px;
+	}
+}
+@media only screen and (min-width: 768px) {
+	.collapse.navbar-collapse.menu-list-mobile {
+		display: none !important;
+	}
+	/* Contact Form 7 */
+	.contact-form-container {
+		padding: 22px 0 !important;
+		.wpcf7 {
+			width: 680px !important;
+			margin: 0 auto !important;
+		}
+	}
+	/* Product Development Page */
+	.product-development-cards {
+		display: block;
+		&.mobile {
+			display: none;
+		}
+	}
+}

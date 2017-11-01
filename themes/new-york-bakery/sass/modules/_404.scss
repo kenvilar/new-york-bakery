@@ -1,0 +1,18 @@
+.error404 {
+	.error-404 {
+		form {
+			display: block;
+		}
+		label {
+			display: block;
+		}
+		input[type=search] {
+			-webkit-appearance: none;
+			width: 100%;
+		}
+		input[type=submit] {
+			width: 100%;
+			font-size: 16px;
+		}
+	}
+}

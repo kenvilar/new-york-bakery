@@ -1,0 +1,21 @@
+/*
+Run this command in terminal
+
+sass --watch assets/css/style.css:assets/css/style.min.css --style compressed --watch sass/style.scss:assets/css/style.css --scss
+
+*/
+@import "typography/fonts";
+@import "general/elements";
+@import "general/buttons";
+@import "general/forms";
+@import "layouts/header";
+@import "modules/search";
+@import "layouts/banner";
+@import "modules/animation-loader";
+@import "modules/container-site";
+@import "modules/home";
+@import "layouts/footer";
+@import "modules/404";
+@import "modules/timeline";
+@import "media-queries/min-width";
+@import "media-queries/max-width";

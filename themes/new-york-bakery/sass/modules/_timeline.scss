@@ -1,0 +1,147 @@
+.timeline-header {
+	width: 800px;
+	margin: 0 auto;
+}
+#timeline {
+	width: 800px;
+	height: 100%;
+	/*height: 350px;*/
+	overflow: hidden;
+	/*margin: 100px auto;*/
+	/*position: relative;*/
+	background: url('../../images/dot.png') repeat-x left 45px;
+	position: inherit;
+	margin: 0 auto 55px;
+	/*background-color: #000 !important;*/
+}
+.timeline-wrap {
+	position: static;
+}
+#dates {
+	width: 800px;
+	height: 60px;
+	overflow: hidden;
+	/*margin-left: 0 !important;*/
+	li {
+		list-style: none;
+		float: left;
+		width: 80px;
+		height: 50px;
+		font-size: 24px;
+		text-align: center;
+		background: url('../../images/biggerdot.png') center bottom no-repeat;
+	}
+	a {
+		line-height: 38px;
+		padding-bottom: 10px;
+	}
+	.selected {
+		font-size: 38px;
+	}
+	.selected {
+		background: #b0122e;
+		opacity: 0.8;
+		font-size: 4px;
+		top: 25px;
+		left: 80px;
+		position: relative;
+		border-radius: 50px;
+		padding-bottom: 5px;
+	}
+}
+#issues {
+	width: 800px;
+	height: 100%;
+	/*height: 350px;*/
+	overflow-x: hidden;
+	background-color: #292929;
+	li {
+		width: 800px;
+		height: auto;
+		/*height: 350px;*/
+		list-style: none;
+		float: left;
+		h1 {
+			color: #fff;
+			font-size: 36px;
+			margin: 10px 0 25px;
+			font-family: "Avenir Next", sans-serif;
+			font-style: normal;
+			font-weight: 900;
+			line-height: normal;
+		}
+		p {
+			font-size: 16px;
+			margin-right: 70px;
+			margin-left: 10px;
+			margin-bottom: 55px;
+			font-weight: normal;
+			line-height: 28px;
+			font-family: Roboto, sans-serif;
+			font-style: normal;
+			color: #fff;
+			height: 100%;
+		}
+		img {
+			zoom: 1;
+			float: left;
+			margin: 10px 30px 10px 50px;
+			background: transparent;
+			-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF,endColorstr=#00FFFFFF)"; /* IE 8 */
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#00FFFFFF, endColorstr=#00FFFFFF); /* IE 6 & 7 */
+			-webkit-transition: all 2s ease-in-out;
+			-moz-transition: all 2s ease-in-out;
+			-o-transition: all 2s ease-in-out;
+			-ms-transition: all 2s ease-in-out;
+			transition: all 2s ease-in-out;
+			-webkit-transform: scale(0.7, 0.7);
+			-moz-transform: scale(0.7, 0.7);
+			-o-transform: scale(0.7, 0.7);
+			-ms-transform: scale(0.7, 0.7);
+			transform: scale(0.7, 0.7);
+		}
+	}
+	li.selected img {
+		-webkit-transform: scale(1.1, 1.1);
+		-moz-transform: scale(1.1, 1.1);
+		-o-transform: scale(1.1, 1.1);
+		-ms-transform: scale(1.1, 1.1);
+		transform: scale(1.1, 1.1);
+	}
+}
+#grad_left, #grad_right {
+	width: 100px;
+	height: 350px;
+	position: absolute;
+	top: 0;
+}
+#grad_left {
+	left: 0;
+	background: url('../../images/grad_left.png') repeat-y;
+}
+#grad_right {
+	right: 0;
+	background: url('../../images/grad_right.png') repeat-y;
+}
+#next, #prev {
+	position: absolute;
+	font-size: 70px;
+	/*top: 170px;*/
+	/*top: 0;*/
+	width: 22px;
+	height: 38px;
+	background: no-repeat 0 0;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+#next {
+	right: 0;
+	background-image: url('../../images/next.png');
+}
+#prev {
+	left: 0;
+	background-image: url('../../images/prev.png');
+}
+#next.disabled, #prev.disabled {
+	opacity: 0.2;
+}
