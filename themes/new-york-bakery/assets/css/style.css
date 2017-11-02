@@ -610,6 +610,12 @@ footer .textwidget p {
   line-height: 20px;
   color: #ffffff;
 }
+footer .textwidget p a {
+  color: #ffffff;
+}
+footer .textwidget p a:hover, footer .textwidget p a:active, footer .textwidget p a:focus {
+  text-decoration: none;
+}
 footer .site-container {
   padding-left: 140px;
   padding-right: 140px;

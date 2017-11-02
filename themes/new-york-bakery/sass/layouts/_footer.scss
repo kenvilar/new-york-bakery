@@ -27,6 +27,12 @@ footer {
 		font-size: 14px;
 		line-height: 20px;
 		color: #ffffff;
+		a {
+			color: #ffffff;
+			&:hover, &:active, &:focus {
+				text-decoration: none;
+			}
+		}
 	}
 	.site-container {
 		padding-left: 140px;
