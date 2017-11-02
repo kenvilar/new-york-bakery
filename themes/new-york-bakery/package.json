@@ -1,0 +1,23 @@
+{
+  "name": "new-york-bakery",
+  "version": "1.0.0",
+  "description": "New York Bakery is a full service bakery located in Syracuse, New York.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "new-york-bakery",
+    "newyorkbakery",
+    "wordpress-theme",
+    "wordpress",
+    "php",
+    "bootstrap",
+    "sass"
+  ],
+  "author": "Ken",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "^3.8.1"
+  }
+}

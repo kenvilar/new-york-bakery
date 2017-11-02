@@ -3,6 +3,7 @@ debug.log
 .sass-cache
 node_modules
 assets/css/*.css.map
+package-lock.json
 
 #from WPSOL cache
 cache
