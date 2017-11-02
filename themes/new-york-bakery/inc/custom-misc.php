@@ -27,5 +27,5 @@ add_action( 'login_enqueue_scripts', 'my_login_logo_one' );
 function newyorkbakery_is_localhost() {
 	$server_name = strtolower( $_SERVER['SERVER_NAME'] );
 	
-	return in_array( $server_name, array( 'localhost', '127.0.0.1' ) );
+	return in_array( $server_name, array( 'localhost', '127.0.0.1', 'newyorkbakery.dev' ) );
 }
