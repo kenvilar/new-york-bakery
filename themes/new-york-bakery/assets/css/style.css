@@ -230,11 +230,6 @@ img.custom-logo {
   margin-top: 10px;
 }
 
-header #navbar-primary .menu-small-screen img.custom-logo {
-  margin-top: inherit;
-  margin-left: -30px;
-}
-
 header .fixed {
   position: fixed;
   top: 0;
@@ -243,7 +238,6 @@ header .fixed {
   z-index: 100;
   opacity: 100;
 }
-
 header #navbar-primary {
   background: #fff;
   margin-bottom: 0;
@@ -256,31 +250,29 @@ header #navbar-primary {
   -moz-border-radius: 0;
   border-radius: 0;
 }
-
 header #navbar-primary .container-fluid {
   padding: 0;
   margin: 0;
 }
-
 header #navbar-primary .collapse.navbar-collapse {
   padding: 0;
 }
-
 header #navbar-primary .menu-hd .navbar-nav {
   width: 100%;
   padding-top: 0;
   padding-bottom: 10px;
 }
-
 header #navbar-primary .menu-hd .menu-hd-right {
   width: auto;
   margin-right: 0;
 }
-
 header #navbar-primary .menu-hd .menu-hd-right > li {
   margin-right: 10px;
 }
-
+header #navbar-primary .menu-small-screen img.custom-logo {
+  margin-top: inherit;
+  margin-left: -30px;
+}
 header #navbar-primary .menu-small-screen .navbar-nav {
   width: 100%;
   text-align: center;
@@ -288,26 +280,26 @@ header #navbar-primary .menu-small-screen .navbar-nav {
   padding-top: 10px;
   padding-bottom: 10px;
 }
-
 header #navbar-primary .menu-small-screen .navbar-toggle .icon-bar {
   height: 3px;
   width: 20px;
 }
-
 header #navbar-primary .navbar-nav > li {
   display: inline-block;
   float: none;
 }
-
 header #navbar-primary .navbar-nav > li > a {
   padding: 0;
   text-transform: uppercase;
   color: #292929;
   font-weight: 600;
 }
-
 header #navbar-primary .navbar-nav > li > a:hover {
   background-color: transparent;
+  color: #AC162C;
+}
+header #navbar-primary .navbar-nav .current-menu-item a {
+  color: #AC162C;
 }
 
 .navbar-nav input[type="search"] {
@@ -564,7 +556,7 @@ i.icon:before {
 }
 
 .add-hover-front-page .front-page-card-bg-img {
-  background-color: rgba(172, 22, 44, 0.504048);
+  background-color: rgba(172, 22, 44, 0.504);
   background-blend-mode: multiply;
   -webkit-transition: all 900ms ease-out;
   -moz-transition: all 900ms ease-out;

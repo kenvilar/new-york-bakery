@@ -50,14 +50,17 @@
 		var product_development_toggle_show_content_icon = $( ".product-development-toggle-show-content-icon" );
 
 		product_development_toggle_show_content.click( function() {
-			product_development_toggle_show_content.css( 'visibility', 'hidden' );
+			//product_development_toggle_show_content.css( 'visibility', 'hidden' );
+			product_development_toggle_show_content.toggle( 0 );
 			$( this ).parent().find( '.product-development-toggle-content' ).slideToggle( 'slow' );
 		} );
 		product_development_toggle_hide_content.click( function() {
-			product_development_toggle_show_content.css( 'visibility', 'visible' );
+			//product_development_toggle_show_content.css( 'visibility', 'visible' );
+			product_development_toggle_show_content.toggle( 0 );
 			$( this ).parent().parent().find( '.product-development-toggle-content' ).slideToggle( 'slow' );
 		} );
 		product_development_toggle_show_content_icon.click( function() {
+			product_development_toggle_show_content.toggle( 0 );
 			$( this ).parent().find( '.product-development-toggle-content' ).slideToggle( 'slow' );
 		} );
 
