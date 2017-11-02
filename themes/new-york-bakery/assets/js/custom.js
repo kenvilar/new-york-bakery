@@ -36,12 +36,12 @@
 
 		//Hide/show menu icon in mobile
 		$( "#navbar-toggle-open" ).click( function() {
-			$( "#navbar-toggle-open" ).hide( 1 );
-			$( "#navbar-toggle-close" ).show( 1 );
+			$( "#navbar-toggle-open" ).css( 'display', 'none' );
+			$( "#navbar-toggle-close" ).css( 'display', 'block' );
 		} );
 		$( "#navbar-toggle-close" ).click( function() {
-			$( "#navbar-toggle-close" ).hide( 1 );
-			$( "#navbar-toggle-open" ).show( 1 );
+			$( "#navbar-toggle-close" ).css( 'display', 'none' );
+			$( "#navbar-toggle-open" ).css( 'display', 'block' );
 		} );
 
 		//Mobile Toggle effects on product development page
