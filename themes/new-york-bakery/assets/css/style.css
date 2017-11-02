@@ -529,11 +529,11 @@ i.icon:before {
   margin-bottom: 20px;
   display: inline-block;
 }
-.front-page .front-page-card p p a {
+.front-page .front-page-card p a {
   color: #292929;
   cursor: auto;
 }
-.front-page .front-page-card p p a:hover {
+.front-page .front-page-card p a:hover {
   color: #AC162C;
 }
 .front-page .front-page-top-content {
