@@ -103,10 +103,16 @@
 							<?php
 							$custom_logo_id = get_theme_mod( 'custom_logo' );
 							$image          = wp_get_attachment_image_src( $custom_logo_id, 'full' );
-							?>
-							<img width="1085" height="495"
-							     src="<?php echo $image[0]; ?>"
-							     class="custom-logo" alt="new-york-bakery-logo" itemprop="logo">
+							
+							if ( $image ) : ?>
+								<img width="1085" height="495"
+								     src="<?php echo $image[0]; ?>"
+								     class="custom-logo" alt="new-york-bakery-logo" itemprop="logo">
+							<?php else : ?>
+								<img width="1085" height="495"
+								     src="<?php echo get_template_directory_uri() . '/assets/images/new-york-bakery-logo-1.png'; ?>"
+								     class="custom-logo" alt="new-york-bakery-logo" itemprop="logo">
+							<?php endif; ?>
 						</a>
 					</li>
 					<form role="search" method="get" action="<?php echo home_url( '/' ); ?>">
