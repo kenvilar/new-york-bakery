@@ -17,7 +17,7 @@ header( $expStr );*/
 
 ?>
 <!doctype html>
-<html <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?> style="margin-top: 0 !important;">
 <head>
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="theme-color" content="#292929"/>

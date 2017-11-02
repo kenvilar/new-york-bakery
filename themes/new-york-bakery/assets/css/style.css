@@ -213,7 +213,7 @@ div.wpcf7-response-output {
 }
 
 div#wpadminbar {
-  opacity: 0.4;
+  opacity: 0.1;
 }
 div#wpadminbar:hover {
   opacity: 1;
