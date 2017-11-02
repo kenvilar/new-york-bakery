@@ -47,6 +47,7 @@
 		//Mobile Toggle effects on product development page
 		var product_development_toggle_show_content = $( ".product-development-toggle-show-content" );
 		var product_development_toggle_hide_content = $( ".product-development-toggle-hide-content" );
+		var product_development_toggle_show_content_icon = $( ".product-development-toggle-show-content-icon" );
 
 		product_development_toggle_show_content.click( function() {
 			product_development_toggle_show_content.css( 'visibility', 'hidden' );
@@ -55,6 +56,9 @@
 		product_development_toggle_hide_content.click( function() {
 			product_development_toggle_show_content.css( 'visibility', 'visible' );
 			$( this ).parent().parent().find( '.product-development-toggle-content' ).slideToggle( 'slow' );
+		} );
+		product_development_toggle_show_content_icon.click( function() {
+			$( this ).parent().find( '.product-development-toggle-content' ).slideToggle( 'slow' );
 		} );
 
 		//Adjust next and prev timeline icons when width resize

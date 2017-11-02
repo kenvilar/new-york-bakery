@@ -62,9 +62,11 @@ if ( have_rows( 'product_development_cards' ) ) : while ( have_rows( 'product_de
 
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 product-development-single-card">
 				<?php if ( get_sub_field( 'first_column_icon' ) ) : ?>
-					<span class="product-development-icon step size-48">
-						<i class="icon <?php the_sub_field( 'first_column_icon' ); ?>"></i>
-					</span>
+					<div class="product-development-toggle-show-content-icon">
+						<span class="product-development-icon step size-48">
+							<i class="icon <?php the_sub_field( 'first_column_icon' ); ?>"></i>
+						</span>
+					</div>
 				<?php endif; ?>
 
 				<span class="first-column-card-title"><?php the_sub_field( 'first_column_card_title' ); ?></span>
@@ -92,9 +94,11 @@ if ( have_rows( 'product_development_cards' ) ) : while ( have_rows( 'product_de
 
 			<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 product-development-single-card">
 				<?php if ( get_sub_field( 'second_column_icon' ) ) : ?>
-					<span class="product-development-icon step size-48">
+					<div class="product-development-toggle-show-content-icon">
+						<span class="product-development-icon step size-48">
 							<i class="icon <?php the_sub_field( 'second_column_icon' ); ?>"></i>
 						</span>
+					</div>
 				<?php endif; ?>
 
 				<span class="first-column-card-title"><?php the_sub_field( 'second_column_card_title' ); ?></span>
