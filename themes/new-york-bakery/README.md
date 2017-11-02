@@ -16,11 +16,15 @@ Documentation
 -------------
 Running SASS:
 
-Run this command in terminal
+To minify css, run these commands in terminal
 
 `sass --watch sass/style.scss:assets/css/style.css --style expanded`
 
 `sass --watch assets/css/style.css:assets/css/style.min.css --style compressed --scss`
+
+To minify js, run this command in terminal
+
+`NODE_ENV=production webpack --watch`
 
 
 Shortcodes: 
