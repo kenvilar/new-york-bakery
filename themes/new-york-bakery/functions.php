@@ -189,9 +189,15 @@ function new_york_bakery_scripts() {
 			array( 'jquery' ), get_bloginfo( 'version' ), true );
 	endif;
 	
-	wp_enqueue_script( 'custom-js',
-		get_template_directory_uri() . '/assets/js/custom.js',
-		array( 'jquery' ), null, true );
+	if ( newyorkbakery_is_localhost() ) :
+		wp_enqueue_script( 'custom-js',
+			get_template_directory_uri() . '/assets/js/custom.js',
+			array( 'jquery' ), null, true );
+	else :
+		wp_enqueue_script( 'custom-js',
+			get_template_directory_uri() . '/assets/js/custom.min.js',
+			array( 'jquery' ), null, true );
+	endif;
 	
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
