@@ -1,0 +1,10 @@
+.DS_Store
+debug.log
+.sass-cache
+node_modules
+assets/css/*.css.map
+
+#from WPSOL cache
+cache
+wpsol-config
+advanced-cache.php
