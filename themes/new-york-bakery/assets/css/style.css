@@ -640,10 +640,44 @@ footer .footer-container-widget {
 }
 
 .timeline-header {
-  width: 800px;
   margin: 0 auto;
 }
 
+.my-timeline-slider {
+  width: 100%;
+  margin: 0 auto 100px;
+}
+.my-timeline-slider .slick-slide {
+  transition: all ease-in-out .3s;
+  opacity: 0;
+  margin: 0 auto !important;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.my-timeline-slider .slick-slide img {
+  width: 100%;
+}
+.my-timeline-slider .slick-active {
+  opacity: .5;
+}
+.my-timeline-slider .slick-current {
+  opacity: 1;
+  background: #292929;
+  color: #ffffff;
+}
+.my-timeline-slider .slick-prev:before,
+.my-timeline-slider .slick-next:before {
+  color: black;
+}
+.my-timeline-slider .slick-list {
+  padding: 0 !important;
+}
+
+.timeline-slider-dots .slick-dots {
+  position: inherit;
+}
+
+/* Old timeline slider (deprecated) */
 #timeline {
   width: 800px;
   height: 100%;

@@ -64,6 +64,28 @@
 			$( this ).parent().find( '.product-development-toggle-content' ).slideToggle( 'slow' );
 		} );
 
+		// Timeline Slider
+		$( '.lazy' ).slick( {
+			//lazyLoad       : 'ondemand', // ondemand progressive anticipated
+			centerMode     : true,
+			infinite       : true,
+			dots           : true,
+			speed          : 300,
+			slidesToShow   : 1,
+			adaptiveHeight : true,
+			appendDots     : '.timeline-slider-dots',
+			responsive     : [
+				{
+					breakpoint : 1024,
+					settings   : {
+						arrows         : true,
+						adaptiveHeight : true,
+						variableWidth  : false
+					}
+				}
+			]
+		} );
+
 		//Adjust next and prev timeline icons when width resize
 		window.onload = window.onresize = function() {
 			var nextAndPrevWidth = window.innerWidth;

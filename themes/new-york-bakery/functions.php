@@ -153,6 +153,16 @@ function new_york_bakery_styles() {
 		get_template_directory_uri() . '/assets/bower_components/Ionicons/css/ionicons.min.css',
 		array(), get_bloginfo( 'version' ), 'all' );
 	
+	if ( is_page( 'about-us' ) || is_page( 'about' ) ) :
+		wp_enqueue_style( 'slick-css',
+			get_template_directory_uri() . '/assets/bower_components/slick-carousel/slick/slick.css',
+			array(), get_bloginfo( 'version' ), 'all' );
+		
+		wp_enqueue_style( 'slick-theme-css',
+			get_template_directory_uri() . '/assets/bower_components/slick-carousel/slick/slick-theme.css',
+			array(), get_bloginfo( 'version' ), 'all' );
+	endif;
+	
 	if ( newyorkbakery_is_localhost() ) :
 		wp_enqueue_style( 'custom-css',
 			get_template_directory_uri() . '/assets/css/style.css',
@@ -186,6 +196,10 @@ function new_york_bakery_scripts() {
 	if ( is_page( 'about-us' ) || is_page( 'about' ) ) :
 		wp_enqueue_script( 'timeline-slider',
 			get_template_directory_uri() . '/assets/js/jquery.timelinr-0.9.6.js',
+			array( 'jquery' ), get_bloginfo( 'version' ), true );
+		
+		wp_enqueue_script( 'slick-slider',
+			get_template_directory_uri() . '/assets/bower_components/slick-carousel/slick/slick.min.js',
 			array( 'jquery' ), get_bloginfo( 'version' ), true );
 	endif;
 	

@@ -1,7 +1,41 @@
 .timeline-header {
-	width: 800px;
 	margin: 0 auto;
 }
+.my-timeline-slider {
+	width: 100%;
+	margin: 0 auto 100px;
+	.slick-slide {
+		transition: all ease-in-out .3s;
+		opacity: 0;
+		margin: 0 auto !important;
+		padding-left: 50px;
+		padding-right: 50px;
+		img {
+			width: 100%;
+		}
+	}
+	.slick-active {
+		opacity: .5;
+	}
+	.slick-current {
+		opacity: 1;
+		background: #292929;
+		color: #ffffff;
+	}
+	.slick-prev:before,
+	.slick-next:before {
+		color: black;
+	}
+	.slick-list {
+		padding: 0 !important;
+	}
+}
+.timeline-slider-dots {
+	.slick-dots {
+		position: inherit;
+	}
+}
+/* Old timeline slider (deprecated) */
 #timeline {
 	width: 800px;
 	height: 100%;
