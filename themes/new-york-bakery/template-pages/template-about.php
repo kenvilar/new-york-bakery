@@ -19,11 +19,18 @@ wp_reset_query();
 ?>
 
 	<div class="gray-bg timeline-history">
-		
-		<?php if ( have_rows( 'timeline_slider' ) ) : ?>
-			<h4 class="timeline-header">OUR HISTORY</h4>
-			<div class="timeline-slider-dots"></div>
-			<section class="lazy my-timeline-slider" data-sizes="50vw">
+
+		<h4 class="timeline-header">OUR HISTORY</h4>
+		<div class="timeline-slider-dots"></div>
+		<section class="lazy my-timeline-slider" data-sizes="50vw">
+			<?php if ( have_rows( 'timeline_slider' ) ) : ?>
+				<?php while ( have_rows( 'timeline_slider' ) ) : the_row(); ?>
+					<div>
+						<h1><?php the_sub_field( 'year' ); ?></h1>
+						<p><?php the_sub_field( 'timeline_content' ); ?></p>
+					</div>
+				<?php endwhile; ?>
+			<?php else : ?>
 				<div>
 					<h1>1951</h1>
 					<p>Upon arriving in America from Greece in 1951, our grandfather, Chris Christou, found work at
@@ -58,8 +65,10 @@ wp_reset_query();
 						as they carry on the history that is at the heart of New York Bakery and offer their own
 						personal commitment to product quality and service excellence.</p>
 				</div>
-			</section>
-			<!--<div id="timeline">
+			<?php endif;
+			wp_reset_query(); ?>
+		</section>
+		<!--<div id="timeline">
 				<div class="timeline-wrap">
 					<ul id="dates">
 						<?php /*while ( have_rows( 'timeline_slider' ) ) : the_row(); */ ?>
@@ -95,8 +104,6 @@ wp_reset_query();
 					</div>
 				</div>
 			</div>-->
-		<?php endif;
-		wp_reset_query(); ?>
 
 	</div>
 
