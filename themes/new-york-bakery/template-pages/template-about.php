@@ -29,7 +29,8 @@ wp_reset_query();
 						<h1><?php the_sub_field( 'year' ); ?></h1>
 						<p><?php the_sub_field( 'timeline_content' ); ?></p>
 					</div>
-				<?php endwhile; ?>
+				<?php endwhile;
+				wp_reset_postdata(); ?>
 			<?php else : ?>
 				<div>
 					<h1>1951</h1>
@@ -68,42 +69,6 @@ wp_reset_query();
 			<?php endif;
 			wp_reset_query(); ?>
 		</section>
-		<!--<div id="timeline">
-				<div class="timeline-wrap">
-					<ul id="dates">
-						<?php /*while ( have_rows( 'timeline_slider' ) ) : the_row(); */ ?>
-							
-							<?php /*if ( get_sub_field( 'year' ) ) : */ ?>
-								<li><a href="#<?php /*the_sub_field( 'year' ); */ ?>">
-										<span style="opacity:0;"><?php /*the_sub_field( 'year' ); */ ?></span></a>
-								</li>
-							<?php /*endif; */ ?>
-						<?php /*endwhile;
-						wp_reset_postdata(); */ ?>
-					</ul>
-					<ul id="issues">
-						<?php /*while ( have_rows( 'timeline_slider' ) ) : the_row(); */ ?>
-							<li id="<?php /*the_sub_field( 'year' ); */ ?>">
-								
-								<?php /*if ( get_sub_field( 'year' ) ) : */ ?>
-									<h1><?php /*the_sub_field( 'year' ); */ ?></h1>
-								<?php /*endif; */ ?>
-								
-								<?php /*if ( get_sub_field( 'timeline_content' ) ) : */ ?>
-									<p><?php /*the_sub_field( 'timeline_content' ); */ ?></p>
-								<?php /*endif; */ ?>
-
-							</li>
-						<?php /*endwhile;
-						wp_reset_postdata(); */ ?>
-					</ul>
-					<?php /*/*echo '<div id="grad_left"></div><div id="grad_right"></div>'; */ ?>
-					<div class="next-and-prev">
-						<a href="#" id="next">+</a>
-						<a href="#" id="prev">-</a>
-					</div>
-				</div>
-			</div>-->
 
 	</div>
 
