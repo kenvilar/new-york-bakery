@@ -313,11 +313,6 @@ header #navbar-primary .navbar-nav .current-menu-item a {
   right: 0;
   background: none;
   z-index: 3;
-  -webkit-transition: width 0.8s cubic-bezier(0, 1, 0, 1);
-  -moz-transition: width 0.8s cubic-bezier(0, 1, 0, 1);
-  -ms-transition: width 0.8s cubic-bezier(0, 1, 0, 1);
-  -o-transition: width 0.8s cubic-bezier(0, 1, 0, 1);
-  transition: width 0.8s cubic-bezier(0, 1, 0, 1);
   cursor: pointer;
 }
 

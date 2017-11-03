@@ -14,11 +14,6 @@
 	right: 0;
 	background: none;
 	z-index: 3;
-	-webkit-transition: width .8s cubic-bezier(0.000, 1, 0.00, 1.000);
-	-moz-transition: width .8s cubic-bezier(0.000, 1, 0.00, 1.000);
-	-ms-transition: width .8s cubic-bezier(0.000, 1, 0.00, 1.000);
-	-o-transition: width .8s cubic-bezier(0.000, 1, 0.00, 1.000);
-	transition: width .8s cubic-bezier(0.000, 1, 0.00, 1.000);
 	cursor: pointer;
 }
 .navbar-nav input[type="search"]:focus {
