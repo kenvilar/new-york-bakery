@@ -647,6 +647,9 @@ footer .footer-container-widget {
   width: 100%;
   margin: 0 auto 100px;
 }
+.my-timeline-slider .slick-list {
+  padding: 0 !important;
+}
 .my-timeline-slider .slick-slide {
   transition: all ease-in-out .3s;
   opacity: 0;
@@ -668,13 +671,53 @@ footer .footer-container-widget {
 .my-timeline-slider .slick-prev:before,
 .my-timeline-slider .slick-next:before {
   color: black;
+  font-family: 'Ionicons', sans-serif;
+  speak: none;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-rendering: auto;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-.my-timeline-slider .slick-list {
-  padding: 0 !important;
+.my-timeline-slider .slick-next:before {
+  content: '\f125';
+}
+.my-timeline-slider .slick-prev:before {
+  content: '\f124';
 }
 
 .timeline-slider-dots .slick-dots {
   position: inherit;
+  width: 100%;
+}
+.timeline-slider-dots .slick-dots li {
+  width: 60px;
+}
+.timeline-slider-dots .slick-dots li:first-child:before {
+  background-color: transparent;
+}
+.timeline-slider-dots .slick-dots li:before {
+  content: '';
+  position: absolute;
+  background-color: #979797;
+  width: 120%;
+  height: 3px;
+  top: 34%;
+  left: -110%;
+}
+.timeline-slider-dots .slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: #AC162C;
+}
+.timeline-slider-dots .slick-dots li button:before {
+  font-size: 12px;
+  z-index: 1;
+  opacity: 1;
+  color: #979797;
 }
 
 /* Old timeline slider (deprecated) */
@@ -1185,6 +1228,11 @@ footer .footer-container-widget {
   /* About Us */
   .page-template-template-about #issues li {
     width: 550px;
+  }
+
+  /* Timeline Slider */
+  .timeline-slider-dots .slick-dots li {
+    width: 10%;
   }
 }
 @media screen and (max-width: 480px) {

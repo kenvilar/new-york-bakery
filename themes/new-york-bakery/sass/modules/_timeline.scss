@@ -4,6 +4,9 @@
 .my-timeline-slider {
 	width: 100%;
 	margin: 0 auto 100px;
+	.slick-list {
+		padding: 0 !important;
+	}
 	.slick-slide {
 		transition: all ease-in-out .3s;
 		opacity: 0;
@@ -25,14 +28,54 @@
 	.slick-prev:before,
 	.slick-next:before {
 		color: black;
+		font-family: 'Ionicons', sans-serif;
+		speak: none;
+		font-size: 30px;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		text-rendering: auto;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale
 	}
-	.slick-list {
-		padding: 0 !important;
+	.slick-next:before {
+		content: '\f125';
+	}
+	.slick-prev:before {
+		content: '\f124';
 	}
 }
 .timeline-slider-dots {
 	.slick-dots {
 		position: inherit;
+		width: 100%;
+		li {
+			width: 60px;
+			&:first-child:before {
+				background-color: transparent;
+			}
+			&:before {
+				content: '';
+				position: absolute;
+				background-color: #979797;
+				width: 120%;
+				height: 3px;
+				top: 34%;
+				left: -110%;
+			}
+			&.slick-active button:before {
+				opacity: 1;
+				color: #AC162C;
+			}
+			button:before {
+				font-size: 12px;
+				z-index: 1;
+				opacity: 1;
+				color: #979797;
+			}
+		}
 	}
 }
 /* Old timeline slider (deprecated) */

@@ -179,6 +179,10 @@
 	.navbar-nav input[type="submit"] { top: 20px; }
 	/* About Us */
 	.page-template-template-about #issues li { width: 550px; }
+	/* Timeline Slider */
+	.timeline-slider-dots .slick-dots li {
+		width: 10%;
+	}
 }
 @media screen and (max-width: 480px) {
 	.new-york-bakery-container-fluid.out { left: 0 !important; }
