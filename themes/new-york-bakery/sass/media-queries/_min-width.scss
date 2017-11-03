@@ -9,6 +9,14 @@
 		right: 40px;
 		bottom: 10px;
 	}
+	.navbar-brand-centered {
+		position: absolute;
+		left: 50%;
+		display: block;
+		width: auto;
+		text-align: center;
+		margin-left: 30px;
+	}
 	/* Menu Toggle */
 	.side-collapse.in {
 		display: none;

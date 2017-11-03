@@ -260,6 +260,7 @@ header #navbar-primary .menu-hd .navbar-nav {
 header #navbar-primary .menu-hd .menu-hd-right {
   width: auto;
   margin-right: 0;
+  margin-top: 30px;
 }
 header #navbar-primary .menu-hd .menu-hd-right > li {
   margin-right: 10px;
@@ -882,6 +883,15 @@ footer .footer-container-widget {
   ul.nav.navbar-nav.navbar-right.menu-hd-right.menus li.search-menu-hd {
     right: 40px;
     bottom: 10px;
+  }
+
+  .navbar-brand-centered {
+    position: absolute;
+    left: 50%;
+    display: block;
+    width: auto;
+    text-align: center;
+    margin-left: 30px;
   }
 
   /* Menu Toggle */

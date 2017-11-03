@@ -33,6 +33,19 @@
 			<!--Display only on Desktop HD-->
 			<div class="collapse navbar-collapse menu-hd">
 				<ul class="nav navbar-nav">
+
+					<div class="navbar-brand-centered">
+						<div class="search-menu-hd">
+							<form role="search" method="get" action="<?php echo home_url( '/' ); ?>">
+								<input id="search" type="search" class="search-field"
+								       placeholder="<?php echo esc_attr_x( 'search', 'placeholder' ) ?>"
+								       value="<?php echo get_search_query() ?>" name="s"/>
+								<input type="submit" class="search-submit"
+								       value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>"/>
+							</form>
+						</div>
+					</div>
+
 					<li class="active">
 						<a href="<?php echo home_url( '/' ); ?>" class="custom-logo-link" rel="home" itemprop="url">
 							<?php
@@ -51,15 +64,6 @@
 						</a>
 					</li>
 					<ul class="nav navbar-nav navbar-right menu-hd-right menus">
-						<li class="search-menu-hd">
-							<form role="search" method="get" action="<?php echo home_url( '/' ); ?>">
-								<input id="search" type="search" class="search-field"
-								       placeholder="<?php echo esc_attr_x( 'search', 'placeholder' ) ?>"
-								       value="<?php echo get_search_query() ?>" name="s"/>
-								<input type="submit" class="search-submit"
-								       value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>"/>
-							</form>
-						</li>
 						<?php
 						wp_nav_menu( array(
 							'menu'            => '',
