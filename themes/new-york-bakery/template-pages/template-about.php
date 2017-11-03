@@ -8,7 +8,26 @@ get_header(); ?>
 	<script type="text/javascript">
 		//jQuery Timeline Slider
 		jQuery( function( $ ) {
-			$().timelinr( { autoPlayDirection : 'forward' } );
+			$( '.lazy' ).slick( {
+				//lazyLoad       : 'ondemand', // ondemand progressive anticipated
+				centerMode     : true,
+				infinite       : true,
+				dots           : true,
+				speed          : 300,
+				slidesToShow   : 1,
+				adaptiveHeight : true,
+				appendDots     : '.timeline-slider-dots',
+				responsive     : [
+					{
+						breakpoint : 1024,
+						settings   : {
+							arrows         : true,
+							adaptiveHeight : true,
+							variableWidth  : false
+						}
+					}
+				]
+			} );
 		} );
 	</script>
 
