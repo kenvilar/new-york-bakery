@@ -9,6 +9,7 @@ sass --watch assets/css/style.css:assets/css/style.min.css --style compressed --
 @import "general/elements";
 @import "general/buttons";
 @import "general/forms";
+@import "general/theme";
 @import "layouts/header";
 @import "modules/search";
 @import "layouts/banner";

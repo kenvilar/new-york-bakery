@@ -35,21 +35,27 @@ get_header(); ?>
 					<div class="col-lg-6 col-md-6 col-md-6 col-sm-12 col-xs-12">
 						<div class="front-page-card">
 							<?php if ( get_sub_field( 'first_column_background_image' ) ) : ?>
-								<div class="front-page-card-bg-img"
-								     style="background-image: url(<?php the_sub_field( 'first_column_background_image' ); ?>);
-										     height: 237px;">
+								<a class="featured-page-image" href="<?php the_sub_field( 'first_column_link' ); ?>">
+									<div class="front-page-card-bg-img"
+									     style="background-image: url(<?php the_sub_field( 'first_column_background_image' ); ?>);
+											     height: 237px;">
 									<span class="plus-for-hover">
 										<img alt="icon"
 										     src="<?php echo get_template_directory_uri() . '/assets/images/plus.svg'; ?>"/>
 									</span>
-									<span class="o-for-hover" style="display: none;">
+										<span class="o-for-hover" style="display: none;">
 										<img alt="icon"
 										     src="<?php echo get_template_directory_uri() . '/assets/images/open.png'; ?>"/>
 									</span>
-								</div>
+									</div>
+								</a>
 							<?php endif; ?>
 							<?php if ( get_sub_field( 'first_column_title' ) ) : ?>
-								<h4><?php the_sub_field( 'first_column_title' ); ?></h4>
+								<h4 class="featured-page-title">
+									<a class="normal-link" href="<?php the_sub_field( 'first_column_link' ); ?>">
+										<?php the_sub_field( 'first_column_title' ); ?>
+									</a>
+								</h4>
 							<?php endif; ?>
 							<?php if ( get_sub_field( 'first_column_link' ) ) : ?>
 								<p class="learn-more"><a href="<?php the_sub_field( 'first_column_link' ); ?>">learn
@@ -61,21 +67,27 @@ get_header(); ?>
 					<div class="col-lg-6 col-md-6 col-md-6 col-sm-12 col-xs-12">
 						<div class="front-page-card">
 							<?php if ( get_sub_field( 'second_column_background_image' ) ) : ?>
-								<div class="front-page-card-bg-img"
-								     style="background-image: url(<?php the_sub_field( 'second_column_background_image' ); ?>);
-										     height: 237px;">
+								<a class="featured-page-image" href="<?php the_sub_field( 'second_column_link' ); ?>">
+									<div class="front-page-card-bg-img"
+									     style="background-image: url(<?php the_sub_field( 'second_column_background_image' ); ?>);
+											     height: 237px;">
 									<span class="plus-for-hover">
 										<img alt="icon"
 										     src="<?php echo get_template_directory_uri() . '/assets/images/plus.svg'; ?>"/>
 									</span>
-									<span class="o-for-hover" style="display: none;">
+										<span class="o-for-hover" style="display: none;">
 										<img alt="icon"
 										     src="<?php echo get_template_directory_uri() . '/assets/images/open.png'; ?>"/>
 									</span>
-								</div>
+									</div>
+								</a>
 							<?php endif; ?>
 							<?php if ( get_sub_field( 'second_column_title' ) ) : ?>
-								<h4><?php the_sub_field( 'second_column_title' ); ?></h4>
+								<h4 class="featured-page-title">
+									<a class="normal-link" href="<?php the_sub_field( 'second_column_link' ); ?>">
+										<?php the_sub_field( 'second_column_title' ); ?>
+									</a>
+								</h4>
 							<?php endif; ?>
 							<?php if ( get_sub_field( 'second_column_link' ) ) : ?>
 								<p class="learn-more"><a href="<?php the_sub_field( 'second_column_link' ); ?>">learn
